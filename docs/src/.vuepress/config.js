@@ -1,10 +1,11 @@
 const { description } = require('../../package')
 
 module.exports = {
+  base: '/',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: '零基础学前端',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -16,6 +17,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
+    ['link', {rel:'icon', href:'/img/favicon.ico'}],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
@@ -34,26 +36,42 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
+        text: '指南',
         link: '/guide/',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'HTML',
+        link: '/HTML/',
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'CSS',
+        link: '/CSS/'
+      },
+      {
+        text: 'JavaScript',
+        link: '/JS/'
+      },
+      {
+        text: 'Vue.js',
+        link: '/Vue/'
+      },
+      {
+        text: '文档指南',
+        items: [
+          { text: 'w3schools原版镜像', link: 'https://www.quanzhanketang.com/' },
+          { text: 'w3schools中文翻译', link: 'https://www.w3school.com.cn/' },
+          { text: 'MDN Web Docs', link: 'https://developer.mozilla.org/' },
+        ]
       }
     ],
     sidebar: {
       '/guide/': [
         {
-          title: 'Guide',
+          title: '指南',
           collapsable: false,
           children: [
             '',
-            'using-vue',
+            // 'using-vue',
           ]
         }
       ],
