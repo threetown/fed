@@ -33,7 +33,7 @@ module.exports = {
     editLinks: false,
     docsDir: '',
     editLinkText: '',
-    lastUpdated: false,
+    lastUpdated: 'Last Updated', // string | boolean
     nav: [
       {
         text: '指南',
@@ -56,6 +56,14 @@ module.exports = {
         link: '/Vue/'
       },
       {
+        text: '其它',
+        items: [
+          { text: 'Git和GitHub', link: '/git/' },
+          { text: 'MarkDown文档', link: '/MarkDown/' },
+          { text: 'SQL', link: '/SQL/' },
+        ]
+      },
+      {
         text: '文档指南',
         items: [
           { text: 'w3schools原版镜像', link: 'https://www.quanzhanketang.com/' },
@@ -72,6 +80,18 @@ module.exports = {
           children: [
             '',
             // 'using-vue',
+          ]
+        }
+      ],
+      '/SQL/': [
+        {
+          title: '结构化查询语句',
+          collapsable: false,
+          // sidebarDepth: 2,
+          children: [
+            '',
+            'DML',
+            'DDL'
           ]
         }
       ],
