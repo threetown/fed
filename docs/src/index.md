@@ -1,5 +1,6 @@
 ---
 home: true
+lang: zh-CN
 heroImage: /hero.png
 tagline: 🎯 万丈高楼平地起，霸王防脱不能少 🤔
 actionText: Quick Start →
