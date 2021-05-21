@@ -1,1 +1,6 @@
-# Vue.js
+# 介绍
+
+Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。
+
+<div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=0" target="_blank" rel="sponsored noopener" title="观看本节视频讲解">观看本节视频讲解</a></div>
+

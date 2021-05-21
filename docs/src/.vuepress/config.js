@@ -36,35 +36,46 @@ module.exports = {
     lastUpdated: 'Last Updated', // string | boolean
     nav: [
       {
-        text: '指南',
+        text: '🌶️指南',
         link: '/guide/',
       },
       {
-        text: 'HTML',
+        text: '🍅HTML',
         link: '/HTML/',
       },
       {
-        text: 'CSS',
+        text: '🍉CSS',
         link: '/CSS/'
       },
       {
-        text: 'JavaScript',
+        text: '🍌JavaScript',
         link: '/JS/'
       },
       {
-        text: 'Vue.js',
-        link: '/Vue/'
-      },
-      {
-        text: '其它',
+        text: '🌲三座大山',
         items: [
-          { text: 'Git和GitHub', link: '/git/' },
-          { text: 'MarkDown文档', link: '/MarkDown/' },
-          { text: 'SQL', link: '/SQL/' },
+          { text: '🌹VueJS', link: '/Vue/' },
+          { text: '🍀React', link: '/React/' },
+          { text: '🌸NodeJS', link: '/Node/' },
         ]
       },
       {
-        text: '文档指南',
+        text: '🍄前端工程化',
+        items: [
+          { text: 'Babel', link: '/Babel/' },
+          { text: 'Webpack', link: '/webpack/' },
+          { text: 'HTTP协议', link: '/HTTP/' },
+          { text: '设计模式', link: '/design-patterns/' },
+          { text: 'Flutter', link: '/Flutter/'},
+          { text: 'webgis', link: '/GIS/' },
+          { text: '测试', link: '/test/' },
+          { text: '🍉Git和GitHub', link: '/git/' },
+          { text: '🥭MarkDown文档', link: '/MarkDown/' },
+          { text: '其它', items: [{ text: '🍒SQL', link: '/SQL/' }] }
+        ]
+      },
+      {
+        text: '🍓文档指南',
         items: [
           { text: 'w3schools原版镜像', link: 'https://www.quanzhanketang.com/' },
           { text: 'w3schools中文翻译', link: 'https://www.w3school.com.cn/' },
@@ -72,6 +83,7 @@ module.exports = {
         ]
       }
     ],
+    // sidebar: 'auto'
     sidebar: {
       '/guide/': [
         {
@@ -83,11 +95,29 @@ module.exports = {
           ]
         }
       ],
+      '/JS/': [
+        {
+          title: 'JavaScript',
+          children: [
+            '',
+            'Functional',
+          ]
+        }
+      ],
+      '/React/': [
+        {
+          title: 'React',
+          collapsable: false,
+          children: [
+            '',
+            'Hooks'
+          ]
+        }
+      ],
       '/SQL/': [
         {
           title: '结构化查询语句',
           collapsable: false,
-          // sidebarDepth: 2,
           children: [
             '',
             'DML',

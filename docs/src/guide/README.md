@@ -6,6 +6,10 @@
 
 推荐您从基础的HTML和CSS开始，简单、轻松的打开方式，会给您带来更好的学习体验。下面是我们列出的学习路线，希望对您有所帮助：
 
+> `HTML & CSS` -> `JavaScript` -> `DOM` -> `ES6` -> `Node.js and npm` -> `Vue.js(Electron) or React.js(React Native、Fluter)`->`小程序`
+>
+> `Webpack`->`Babel` -> `Git & GitHub & Jenkins` -> `Markdown` ->`Conventional Commits`
+
 | 技能           | 课时（周） | 掌握程度 | 别名           |
 |     :----:     |   :----:   | :----: | :----: |
 | HTML           | 1          | 熟练     | 🍀 看家本领     |
@@ -38,4 +42,17 @@
 * [W3Schools Online Web Tutorials](https://www.quanzhanketang.com/)，w3schools 原版国内镜像，最受欢迎的前端技术教程网站，但是国内用户一直不能访问，并且国内的中文翻译版本十分陈旧。
 * [W3Schools在线教程](https://www.w3school.com.cn/)，w3schools 中文翻译版本。
 * [MDN Web Docs](https://developer.mozilla.org/)，开放的 *Web* 给予开发者不可思议的机会,想全面的利用这些技术,你需要知道如何使用它们。
+* [The Modern JavaScript Tutorial](https://javascript.info/)
 
+
+
+## 学习方法
+
+学习前端的人有着不同的知识背景和学习方式，不管你是理论派还是实践派，我们希望我们的内容对你有帮助。
+
+- 如果你是实践派，建议您**边做边学**。
+- 如果你是理论派，建议您**一步步学习概念**。
+
+和所有新技术一样，任何技术都有一条学习曲线，但只要多多实践和保有一点点耐心，你*终将*掌握它。
+
+### 

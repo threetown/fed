@@ -14,6 +14,10 @@ features:
   details: JavaScript 是一门编程语言，可为网站添加交互功能。
 - title: Vue.js
   details: 渐进式 JavaScript 框架。
+- title: React.js
+  details: 用于构建用户界面的 JavaScript 库。
+- title: Node.js
+  details: Node.js® 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。
 footer: Made by Leon_Ariseikz with ❤️
 ---
 
