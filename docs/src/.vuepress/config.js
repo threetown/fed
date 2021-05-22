@@ -69,6 +69,7 @@ module.exports = {
           { text: 'Flutter', link: '/Flutter/'},
           { text: 'webgis', link: '/GIS/' },
           { text: '测试', link: '/test/' },
+          { text: 'Google Chrome', link: '/chrome/' },
           { text: '🍉Git和GitHub', link: '/git/' },
           { text: '🥭MarkDown文档', link: '/MarkDown/' },
           { text: '其它', items: [{ text: '🍒SQL', link: '/SQL/' }] }
@@ -92,6 +93,15 @@ module.exports = {
           children: [
             '',
             // 'using-vue',
+          ]
+        }
+      ],
+      '/CSS/': [
+        {
+          title: 'CSS',
+          children: [
+            '',
+            'BFC'
           ]
         }
       ],
