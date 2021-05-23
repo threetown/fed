@@ -40,23 +40,25 @@ module.exports = {
         link: '/guide/',
       },
       {
-        text: '🍅HTML',
-        link: '/HTML/',
-      },
-      {
-        text: '🍉CSS',
-        link: '/CSS/'
-      },
-      {
-        text: '🍌JavaScript',
-        link: '/JS/'
+        text: '🍌零基础学前端',
+        items: [
+          { text: '🍅 HTML', link: '/HTML/' },
+          { text: '🍉 CSS', link: '/CSS/' },
+          { text: '🍌 JavaScript', link: '/JS/' },
+        ]
       },
       {
         text: '🌲三座大山',
         items: [
           { text: '🌹VueJS', link: '/Vue/' },
           { text: '🍀React', link: '/React/' },
-          { text: '🌸NodeJS', link: '/Node/' },
+          { text: '🌸NodeJS', link: '/NodeJS/' },
+        ]
+      },
+      {
+        text: '🌹前端架构',
+        items: [
+          { text: 'web架构师', link: '/fearchitect/' },
         ]
       },
       {
@@ -111,6 +113,20 @@ module.exports = {
           children: [
             '',
             'Functional',
+          ]
+        }
+      ],
+      '/webpack/': [
+        {
+          title: 'webpack',
+          children: [
+            '',
+            'basic',
+            'configuration',
+            'loader',
+            'plugin',
+            'optimization',
+            'interview',
           ]
         }
       ],
