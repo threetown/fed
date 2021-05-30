@@ -103,6 +103,44 @@ newSay();
 
 
 
+## 闭包（Closures）
+
+* 概念
+
+* 场景
+
+* 案例
+
+  ```js
+  for (var i = 0; i < 10; i++) {
+      // capture the current state of 'i'
+      // by invoking a function with its current value
+      (function(i) {
+          setTimeout(function() { console.log(i); }, 100 * i);
+      })(i);
+  }
+  
+  for (let i = 0; i < 10; i++) {
+  		setTimeout(function() { console.log(i); }, 100 * i);
+  }
+  ```
+
+  
+
+
+
+
+
+## 柯理化（Currying）
+
+
+
+## 高阶函数
+
+
+
+
+
 
 
 https://www.bilibili.com/video/BV1ET4y1F7B9/?spm_id_from=autoNext

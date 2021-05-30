@@ -1,6 +1,4 @@
-# 插件(plugin)
-
-[查看原文](https://webpack.js.org/concepts/plugins/)|[编辑此页](https://github.com/docschina/webpack.js.org/edit/cn/src/content/concepts/plugins.md)
+# 插件(plugin) 
 
 **插件**是 webpack 的 [支柱](https://github.com/webpack/tapable) 功能。webpack 自身也是构建于，你在 webpack 配置中用到的**相同的插件系统**之上！
 
@@ -87,7 +85,41 @@ compiler.run(function(err, stats) {
 
 # 常用plugin
 
-Html-webpack-plugin
+|                                                              |                                    |
+| ------------------------------------------------------------ | ---------------------------------- |
+| [`CommonsChunkPlugin`](https://v4.webpack.docschina.org/plugins/commons-chunk-plugin) | 提取 chunks 之间共享的通用模块     |
+| [`HtmlWebpackPlugin`](https://v4.webpack.docschina.org/plugins/html-webpack-plugin) | 简单创建 HTML 文件，用于服务器访问 |
+| [`IgnorePlugin`](https://v4.webpack.docschina.org/plugins/ignore-plugin) | 从 bundle 中排除某些模块           |
+| [`UglifyjsWebpackPlugin`](https://v4.webpack.docschina.org/plugins/uglifyjs-webpack-plugin) | 可以控制项目中 UglifyJS 的版       |
+| DashboardPlugin()                                            |                                    |
+|                                                              |                                    |
+|                                                              |                                    |
+|                                                              |                                    |
+|                                                              |                                    |
+
+### webpack-dashboard
+
+* vue-cli
+
+  ```diff
+  // vue.config.js
+  
+  + const DashboardPlugin = require("webpack-dashboard/plugin");
+  
+   configureWebpack: {
+      name: name,
+      resolve: {
+        alias: {
+          '@': resolve('src')
+        }
+      },
+  +   plugins: [
+  +     new DashboardPlugin()
+  +   ]
+    },
+  ```
+
+  
 
 
 # 编写一个plugin

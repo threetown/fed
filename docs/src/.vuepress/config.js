@@ -44,7 +44,13 @@ module.exports = {
         items: [
           { text: '🍅 HTML', link: '/HTML/' },
           { text: '🍉 CSS', link: '/CSS/' },
-          { text: '🍌 JavaScript', link: '/JS/' },
+          {
+            text: '🍌 JavaScript', items: [
+              { text: 'JS', link: '/JS/' },
+              { text: 'ES6', link: '/ES6/' },
+              { text: 'TypeScript', link: '/TypeScript/' }
+            ]
+          },
         ]
       },
       {
@@ -77,6 +83,9 @@ module.exports = {
           { text: '其它', items: [{ text: '🍒SQL', link: '/SQL/' }] }
         ]
       },
+      { text: '理论', items: [
+        { text: '计算机与网络', link: '/computing/'}
+      ]},
       {
         text: '🍓文档指南',
         items: [
@@ -127,6 +136,25 @@ module.exports = {
             'plugin',
             'optimization',
             'interview',
+          ]
+        }
+      ],
+      '/fearchitect/': [
+        {
+          title: '前端架构',
+          children: ['', 'Performance']
+        }
+      ],
+      '/computing/': [
+        {
+          title: '计算机与网络',
+          children: [
+            '',
+            'digital-information',
+            'computers',
+            'internet',
+            'online-data-security',
+            'computing-innovations',
           ]
         }
       ],
