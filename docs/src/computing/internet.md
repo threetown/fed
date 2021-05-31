@@ -2,7 +2,7 @@
 
 :::tip The Internet
 
-原谅：[The Internet](https://www.khanacademy.org/computing/ap-computer-science-principles/the-internet)
+原文：[The Internet](https://www.khanacademy.org/computing/ap-computer-science-principles/the-internet)
 
 :::
 
