@@ -1,4 +1,4 @@
-# 互联网介绍
+# The Internet
 
 :::tip The Internet
 
@@ -7,7 +7,7 @@
 :::
 
 
-## 互联网组成
+# 互联网组成
 
 > 原文：[The ingredients of the Internet](https://www.khanacademy.org/computing/ap-computer-science-principles/the-internet/introducing-the-internet/a/the-ingredients-of-the-internet)
 
@@ -271,13 +271,13 @@
 
 
 
-| Unit    | Number of bits |               |      |
-| :------ | :------------- | :------------ | :--- |
-| kilobit | 1000           | 1 thousand    |      |
-| megabit | 1000^2         | 1 million     |      |
-| gigabit | 1000^3         | 1 billion     |      |
-| terabit | 1000^4         | 1 trillion    |      |
-| petabit | 1000^5         | 1 quadrillion |      |
+| Unit    | Number of bits |               |
+| :------ | :------------- | :------------ |
+| kilobit | 1000           | 1 thousand    |
+| megabit | 1000^2         | 1 million     |
+| gigabit | 1000^3         | 1 billion     |
+| terabit | 1000^4         | 1 trillion    |
+| petabit | 1000^5         | 1 quadrillion |
 
 
 
@@ -596,7 +596,7 @@ IPv4和IPv6地址都是分层的。为了简单起见，让我们检查ipv4地�
 
 
 
-#### Step 4:  路由器转发数据包
+#### Step 3:  路由器转发数据包
 
 路由器有多条路径可以发送数据包，其目标是将数据包发送到更接近其最终目的地的路由器。
 
@@ -924,7 +924,7 @@ UDP报头的最后两个字节是校验和(*Checksum*)，发送方和接收方�
 
 ![Diagram of a TCP segment within an IP packet. The IP packet contains header and data sections. The IP data section is the TCP segment, which itself contains header and data sections.](./img/e5fdf560fdb40a1c0b3c3ce96f570e5f00fff161.svg)
 
-每个**TCP**段都包含一个标头(*header*)和数据(*data*)。TCP报头包含的字段比**UDP**报头多得多，根据`options`字段的大小，其大小可以从20 tytes到60 bytes不等。
+每个**TCP**段都包含一个标头(*header*)和数据(*data*)。TCP报头包含的字段比**UDP**报头多得多，根据`options`字段的大小，其大小可以从20 bytes到60 bytes不等。
 
 TCP报头与UDP报头共享一些字段：源端口号(*source port number*)、目标端口号(*destination port number*)和校验和(*checksum*)。要记住这些是如何使用的，请查看[UDP文章](./internet/)。
 

@@ -148,6 +148,7 @@ module.exports = {
       '/computing/': [
         {
           title: '计算机与网络',
+          sidebarDepth: 4,
           children: [
             '',
             'digital-information',
