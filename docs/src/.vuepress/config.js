@@ -139,12 +139,6 @@ module.exports = {
           ]
         }
       ],
-      '/fearchitect/': [
-        {
-          title: '前端架构',
-          children: ['', 'Performance']
-        }
-      ],
       '/computing/': [
         {
           title: '计算机与网络',
@@ -159,6 +153,17 @@ module.exports = {
           ]
         }
       ],
+      '/Vue/': [
+        {
+          title: 'Vue', children: [
+            '',
+            'vue',
+            'vue-router',
+            'vuex',
+            'vue-cli'
+          ]
+        }
+      ],
       '/React/': [
         {
           title: 'React',
@@ -167,6 +172,12 @@ module.exports = {
             '',
             'Hooks'
           ]
+        }
+      ],
+      '/fearchitect/': [
+        {
+          title: '前端架构',
+          children: ['', 'Performance']
         }
       ],
       '/SQL/': [

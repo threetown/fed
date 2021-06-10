@@ -1,0 +1,24 @@
+# 项目文件地址
+projectUrl: "C:\Users\Administrator\Desktop\zhujian_jinan"
+
+# 配置
+lists:
+  监管端:
+    测试(206): 
+      url: http://124.128.226.206:8206/filemg/download/uploadDist
+      path: /opt/rent/gxdRunMg
+  企业端:
+    测试(206): 
+      url: http://124.128.226.206:8202/fileqy/download/uploadDist
+      path: /opt/rent/gxdRunQy
+    正式(205): 
+      url: http://124.128.226.205:8202/fileqy/download/uploadDist
+      path: /opt/rent/gxdRunQy
+  金融端:
+    测试(206): 
+      url: http://124.128.226.206:8202/fileqy/download/uploadDist
+      path: /opt/rent/gxdRunJr
+    正式(205): 
+      url: http://124.128.226.205:8202/fileqy/download/uploadDist
+      path: /opt/rent/gxdRunJr
+  

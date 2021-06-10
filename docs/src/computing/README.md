@@ -362,6 +362,7 @@ ISP将IP地址发送回请求的计算机，现在我们的计算机可以成功
 ## 参考文献
 
 * [Introducing the Internet Protocol Suite](https://docs.oracle.com/cd/E19455-01/806-0916/6ja85398m/index.html)
+* [TCP/IP协议套件介绍](https://docs.oracle.com/cd/E19253-01/819-7058/ipov-6/index.html)
 * [Network protocols](https://www.manageengine.com/network-monitoring/network-protocols.html)
 * [Internet Protocol and Layers](http://www.umass.edu/nfp/guru/handout/ip_layers.html)
 
