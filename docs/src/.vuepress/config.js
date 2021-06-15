@@ -44,13 +44,7 @@ module.exports = {
         items: [
           { text: '🍅 HTML', link: '/HTML/' },
           { text: '🍉 CSS', link: '/CSS/' },
-          {
-            text: '🍌 JavaScript', items: [
-              { text: 'JS', link: '/JS/' },
-              { text: 'ES6', link: '/ES6/' },
-              { text: 'TypeScript', link: '/TypeScript/' }
-            ]
-          },
+          { text: '🍌 JavaScript', link: '/JS/' }
         ]
       },
       {
@@ -65,6 +59,7 @@ module.exports = {
         text: '🌹前端架构',
         items: [
           { text: 'web架构师', link: '/fearchitect/' },
+          { text: '算法', link: '/algorithm/' }
         ]
       },
       {
@@ -73,6 +68,7 @@ module.exports = {
           { text: 'Babel', link: '/Babel/' },
           { text: 'Webpack', link: '/webpack/' },
           { text: 'HTTP协议', link: '/HTTP/' },
+          { text: 'TypeScript', link: '/TypeScript/' },
           { text: '设计模式', link: '/design-patterns/' },
           { text: 'Flutter', link: '/Flutter/'},
           { text: 'webgis', link: '/GIS/' },
@@ -112,7 +108,13 @@ module.exports = {
           title: 'CSS',
           children: [
             '',
-            'BFC'
+            'box_model',
+            'position',
+            'css3',
+            'flex',
+            'BFC',
+            'reflow_repaint',
+            'icon',
           ]
         }
       ],
@@ -121,7 +123,13 @@ module.exports = {
           title: 'JavaScript',
           children: [
             '',
+            'this',
+            'call_apply_bind',
+            'async',
+            'event_loop',
+            'OOP',
             'Functional',
+            'interview'
           ]
         }
       ],

@@ -8,8 +8,6 @@ composition 可组合
 
 
 
-
-
 ### 找出dog
 
 ```js
@@ -47,7 +45,7 @@ node --harmony_arrow_functions example.js
 
 
 
-## Higher-order，高阶函数(AOP)
+## Higher-order，高阶函数
 
 > 把一个函数当成参数传递给另一个函数
 >
@@ -69,9 +67,30 @@ function Fn(x) {
 Fn(1)(2)
 ```
 
+### 应用场景
 
+* 判断类型
 
+  ```js
+  const types = ['String', 'Number', 'Boolean', 'Undefined', 'Null', 'Object', 'Array'];
+  
+  let fns = {};
+  types.forEach(type => {
+    fns[`is${type}`] = isType(type)
+  })
+  
+  function isType(type){
+    return function(obj){
+      return Object.prototype.toString.call(obj).includes(type);
+    }
+  }
+  
+  // demo
+  const a = true;
+  console.log(fns.isBoolean(a))
+  ```
 
+  
 
 * filter
 * map【forEach与map区别：forEach没有返回值，操作的原数组 ；map有返回值】
@@ -80,25 +99,27 @@ Fn(1)(2)
 ### 高阶函数之AOP切片编程
 
 > AOP切片，不修改原来的功能，在原有的基础上去添加新的功能。
+>
+> loadsh.after()...
 
 ```js
-function Say() {
-  console.log('say Hello')
+function Say(who) {
+  console.log(who + ' say Hello!')
 }
 
 Function.prototype.before = function(cb){
   const self = this;
   return function(){
-    cb()
-    self()
+    cb();
+    self(...arguments);
   }
 }
 
 const newSay = Say.before(function(){
-  console.log('leon')
+  console.log('Hi~');
 })
 
-newSay();
+newSay('leon');
 ```
 
 
@@ -266,98 +287,75 @@ console.log(add(1)(2)(3)(4)(5)); // 15;
 
 
 
+## 观察者和发布订阅模式
 
-
-## 说说bind、call、apply 区别？
-
-
-
-`call` 和 `apply` 都是为了解决改变 `this` 的指向。作用都是相同的，只是传参的方式不同。
-
-除了第一个参数外，`call` 可以接收一个参数列表，`apply` 只接受一个参数数组。
+* 观察者模式
 
 ```js
-let a = {
-    value: 1
+/**
+ * 观察者模式：观察者和被观察者，如果被观察都数据变化了，通知观察者
+ **/
+function Events() {
+  this.callbacks = [];
+  this.results = [];
 }
-function getValue(name, age) {
-    console.log(name)
-    console.log(age)
-    console.log(this.value)
+
+// 订阅
+Events.prototype.on = function(callback) {
+  this.callbacks.push(callback)
 }
-getValue.call(a, 'yck', '24')
-getValue.apply(a, ['yck', '24'])
-```
 
-`bind`和其他两个方法作用也是一致的，只是该方法会返回一个函数。并且我们可以通过 `bind`实现柯里化。
+// 发布
+Events.prototype.emit = function(data) {
+  this.results.push(data)
+  this.callbacks.forEach(c => c(this.results));
+}
 
-*（下面是对这三个方法的扩展介绍）*
-
-**如何实现一个 bind 函数**
-
-https://mp.weixin.qq.com/s/HPOUy8K8qnWpfSJzxDl6_w
-
-对于实现以下几个函数，可以从几个方面思考
-
-- 不传入第一个参数，那么默认为 `window`
-- 改变了 this 指向，让新的对象可以执行该函数。那么思路是否可以变成给新的对象添加一个函数，然后在执行完以后删除？
-
-```
-Function.prototype.myBind = function (context) {
-  if (typeof this !== 'function') {
-    throw new TypeError('Error')
+// demo
+let e = new Events();
+e.on(function(arr) {
+  if(arr.length === 3){
+    console.log(arr)
   }
-  var _this = this
-  var args = [...arguments].slice(1)
-  // 返回一个函数
-  return function F() {
-    // 因为返回了一个函数，我们可以 new F()，所以需要判断
-    if (this instanceof F) {
-      return new _this(...args, ...arguments)
-    }
-    return _this.apply(context, args.concat(...arguments))
+})
+
+fs.readFile('./a.txt', 'utf-8', function(err, data){
+  e.emit(data)
+})
+fs.readFile('./b.txt', 'utf-8', function(err, data){
+  e.emit(data)
+})
+fs.readFile('./c.txt', 'utf-8', function(err, data){
+  e.emit(data)
+})
+```
+
+* 发布订阅模式
+
+```js
+// 被观察者
+class Subject {
+  constructor(name){
+    this.name = name;
+    this.observers = [];
+  }
+  
+  // 被观察者要提供一个接受观察者的方法
+  attach(){
+    
   }
 }
-```
 
-**如何实现一个call函数**
 
 ```
-Function.prototype.myCall = function (context) {
-  var context = context || window
-  // 给 context 添加一个属性
-  // getValue.call(a, 'yck', '24') => a.fn = getValue
-  context.fn = this
-  // 将 context 后面的参数取出来
-  var args = [...arguments].slice(1)
-  // getValue.call(a, 'yck', '24') => a.fn('yck', '24')
-  var result = context.fn(...args)
-  // 删除 fn
-  delete context.fn
-  return result
-}
-```
 
-**如何实现一个apply函数**
 
-```
-Function.prototype.myApply = function (context) {
-  var context = context || window
-  context.fn = this
 
-  var result
-  // 需要判断是否存储第二个参数
-  // 如果存在，就将第二个参数展开
-  if (arguments[1]) {
-    result = context.fn(...arguments[1])
-  } else {
-    result = context.fn()
-  }
 
-  delete context.fn
-  return result
-}
-```
+
+## this指向
+
+
 
 
 
