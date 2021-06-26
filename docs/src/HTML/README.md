@@ -1,6 +1,6 @@
 ---
-title: Blogging Like a Hacker
-lang: en-US
+title: HTML 超文本标记语言
+lang: zh-CN
 ---
 
 # HTML
@@ -9,7 +9,17 @@ lang: en-US
 HyperText Markup Language（超文本标记语言），用来描述和定义一张网页的内容。
 :::
 
-<div class="vueschool"><a href="https://vueschool.io/courses/vue-router-for-everyone?friend=vuerouter" target="_blank" rel="sponsored noopener" title="Learn how to build powerful Single Page Applications with the Vue Router on Vue School">Watch a free video course about Vue Router on Vue School</a></div>
+
+
+:::waning 唠会嗑
+
+一直在思考，HTML到底有哪些点，是需要care的？
+
+* HTML*绘图*：`svg`、`canvas`
+
+:::
+
+
 
 ## 渐进增强和优雅降级
 

@@ -29,11 +29,17 @@ console.log(tempArr)
 
 // 方法四：
 console.log([...new Set(arr)])
-
-
 ```
 
 
+
+```js
+// 数组中，根据某一字段去重
+unique(arr, field = 'time') {
+  const res = new Map()
+  return arr.filter(a => !res.has(a[field]) && res.set(a[field], 1))
+},
+```
 
 
 

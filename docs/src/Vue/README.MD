@@ -4,3 +4,13 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 
 <div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=0" target="_blank" rel="sponsored noopener" title="观看本节视频讲解">观看本节视频讲解</a></div>
 
+
+
+
+
+* [vue面试](https://juejin.cn/post/6844903918753808398)
+* [一年半经验如何准备阿里巴巴前端面试](https://juejin.cn/post/6844904072345026574)
+* [《0 到 1 掌握：Vue 核心之数据双向绑定》](https://juejin.im/post/6844903903822086151)
+* [Vue.js 技术揭秘](https://ustbhuangyi.github.io/vue-analysis/)
+* [vue nextTict](https://github.com/vuejs/vue/blob/v2.6.14/src/core/util/next-tick.js)
+* [Web 中高级前端面试题集合（200+）](https://segmentfault.com/a/1190000021966814)

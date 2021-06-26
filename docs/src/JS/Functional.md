@@ -100,6 +100,8 @@ Fn(1)(2)
 
 > AOP切片，不修改原来的功能，在原有的基础上去添加新的功能。
 >
+> AOP（面向切面编程）的主要作用是把一些跟核心业务逻辑模块无关的功能抽离出来，这些跟业务逻辑无关的功能通常包括**日志统计**、**安全控制**、异常处理等。
+>
 > loadsh.after()...
 
 ```js
@@ -345,22 +347,7 @@ class Subject {
     
   }
 }
-
-
 ```
-
-
-
-
-
-## this指向
-
-
-
-
-
-
-
 
 
 
@@ -368,7 +355,11 @@ class Subject {
 https://www.bilibili.com/video/BV1ET4y1F7B9/?spm_id_from=autoNext
 
 
-
-
-
 数组去重、多维数组
+
+### 参考文献
+* [深入理解javascript函数进阶系列第一篇——高阶函数](https://www.xiaohuochai.cc/posts/5afa86b6002834409838bd2f)
+* [深入理解闭包系列第一篇——到底什么才是闭包](https://www.xiaohuochai.cc/posts/5afaa7e6002834409838bd3b)
+* [深入理解this机制系列第一篇——this的4种绑定规则](https://www.xiaohuochai.cc/posts/5afaaabe002834409838bd40)
+* [一张图理解prototype、proto和constructor的三角关系](https://www.xiaohuochai.cc/posts/5afaac67002834409838bd43)
+* [this 的工作原理](http://bonsaiden.github.io/JavaScript-Garden/zh/#function.this)

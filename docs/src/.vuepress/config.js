@@ -128,6 +128,7 @@ module.exports = {
             'async',
             'event_loop',
             'OOP',
+            'ES6',
             'Functional',
             'interview'
           ]
