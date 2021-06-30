@@ -137,80 +137,86 @@ newSay('leon');
   * 可以读取函数内部的变量
   * 让这些变量的值始终保持在内存中
 
-* 场景
+### 防抖函数（debounce）与节流函数（throttle）
 
-* 案例
+>* 防抖函数：只有当**鼠标停止**移动时，才会执行一次。
+>  * 搜索框搜索输入。只需要用户最后一次输入完再发送请求
+>  * 手机号、邮箱格式的输入验证检测
+>  * 窗口大小的 resize 。只需窗口调整完成后，计算窗口的大小，防止重复渲染。
+>* 节流函数：分布的较为均匀，**每过一段时间**就会执行一次。
+>  * 滚动加载，加载更多或滚动到底部监听
+>  * 谷歌搜索框，搜索联想功能
+>  * 高频点击提交，表单重复提交
+>  * 省市信息对应字母快速选择
 
-  * 防抖函数（debounce）与节流函数（throttle）
+**防抖**
 
-    **防抖**
+> 触发高频事件后n秒内函数只会执行一次，如果n秒内高频事件再次被触发，则重新计算时间
 
-    > 触发高频事件后n秒内函数只会执行一次，如果n秒内高频事件再次被触发，则重新计算时间
+- 思路：
 
-    - 思路：
+> 每次触发事件时都取消之前的延时调用方法
 
-    > 每次触发事件时都取消之前的延时调用方法
+```js
+function debounce(fn) {
+      let timeout = null; // 创建一个标记用来存放定时器的返回值
+      return function () {
+        clearTimeout(timeout); // 每当用户输入的时候把前一个 setTimeout clear 掉
+        timeout = setTimeout(() => { // 然后又创建一个新的 setTimeout, 这样就能保证输入字符后的 interval 间隔内如果还有字符输入的话，就不会执行 fn 函数
+          fn.apply(this, arguments);
+        }, 500);
+      };
+    }
+    function sayHi() {
+      console.log('防抖成功');
+    }
 
-    ```js
-    function debounce(fn) {
-          let timeout = null; // 创建一个标记用来存放定时器的返回值
-          return function () {
-            clearTimeout(timeout); // 每当用户输入的时候把前一个 setTimeout clear 掉
-            timeout = setTimeout(() => { // 然后又创建一个新的 setTimeout, 这样就能保证输入字符后的 interval 间隔内如果还有字符输入的话，就不会执行 fn 函数
-              fn.apply(this, arguments);
-            }, 500);
-          };
-        }
-        function sayHi() {
-          console.log('防抖成功');
-        }
-    
-        var inp = document.getElementById('inp');
-        inp.addEventListener('input', debounce(sayHi)); // 防抖
-    ```
+    var inp = document.getElementById('inp');
+    inp.addEventListener('input', debounce(sayHi)); // 防抖
+```
 
-    **节流**
+**节流**
 
-    > 高频事件触发，但在n秒内只会执行一次，所以节流会稀释函数的执行频率
+> 高频事件触发，但在n秒内只会执行一次，所以节流会稀释函数的执行频率
 
-    - **思路**：每次触发事件时都判断当前是否有等待执行的延时函数
+- **思路**：每次触发事件时都判断当前是否有等待执行的延时函数
 
-    ```js
-    function throttle(fn) {
-          let canRun = true; // 通过闭包保存一个标记
-          return function () {
-            if (!canRun) return; // 在函数开头判断标记是否为true，不为true则return
-            canRun = false; // 立即设置为false
-            setTimeout(() => { // 将外部传入的函数的执行放在setTimeout中
-              fn.apply(this, arguments);
-              // 最后在setTimeout执行完毕后再把标记设置为true(关键)表示可以执行下一次循环了。当定时器没有执行的时候标记永远是false，在开头被return掉
-              canRun = true;
-            }, 500);
-          };
-        }
-        function sayHi(e) {
-          console.log(e.target.innerWidth, e.target.innerHeight);
-        }
-        window.addEventListener('resize', throttle(sayHi));
-    ```
+```js
+function throttle(fn) {
+      let canRun = true; // 通过闭包保存一个标记
+      return function () {
+        if (!canRun) return; // 在函数开头判断标记是否为true，不为true则return
+        canRun = false; // 立即设置为false
+        setTimeout(() => { // 将外部传入的函数的执行放在setTimeout中
+          fn.apply(this, arguments);
+          // 最后在setTimeout执行完毕后再把标记设置为true(关键)表示可以执行下一次循环了。当定时器没有执行的时候标记永远是false，在开头被return掉
+          canRun = true;
+        }, 500);
+      };
+    }
+    function sayHi(e) {
+      console.log(e.target.innerWidth, e.target.innerHeight);
+    }
+    window.addEventListener('resize', throttle(sayHi));
+```
 
-  * 输出1~10
+* 输出1~10
 
-  ```js
-  for (var i = 0; i < 10; i++) {
-      // capture the current state of 'i'
-      // by invoking a function with its current value
-      (function(i) {
-          setTimeout(function() { console.log(i); }, 100 * i);
-      })(i);
-  }
-  
-  for (let i = 0; i < 10; i++) {
-  		setTimeout(function() { console.log(i); }, 100 * i);
-  }
-  ```
+```js
+for (var i = 0; i < 10; i++) {
+    // capture the current state of 'i'
+    // by invoking a function with its current value
+    (function(i) {
+        setTimeout(function() { console.log(i); }, 100 * i);
+    })(i);
+}
 
-  
+for (let i = 0; i < 10; i++) {
+		setTimeout(function() { console.log(i); }, 100 * i);
+}
+```
+
+
 
 ## 柯理化（Currying）
 

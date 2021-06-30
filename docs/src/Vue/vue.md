@@ -4,6 +4,25 @@
 
 
 
+## Vue双向数据绑定
+
+* 设计模式：发布-订阅模式
+* Obsever
+* Wacth
+* Dep
+* Compile(模板编译)：
+  * document.createDocumentFragment()：创建一个新的空白的文档片段，因为文档片段存在于**内存中**，并不在DOM树中，所以将子元素插入到文档片段时不会引起页面[回流](https://developer.mozilla.org/zh-CN/docs/Glossary/Reflow)（对元素位置和几何上的计算）。因此，使用文档片段通常会带来更好的性能。
+
+
+
+## Vue源码
+
+* rollup打包
+
+
+
+
+
 ## Mixins
 
 混入 ([mixin](https://cn.vuejs.org/v2/guide/mixins.html)) 提供了一种非常灵活的方式，来分发 Vue 组件中的可复用功能。

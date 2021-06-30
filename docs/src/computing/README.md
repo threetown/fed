@@ -245,7 +245,7 @@ IP地址(如：`74.125.20.113`) ，是计算机识别Internet上其他计算机�
 
   * ISP会首先询问根名称服务器（*Root name servers*），如：“hey, which name server knows about `.org` domains?”
 
-    ![Diagram with two servers, ISP Domain Resolver on left and Root Name Servers on right. An arrow from the ISP Domain Resolver contains message ".org domains?" and an arrow back from the Root Name Servers contains IP address "199.19.54.1".](http://localhost:8080/assets/img/b1d61ffbee75aaf2d02412b49e97d177fd7e5d73.3172e076.svg)
+    ![Diagram with two servers, ISP Domain Resolver on left and Root Name Servers on right. An arrow from the ISP Domain Resolver contains message ".org domains?" and an arrow back from the Root Name Servers contains IP address "199.19.54.1".](./img/b1d61ffbee75aaf2d02412b49e97d177fd7e5d73.svg)
 
     
 
