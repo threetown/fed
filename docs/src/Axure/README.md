@@ -2,7 +2,14 @@
 
 :::tip 说点啥
 不干正事的前端开发，干起了产品的活，Axure走一波
+
+[人人都是产品经理](http://www.woshipm.com/)
+
 :::
+
+
+
+![AXURE](./img/AxureRP9.png)
 
 ## Axure软件介绍
 > * 菜单栏

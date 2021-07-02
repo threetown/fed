@@ -59,7 +59,8 @@ module.exports = {
         text: '🌹前端架构',
         items: [
           { text: 'web架构师', link: '/fearchitect/' },
-          { text: '算法', link: '/algorithm/' }
+          { text: '算法', link: '/algorithm/' },
+          { text: 'Axure', link: '/Axure/' }
         ]
       },
       {
