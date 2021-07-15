@@ -2,6 +2,8 @@
 
 事件循环机制(Event Loop)
 
+:boom: [Event Loop机制](https://www.yuque.com/guoba7/mz70ea/nw3k1g)
+
 :::tip 结论
 
 * **微任务**执行时机比**宏任务**早

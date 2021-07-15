@@ -298,6 +298,69 @@ module.exports = {
 
 
 
+### 6. CDN加速
+
+:::tip 方式
+
+将**不怎么需要更新**的**第三方库脱离webpack打包**，不被打入bundle中，从而减少打包时间，但又不影响运用第三方库的方式，例如import方式等
+
+* 方式一：使用 `html-webpack-externals-plugin`
+* 方式二：直接配置 `externals`
+
+:::
+
+#### html-webpack-externals-plugin
+
+通常在 `webpack.base.conf.js` 中进行配置，让其不打包到 `vendor.js` 中，配置如下：（以vue框架为例）
+
+```js
+const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
+
+module.exports = {
+    // 其它省略...
+    plugins: [
+        new HtmlWebpackExternalsPlugin({
+          externals: [{
+            module: 'vue',
+            entry: 'https://lib.baomitu.com/vue/2.6.12/vue.min.js',
+            global: 'Vue'
+          }]
+        })
+    ],
+    // 其它省略...
+}
+```
+
+最后看到在 `index.html` 中动态添加了如下代码：
+
+```html
+<script type="text/javascript" src="https://lib.baomitu.com/vue/2.6.12/vue.min.js"></script>
+```
+
+
+
+#### externals配置
+
+首先在 `index.html` 中script标签引入JS，如下代码：
+
+```html
+<script type="text/javascript" src="https://lib.baomitu.com/vue/2.6.12/vue.min.js"></script>
+```
+
+在 `webpack.base.conf.js` 的配置如下：
+
+```js
+module.exports = {
+    // 其它省略...
+    externals: {
+        vue: 'Vue'
+    },
+    // 其它省略...
+}
+```
+
+
+
 ## 总结
 
 **development(开发环境)** 和 **production(生产环境)** 这两个环境下的构建目标存在着巨大差异。

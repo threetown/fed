@@ -1,12 +1,15 @@
 # asynchronous programming
 异步（Asynchronous, async）是与同步（Synchronous, sync）相对的概念。
 
+:boom: [异步编程](https://www.yuque.com/guoba7/mz70ea/igr91h)
+
 ## 异步编程
 * callback
+* 事件发布/订阅
 * [Promises/A+](https://promisesaplus.com/)
 * async/await
  * [async和await:让异步编程更简单](https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Asynchronous/Async_await)
-* genrtor...
+* generator
 
 
 

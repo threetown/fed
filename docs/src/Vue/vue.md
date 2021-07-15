@@ -2,6 +2,10 @@
 
 * 开发插件如：vue-router、vuex等
 
+:boom: [vue内部运行机制](https://www.yuque.com/guoba7/xh8mvb/cdgggn)
+
+[深入理解Vue响应式原理](https://jungahuang.com/2018/02/07/about-responsive-of-vue/)
+
 
 
 ## Vue双向数据绑定

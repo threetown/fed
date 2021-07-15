@@ -363,9 +363,19 @@ https://www.bilibili.com/video/BV1ET4y1F7B9/?spm_id_from=autoNext
 
 数组去重、多维数组
 
-### 参考文献
+## 参考文献
 * [深入理解javascript函数进阶系列第一篇——高阶函数](https://www.xiaohuochai.cc/posts/5afa86b6002834409838bd2f)
 * [深入理解闭包系列第一篇——到底什么才是闭包](https://www.xiaohuochai.cc/posts/5afaa7e6002834409838bd3b)
 * [深入理解this机制系列第一篇——this的4种绑定规则](https://www.xiaohuochai.cc/posts/5afaaabe002834409838bd40)
 * [一张图理解prototype、proto和constructor的三角关系](https://www.xiaohuochai.cc/posts/5afaac67002834409838bd43)
 * [this 的工作原理](http://bonsaiden.github.io/JavaScript-Garden/zh/#function.this)
+
+
+
+
+
+
+
+## :boom:补充（非常重要）
+
+[函数式编程思想概述](https://www.yuque.com/guoba7/xh8mvb/ahbxwg)
