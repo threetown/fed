@@ -1,8 +1,8 @@
 ---
 home: true
 lang: zh-CN
-heroImage: /hero.png
-tagline: 🎯 万丈高楼平地起，霸王防脱不能少 🤔
+heroImage: /threetowns.png
+tagline: 🎯 Get The Best Solution For Your Business
 actionText: Quick Start →
 actionLink: /guide/
 features:
@@ -18,6 +18,6 @@ features:
   details: 用于构建用户界面的 JavaScript 库。
 - title: Node.js
   details: Node.js® 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。
-footer: Made by Leon_Aurora with ❤️
+footer: Made by Leon with ❤️
 ---
 

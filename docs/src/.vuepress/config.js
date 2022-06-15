@@ -36,27 +36,22 @@ module.exports = {
     lastUpdated: 'Last Updated', // string | boolean
     nav: [
       {
-        text: '🍌零基础学前端',
+        text: '🍓前端开发',
         items: [
           { text: '指南', link: '/guide/' },
-          { text: '🍅 HTML', link: '/HTML/' },
-          { text: '🍉 CSS', link: '/CSS/' },
-          { text: '🍌 JavaScript', link: '/JS/' }
-        ]
-      },
-      {
-        text: '🌲三座大山',
-        items: [
-          { text: 'VueJS', items: [{ text: 'vue_0.11', link: '/vue@0.11/'}, { text: 'vue_2.x', link: '/vue@2.x/'}, { text: 'vue', link: '/Vue/'}] },
-          { text: 'Vue CLI', items: [{ text: 'vue_cli', link: '/vue-cli/' }] },
-          { text: 'React', link: '/React/' },
-          { text: 'NodeJS', link: '/NodeJS/' },
+          { text: 'HTML', link: '/HTML/' },
+          { text: 'CSS', link: '/CSS/' },
+          { text: 'JavaScript', link: '/JS/' }
         ]
       },
       {
         text: '🌹前端架构',
         items: [
           { text: 'web架构师', link: '/fearchitect/' },
+          { text: 'VueJS', items: [{ text: 'vue_0.11', link: '/vue@0.11/'}, { text: 'vue_2.x', link: '/vue@2.x/'}, { text: 'vue', link: '/Vue/'}] },
+          { text: 'Vue CLI', items: [{ text: 'vue_cli', link: '/vue-cli/' }] },
+          { text: 'React', link: '/React/' },
+          { text: 'NodeJS', link: '/NodeJS/' },
           { text: '算法', link: '/algorithm/' },
           { text: 'Axure', link: '/Axure/' }
         ]
@@ -73,16 +68,13 @@ module.exports = {
           { text: 'webgis', link: '/GIS/' },
           { text: '测试', link: '/test/' },
           { text: 'Google Chrome', link: '/chrome/' },
-          { text: '🍉Git和GitHub', link: '/git/' },
-          { text: '🥭MarkDown文档', link: '/MarkDown/' },
-          { text: '其它', items: [{ text: '🍒SQL', link: '/SQL/' }] }
+          { text: 'Git和GitHub', link: '/git/' },
+          { text: 'MarkDown文档', link: '/MarkDown/' },
+          { text: '其它', items: [{ text: 'SQL', link: '/SQL/' }] }
         ]
       },
-      { text: '理论', items: [
-        { text: '计算机与网络', link: '/computing/'}
-      ]},
       {
-        text: '经理人', items: [
+        text: '🎯经理人', items: [
           { text: '聊聊管理', link: '/manage/' },
           { text: 'HR六大模块', items: [
             { text: 'OKR', link: '/OKR/' }
@@ -90,8 +82,9 @@ module.exports = {
         ]
       },
       {
-        text: '🍓文档指南',
+        text: '文档指南',
         items: [
+          { text: '计算机与网络', link: '/computing/' },
           { text: 'w3schools原版镜像', link: 'https://www.quanzhanketang.com/' },
           { text: 'w3schools中文翻译', link: 'https://www.w3school.com.cn/' },
           { text: 'MDN Web Docs', link: 'https://developer.mozilla.org/' },
@@ -100,16 +93,6 @@ module.exports = {
     ],
     // sidebar: 'auto'
     sidebar: {
-      '/guide/': [
-        {
-          title: '指南',
-          collapsable: false,
-          children: [
-            '',
-            // 'using-vue',
-          ]
-        }
-      ],
       '/CSS/': [
         {
           title: 'CSS',
@@ -226,7 +209,8 @@ module.exports = {
           title: '职业规划',
           collapsable: false,
           children: [
-            '',
+            'career',
+            'career-programming'
           ]
         }
       ],
