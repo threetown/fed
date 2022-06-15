@@ -4,6 +4,12 @@
 
 :boom: [Event Loop机制](https://www.yuque.com/guoba7/mz70ea/nw3k1g)
 
+[浏览器和Node.js中的Event Loop](https://fynn90.github.io/2019/07/13/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84Even%20Loop%E5%92%8CNode.JS%E7%9A%84Even%20Loop/)
+
+![](./images/event_loop.gif)
+
+
+
 :::tip 结论
 
 * **微任务**执行时机比**宏任务**早

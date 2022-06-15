@@ -1,5 +1,10 @@
 # 重绘和回流
 
+> * 回流 —— 将DOM节点和CSS样式结合准确的计算出DOM节点的表现形式（位置、形状），计算的过程就是回流
+> * 重绘 —— 经过了回流计算之后，就了解到哪些DOM显示（如何显示）和不显示，将DOM显示到浏览器中的过程就是重绘
+
+
+
 **回流必将引起重绘，重绘不一定会引起回流。**
 
 :::tip 浏览器使用流式布局模型 (Flow Based Layout)。
@@ -40,4 +45,56 @@
 ### b. 重绘 (Repaint)
 
 当页面中**元素样式的改变并不影响它在文档流中的位置**时（例如：`color`、`background-color`、`visibility`等），浏览器会将新样式赋予给元素并重新绘制它，这个过程称为重绘。
+
+
+
+## 如何减少回流和重绘
+
+1. 尽量一次修改所有样式属性
+
+   ```diff
+     const el = document.getElementById('app');
+   - el.style.padding = '5px';
+   - el.style.borderLeft = '1px';
+   
+   + el.style.cssText += 'padding: 5px; border-left: 1px;'
+   ```
+
+2. 批量修改DOM
+
+   即使元素脱离文档流，在脱离文档流的元素中修改完成，然后最后一次插入到DOM文档流中
+
+   有三种方式可以让DOM脱离文档流：
+
+   * 隐藏元素，应用修改，重新显示
+
+   * 使用文档片段(document fragment)在当前DOM之外构建一个子树，再把它拷贝回文档。
+
+     ```diff
+       var ul = document.getElementById("ul");
+     + var fragment = document.createDocumentFragment();
+       for (var i = 0; i < 20; i++) {
+         var li = document.createElement("li");
+         li.innerHTML = "index: " + i;
+     -   ul.appendChild(li);
+     +   fragment.appendChild(li);
+       }
+     + ul.appendChild(fragment);
+     ```
+
+   * 将原始元素拷贝到一个脱离文档的节点中，修改节点后，再替换原始的元素。
+
+3. 避免触发同步布局事件
+
+4. 对于复杂动画效果,使用绝对定位让其脱离文档流
+
+5. css3硬件加速（GPU加速）
+
+
+
+
+
+## 参考文献
+
+* [浏览器渲染之回流重绘](https://www.zoo.team/article/browser-redraw)
 

@@ -50,9 +50,10 @@ module.exports = {
       {
         text: '🌲三座大山',
         items: [
-          { text: '🌹VueJS', link: '/Vue/' },
-          { text: '🍀React', link: '/React/' },
-          { text: '🌸NodeJS', link: '/NodeJS/' },
+          { text: 'VueJS', items: [{ text: 'vue_0.11', link: '/vue@0.11/'}, { text: 'vue_2.x', link: '/vue@2.x/'}, { text: 'vue', link: '/Vue/'}] },
+          { text: 'Vue CLI', items: [{ text: 'vue_cli', link: '/vue-cli/' }] },
+          { text: 'React', link: '/React/' },
+          { text: 'NodeJS', link: '/NodeJS/' },
         ]
       },
       {
@@ -174,6 +175,12 @@ module.exports = {
           ]
         }
       ],
+      '/vue-cli/': [
+        {
+          title: 'vue-cli',
+          children: ['', 'Repo', 'history', 'flow']
+        }
+      ],
       '/React/': [
         {
           title: 'React',
@@ -188,6 +195,18 @@ module.exports = {
         {
           title: '前端架构',
           children: ['', 'Performance']
+        }
+      ],
+      '/git/': [
+        {
+          title: 'Git',
+          children: [
+            '',
+            'internals',
+            'git-cz',
+            'git',
+            'survey'
+          ]
         }
       ],
       '/SQL/': [

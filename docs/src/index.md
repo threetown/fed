@@ -18,6 +18,6 @@ features:
   details: 用于构建用户界面的 JavaScript 库。
 - title: Node.js
   details: Node.js® 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。
-footer: Made by Leon_Ariseikz with ❤️
+footer: Made by Leon_Aurora with ❤️
 ---
 

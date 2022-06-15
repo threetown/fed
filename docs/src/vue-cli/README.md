@@ -1,9 +1,13 @@
 # CLI
 写一个CLI(Command Line Interface)，你需要具备以下基础知识：
-* [inquirer.js](https://blog.csdn.net/qq_26733915/article/details/80461257) ——用户与命令行交互的工具
+* [inquirer.js](https://blog.csdn.net/qq_26733915/article/details/80461257) ——用户与命令行交互的工具，它可以简化以下流程：
+  * 提供错误反馈
+  * 询问问题
+  * 解析输入
+  * 验证结果
 * commander —— 完整的 node.js 命令行解决方案
-* download-git-repo
-* ora
+* download-git-repo：用来将相应的git库下载到指定的本地文件夹。
+* ora：让我们在终端展示加载效果。
 * chalk: 让我们的输出变得有色彩；
 * clear: 清空终端屏幕；
 * clui: 绘制命令行中的表格、仪表盘、加载指示器等；
@@ -60,9 +64,13 @@ vue-cli、create-react-app
 
 
 
+[vue-cli](http://man.hubwiz.com/docset/VueJS.docset/Contents/Resources/Documents/vuejs.org/2015/12/28/vue-cli/index.html)
 
 
 
+
+
+:boom: [vue-cli-analysis](https://kuangpf.com/vue-cli-analysis/init/)
 
 
 
