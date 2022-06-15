@@ -75,7 +75,11 @@ module.exports = {
       },
       {
         text: '🎯经理人', items: [
-          { text: '聊聊管理', link: '/manage/' },
+          { text: '职业经理人', items: [
+            { text: '聊聊管理', link: '/manage/' },
+            { text: '职业规划', link: '/manage/career/' },
+            { text: '面试指南', link: '/manage/interview/' },
+          ] },
           { text: 'HR六大模块', items: [
             { text: 'OKR', link: '/OKR/' }
           ] },
@@ -212,7 +216,14 @@ module.exports = {
             'career',
             'career-programming'
           ]
-        }
+        },
+        {
+          title: '面试指南',
+          collapsable: false,
+          children: [
+            'interview'
+          ]
+        },
       ],
       '/OKR/': [
         {
