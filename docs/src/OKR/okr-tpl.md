@@ -4,29 +4,29 @@
 
 #### 月度OKR考核-自评 + 上级评
 
-![](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/535BF2EC-6F7E-43D8-BABB-5220AEA2EC89-tita.png)
+![](./assets/tpl/535BF2EC-6F7E-43D8-BABB-5220AEA2EC89-tita.png)
 
 
 
 #### 季度 OKR 考核-360评价（匿名评价）
 
-![季度 OKR 考核-360评价（匿名评价）](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/3A83228B-4B37-4CE3-BB26-288F082734A1-tita.png)
+![季度 OKR 考核-360评价（匿名评价）](./assets/tpl/3A83228B-4B37-4CE3-BB26-288F082734A1-tita.png)
 
 #### 年度 OKR 考核-评价+等级校准
 
-![年度 OKR 考核-评价+等级校准](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/221F0CFE-C5AB-427A-99B2-9992B71BA493-tita.png)
+![年度 OKR 考核-评价+等级校准](./assets/tpl/221F0CFE-C5AB-427A-99B2-9992B71BA493-tita.png)
 
 
 
 #### OKR 考核-季度初制定指标+季度末评价
 
-![OKR 考核-季度初制定指标+季度末评价](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/FEED008C-FB31-4043-BB13-7C74A58700A0-tita.png)
+![OKR 考核-季度初制定指标+季度末评价](./assets/tpl/FEED008C-FB31-4043-BB13-7C74A58700A0-tita.png)
 
 
 
 #### OKR 考核-绩效结果确认+绩效申诉
 
-![OKR 考核-绩效结果确认+绩效申诉](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/0382150D-D5E2-499F-AC11-8FE077913AF2-tita.png)
+![OKR 考核-绩效结果确认+绩效申诉](./assets/tpl/0382150D-D5E2-499F-AC11-8FE077913AF2-tita.png)
 
 
 
@@ -36,19 +36,19 @@
 
 #### 月度 KPI 考核-自评+上级评
 
-![月度 KPI 考核-自评+上级评](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/7BC8C353-49E7-4CC2-A3C6-C4731AAA3F54-tita.png)
+![月度 KPI 考核-自评+上级评](./assets/tpl/7BC8C353-49E7-4CC2-A3C6-C4731AAA3F54-tita.png)
 
 
 
 #### 季度 KPI 考核-360评价（匿名评价）
 
-![季度 KPI 考核-360评价（匿名评价）](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/25C292F7-7B43-4939-A1E5-0A752F243A34-tita.png)
+![季度 KPI 考核-360评价（匿名评价）](./assets/tpl/25C292F7-7B43-4939-A1E5-0A752F243A34-tita.png)
 
 
 
 #### 年度 KPI 考核-评价+等级校准
 
-![年度 KPI 考核-评价+等级校准](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/D2966DE5-DE74-484E-888F-4C86C0622940-tita.png)
+![年度 KPI 考核-评价+等级校准](./assets/tpl/D2966DE5-DE74-484E-888F-4C86C0622940-tita.png)
 
 
 
@@ -56,13 +56,13 @@
 
 #### 工作业绩考核-季度初制定指标+季度末评分
 
-![工作业绩考核-季度初制定指标+季度末评分](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/B7DDB064-519D-4300-9A31-92384DC9FE75-tita.png)
+![工作业绩考核-季度初制定指标+季度末评分](./assets/tpl/B7DDB064-519D-4300-9A31-92384DC9FE75-tita.png)
 
 
 
 #### 定量指标公式自动算分-绩效结果确认+绩效申诉
 
-![定量指标公式自动算分-绩效结果确认+绩效申诉](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/DC843E75-9A5C-42D0-BAB4-B089570B77FC-tita.png)
+![定量指标公式自动算分-绩效结果确认+绩效申诉](./assets/tpl/DC843E75-9A5C-42D0-BAB4-B089570B77FC-tita.png)
 
 
 
@@ -70,19 +70,19 @@
 
 #### 月度定性考核-自评+上级评
 
-![月度定性考核-自评+上级评](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/0635864D-55CD-4A71-AA9D-2396B87EABD6-tita.png)
+![月度定性考核-自评+上级评](./assets/tpl/0635864D-55CD-4A71-AA9D-2396B87EABD6-tita.png)
 
 
 
 #### 季度定性考核-360评价（匿名评价）
 
-![季度定性考核-360评价（匿名评价）](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/B06EB3B9-D8C3-42D5-81BC-4543412392DE-tita.png)
+![季度定性考核-360评价（匿名评价）](./assets/tpl/B06EB3B9-D8C3-42D5-81BC-4543412392DE-tita.png)
 
 
 
 #### 年度定性考核-评价+等级校准
 
-![年度定性考核-评价+等级校准](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/8E49412E-C975-4E84-828A-212444930314-tita.png)
+![年度定性考核-评价+等级校准](./assets/tpl/8E49412E-C975-4E84-828A-212444930314-tita.png)
 
 
 
@@ -92,7 +92,7 @@
 
 
 
-![定性考核-季度初制定指标+季度末评价](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/27A27D32-3EA9-46F1-AF17-F660CE5B2D7E-tita.png)
+![定性考核-季度初制定指标+季度末评价](./assets/tpl/27A27D32-3EA9-46F1-AF17-F660CE5B2D7E-tita.png)
 
 
 
@@ -100,7 +100,7 @@
 
 #### 价值观考核-绩效结果确认+绩效申诉
 
-![价值观考核-绩效结果确认+绩效申诉](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/B3DBF062-D56B-4611-A672-9728AC30F437-tita.png)
+![价值观考核-绩效结果确认+绩效申诉](./assets/tpl/B3DBF062-D56B-4611-A672-9728AC30F437-tita.png)
 
 
 
@@ -110,7 +110,7 @@
 
 #### 月度项目考核-自评+上级评
 
-![月度项目考核-自评+上级评](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/F5A96224-0B29-4052-90D6-8A76C370BC5A-tita.png)
+![月度项目考核-自评+上级评](./assets/tpl/F5A96224-0B29-4052-90D6-8A76C370BC5A-tita.png)
 
 
 
@@ -118,7 +118,7 @@
 
 #### 季度项目考核-360评价（匿名评价）
 
-![季度项目考核-360评价（匿名评价）](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/638E4D69-E65D-4773-9E86-61BC933883CF-tita.png)
+![季度项目考核-360评价（匿名评价）](./assets/tpl/638E4D69-E65D-4773-9E86-61BC933883CF-tita.png)
 
 
 
@@ -126,13 +126,13 @@
 
 #### 年度项目考核-评价+等级校准
 
-![年度项目考核-评价+等级校准](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/AFF330A3-D701-4229-A264-CAFB46FC00E2-tita.png)
+![年度项目考核-评价+等级校准](./assets/tpl/AFF330A3-D701-4229-A264-CAFB46FC00E2-tita.png)
 
 
 
 #### 项目考核-季度初制定指标+季度末评价
 
-![项目考核-季度初制定指标+季度末评价](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/B4FDF870-F108-4C0D-83A0-06B305894E85-tita.png)
+![项目考核-季度初制定指标+季度末评价](./assets/tpl/B4FDF870-F108-4C0D-83A0-06B305894E85-tita.png)
 
 
 
@@ -140,7 +140,7 @@
 
 #### 项目考核-绩效结果确认+绩效申诉
 
-![项目考核-绩效结果确认+绩效申诉](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/804A3FE7-F04F-4F39-A962-F9A628234BFE-tita.png)
+![项目考核-绩效结果确认+绩效申诉](./assets/tpl/804A3FE7-F04F-4F39-A962-F9A628234BFE-tita.png)
 
 
 
@@ -148,19 +148,19 @@
 
 #### 月度总结-自评+上级评
 
-![月度总结-自评+上级评](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/2046547B-4E47-466D-BD47-051C24F5B19A-tita.png)
+![月度总结-自评+上级评](./assets/tpl/2046547B-4E47-466D-BD47-051C24F5B19A-tita.png)
 
 
 
 #### 季度总结-360评价（匿名评价）
 
-![季度总结-360评价（匿名评价）](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/BC5EE193-BACA-465A-8B9B-4F3CE8DE4683-tita.png)
+![季度总结-360评价（匿名评价）](./assets/tpl/BC5EE193-BACA-465A-8B9B-4F3CE8DE4683-tita.png)
 
 
 
 #### 年度总结-评价+等级校准
 
-![年度总结-评价+等级校准](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/3DB7C5C8-B82A-4B3F-9328-2FBA1DFD5240-tita.png)
+![年度总结-评价+等级校准](./assets/tpl/3DB7C5C8-B82A-4B3F-9328-2FBA1DFD5240-tita.png)
 
 
 
@@ -168,7 +168,7 @@
 
 #### 总结考核-绩效结果确认+绩效申诉
 
-![总结考核-绩效结果确认+绩效申诉](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/D4DB4175-3B4D-430D-972E-10EDCDF1C207-tita.png)
+![总结考核-绩效结果确认+绩效申诉](./assets/tpl/D4DB4175-3B4D-430D-972E-10EDCDF1C207-tita.png)
 
 
 
@@ -176,25 +176,25 @@
 
 #### 月度工作业绩+价值观考核-自评+上级评
 
-![月度工作业绩+价值观考核-自评+上级评](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/35E8E462-3807-4E07-BA1C-2E97A9A9C299-tita.png)
+![月度工作业绩+价值观考核-自评+上级评](./assets/tpl/35E8E462-3807-4E07-BA1C-2E97A9A9C299-tita.png)
 
 
 
 #### 季度 OKR+KPI 考核-360评价（匿名评价）
 
-![季度 OKR+KPI 考核-360评价（匿名评价）](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/E0D838AB-D552-4F9F-AE4F-8939F7E41B50-tita.png)
+![季度 OKR+KPI 考核-360评价（匿名评价）](./assets/tpl/E0D838AB-D552-4F9F-AE4F-8939F7E41B50-tita.png)
 
 
 
 #### 年度 OKR+KPI+价值观考核-评价+等级校准
 
-![年度 OKR+KPI+价值观考核-评价+等级校准](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/B59D42F6-A051-41A7-96DC-E6A943413F52-tita.png)
+![年度 OKR+KPI+价值观考核-评价+等级校准](./assets/tpl/B59D42F6-A051-41A7-96DC-E6A943413F52-tita.png)
 
 
 
 #### 加分项/减分项考核-绩效结果确认+绩效申诉
 
-![加分项/减分项考核-绩效结果确认+绩效申诉](https://xfile5.tita.com/titacn/tita/images/performance-template-library-previews/lg/1D99C163-533B-4501-A7B9-EBE4A277A1C3-tita.png)
+![加分项/减分项考核-绩效结果确认+绩效申诉](./assets/tpl/1D99C163-533B-4501-A7B9-EBE4A277A1C3-tita.png)
 
 
 

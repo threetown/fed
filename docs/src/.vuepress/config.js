@@ -36,12 +36,9 @@ module.exports = {
     lastUpdated: 'Last Updated', // string | boolean
     nav: [
       {
-        text: '🌶️指南',
-        link: '/guide/',
-      },
-      {
         text: '🍌零基础学前端',
         items: [
+          { text: '指南', link: '/guide/' },
           { text: '🍅 HTML', link: '/HTML/' },
           { text: '🍉 CSS', link: '/CSS/' },
           { text: '🍌 JavaScript', link: '/JS/' }
@@ -84,6 +81,14 @@ module.exports = {
       { text: '理论', items: [
         { text: '计算机与网络', link: '/computing/'}
       ]},
+      {
+        text: '经理人', items: [
+          { text: '聊聊管理', link: '/manage/' },
+          { text: 'HR六大模块', items: [
+            { text: 'OKR', link: '/OKR/' }
+          ] },
+        ]
+      },
       {
         text: '🍓文档指南',
         items: [
@@ -206,6 +211,32 @@ module.exports = {
             'git-cz',
             'git',
             'survey'
+          ]
+        }
+      ],
+      '/manage/': [
+        {
+          title: '管理',
+          collapsable: false,
+          children: [
+            '',
+          ]
+        },
+        {
+          title: '职业规划',
+          collapsable: false,
+          children: [
+            '',
+          ]
+        }
+      ],
+      '/OKR/': [
+        {
+          title: '目标与关键成果',
+          collapsable: false,
+          children: [
+            'OKR',
+            'okr-tpl'
           ]
         }
       ],
