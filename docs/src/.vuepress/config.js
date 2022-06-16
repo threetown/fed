@@ -38,47 +38,62 @@ module.exports = {
       {
         text: '🍓前端开发',
         items: [
-          { text: '指南', link: '/guide/' },
-          { text: 'HTML', link: '/HTML/' },
-          { text: 'CSS', link: '/CSS/' },
-          { text: 'JavaScript', link: '/JS/' }
+          { text: '从入门到放弃', items: [
+            { text: '指南', link: '/guide/' },
+            { text: 'HTML', link: '/HTML/' },
+            { text: 'CSS', link: '/CSS/' },
+            { text: 'JavaScript', link: '/JS/' }
+          ]},
+          {
+            text: '工具类',
+            items: [
+              { text: 'Babel', link: '/Babel/' },
+              { text: 'Webpack', link: '/webpack/' },
+              { text: 'TypeScript', link: '/TypeScript/' },
+            ]
+          },
+          {
+            text: '其它',
+            items: [
+              { text: 'Google Chrome', link: '/chrome/' },
+              { text: 'Git和GitHub', link: '/git/' },
+              { text: 'MarkDown文档', link: '/MarkDown/' },
+              { text: 'webgis', link: '/GIS/' },
+              { text: 'Flutter', link: '/Flutter/'},
+              { text: '测试', link: '/test/' },
+              { text: 'Axure', link: '/Axure/' },
+              { text: 'SQL', link: '/SQL/' }
+            ]
+          },
         ]
       },
-      {
-        text: '🌹前端架构',
-        items: [
-          { text: 'web架构师', link: '/fearchitect/' },
-          { text: 'VueJS', items: [{ text: 'vue_0.11', link: '/vue@0.11/'}, { text: 'vue_2.x', link: '/vue@2.x/'}, { text: 'vue', link: '/Vue/'}] },
-          { text: 'Vue CLI', items: [{ text: 'vue_cli', link: '/vue-cli/' }] },
+      { text: '🍄大前端', items: [
+        { text: 'VueJS', items: [{ text: 'vue_0.11', link: '/vue@0.11/'}, { text: 'vue_2.x', link: '/vue@2.x/'}, { text: 'vue', link: '/Vue/'}] },
+        { text: 'Vue CLI', items: [{ text: 'vue_cli', link: '/vue-cli/' }] },
+        { text: 'React', items: [
           { text: 'React', link: '/React/' },
-          { text: 'NodeJS', link: '/NodeJS/' },
-          { text: '算法', link: '/algorithm/' },
-          { text: 'Axure', link: '/Axure/' }
-        ]
-      },
-      {
-        text: '🍄前端工程化',
-        items: [
-          { text: 'Babel', link: '/Babel/' },
-          { text: 'Webpack', link: '/webpack/' },
-          { text: 'HTTP协议', link: '/HTTP/' },
-          { text: 'TypeScript', link: '/TypeScript/' },
+          { text: 'DvaJS', link: '/DvaJS/' },
+          { text: 'UmiJS', link: '/UmiJS/' },
+        ] },
+        {
+          text: 'NodeJS', items: [
+            { text: 'NodeJS', link: '/NodeJS/' }
+          ]
+        },
+        { text: '架构师', items: [
+          { text: '架构能力', link: '/fearchitect/' },
           { text: '设计模式', link: '/design-patterns/' },
-          { text: 'Flutter', link: '/Flutter/'},
-          { text: 'webgis', link: '/GIS/' },
-          { text: '测试', link: '/test/' },
-          { text: 'Google Chrome', link: '/chrome/' },
-          { text: 'Git和GitHub', link: '/git/' },
-          { text: 'MarkDown文档', link: '/MarkDown/' },
-          { text: '其它', items: [{ text: 'SQL', link: '/SQL/' }] }
-        ]
-      },
+          { text: 'HTTP协议', link: '/HTTP/' },
+          { text: '算法', link: '/algorithm/' },
+        ]}
+      ]},
       {
         text: '🎯经理人', items: [
           { text: '职业经理人', items: [
             { text: '聊聊管理', link: '/manage/' },
             { text: '职业规划', link: '/manage/career/' },
             { text: '面试指南', link: '/manage/interview/' },
+            { text: '能力框架', link: '/manage/ability/' },
           ] },
           { text: 'HR六大模块', items: [
             { text: 'OKR', link: '/OKR/' }
@@ -224,11 +239,19 @@ module.exports = {
             'interview'
           ]
         },
+        {
+          title: '能力',
+          collapsable: false,
+          children: [
+            'ability'
+          ]
+        },
       ],
       '/OKR/': [
         {
           title: '目标与关键成果',
           collapsable: false,
+          sidebarDepth: 4,
           children: [
             'OKR',
             'okr-tpl'
