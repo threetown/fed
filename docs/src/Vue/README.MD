@@ -5,7 +5,7 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 <div class="vueschool"><a href="https://learning.dcloud.io/#/?vid=0" target="_blank" rel="sponsored noopener" title="观看本节视频讲解">观看本节视频讲解</a></div>
 
 
-
+![vue basic](./img/vue-basic.png)
 
 
 * [vue面试](https://juejin.cn/post/6844903918753808398)

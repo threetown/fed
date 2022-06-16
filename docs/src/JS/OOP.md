@@ -1,6 +1,8 @@
 # OOP
 * [面向对象设计模式原则](https://fynn90.github.io/2019/09/12/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%8E%9F%E5%88%99/)
 
+![js oop](./images/js-oop.png)
+
 :::tip 面向对象设计模式原则
 
 | 标记 | 英文全称                            | 设计模式原则名称  | 简单定义                                        |

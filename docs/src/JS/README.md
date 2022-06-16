@@ -2,6 +2,8 @@
 
 > JavaScript 通过原型链而不是类来支持面向对象编程（有关 ES6 类的内容参考这里[`Classes`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes)，有关对象原型参考见此[继承与原型链](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)）。JavaScript同样支持函数式编程——因为它们也是对象，函数也可以被保存在变量中，并且像其他对象一样被传递。
 
+![js basic](./images/js-basic.png)
+
 ## JS数据类型
 
 任何编程语言都不可缺少的组成部分——“类型”，JavaScript 中的类型应该包括这些：

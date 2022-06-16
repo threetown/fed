@@ -8,7 +8,7 @@ flexbox 是一种一维的布局，是因为一个 flexbox 一次只能处理一
 
 :::
 
-
+![css3 flex](./img/flex.png)
 
 # 父元素 (flex container)
 

@@ -2,15 +2,14 @@
 
 :::tip
 * HTTP
+  * HTTP/1.1
+  * HTTP/2
 * SSL
 * HTTPS
 :::
 
+![前端网络](./img/net.png)
 
-
-*HTTP/1.1*
-
-*HTTP/2*
 
 ## 理论
 
@@ -92,7 +91,7 @@ http://www.example.com:1030/software/index.html
 
 * [The components of a URL](https://www.ibm.com/docs/en/cics-ts/5.3?topic=concepts-components-url)
 
-  ![url](url.svg)
+  ![url](./img/url.svg)
 
 * [Khanacademy Computing](https://www.khanacademy.org/computing)
 

@@ -55,7 +55,7 @@ module.exports = {
           {
             text: '其它',
             items: [
-              { text: 'Google Chrome', link: '/chrome/' },
+              { text: '浏览器', link: '/browser/' },
               { text: 'Git和GitHub', link: '/git/' },
               { text: 'MarkDown文档', link: '/MarkDown/' },
               { text: 'webgis', link: '/GIS/' },
@@ -85,6 +85,7 @@ module.exports = {
           { text: '设计模式', link: '/design-patterns/' },
           { text: 'HTTP协议', link: '/HTTP/' },
           { text: '算法', link: '/algorithm/' },
+          { text: '性能优化', link: '/performance/'}
         ]}
       ]},
       {
@@ -140,6 +141,19 @@ module.exports = {
             'ES6',
             'Functional',
             'interview'
+          ]
+        }
+      ],
+      '/browser/': [
+        {
+          title: '浏览器',
+          children: [
+            '',
+            'data-storage',
+            'cross-domain',
+            'cache',
+            'safe',
+            'chrome'
           ]
         }
       ],

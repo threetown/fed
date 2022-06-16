@@ -5,6 +5,7 @@
 
 
 ## 浏览器中存储数据
+![storage](./images/storage.png)
 
 * Cookie，document.cookie
 * LocalStorage，sessionStorage
@@ -23,8 +24,5 @@
 * jsonp
 * postMessage
 
-
-
-## 浏览器缓存
 
 ## hash、history模式

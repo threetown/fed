@@ -102,5 +102,10 @@ Person {}
 window
 ```
 
+## 垃圾回收机制
+
+> 垃圾回收机制(GC:Garbage Collecation)
+![js-GC](./images/js-GC.png)
+
 ### 参考文献
 * [3.1.4-闭包和面向对象设计、用闭包实现命令模式](https://www.bilibili.com/video/BV1oE411L7uK?p=5)
