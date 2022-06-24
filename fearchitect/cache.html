@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>缓存 | 零基础学前端</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <meta name="description" content="learn fed">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.2d13298d.css" as="style"><link rel="preload" href="/assets/js/app.78a9c30a.js" as="script"><link rel="preload" href="/assets/js/3.0aee185e.js" as="script"><link rel="preload" href="/assets/js/113.843a2f0d.js" as="script"><link rel="prefetch" href="/assets/js/10.fb4e8b76.js"><link rel="prefetch" href="/assets/js/100.00068d17.js"><link rel="prefetch" href="/assets/js/101.87302599.js"><link rel="prefetch" href="/assets/js/102.8dbf5499.js"><link rel="prefetch" href="/assets/js/103.f3f703c4.js"><link rel="prefetch" href="/assets/js/104.f2a50496.js"><link rel="prefetch" href="/assets/js/105.628a1100.js"><link rel="prefetch" href="/assets/js/106.c82b57e4.js"><link rel="prefetch" href="/assets/js/107.0157b5f4.js"><link rel="prefetch" href="/assets/js/108.164f4842.js"><link rel="prefetch" href="/assets/js/109.a057ea28.js"><link rel="prefetch" href="/assets/js/11.2f5436a1.js"><link rel="prefetch" href="/assets/js/110.d8cde124.js"><link rel="prefetch" href="/assets/js/111.41b020fd.js"><link rel="prefetch" href="/assets/js/112.d1ffeaac.js"><link rel="prefetch" href="/assets/js/114.18f0dfb1.js"><link rel="prefetch" href="/assets/js/115.45fe9b75.js"><link rel="prefetch" href="/assets/js/116.4a3f6bd3.js"><link rel="prefetch" href="/assets/js/117.622b320e.js"><link rel="prefetch" href="/assets/js/118.c79551a2.js"><link rel="prefetch" href="/assets/js/119.d23655dc.js"><link rel="prefetch" href="/assets/js/12.e6990002.js"><link rel="prefetch" href="/assets/js/120.a412b8bc.js"><link rel="prefetch" href="/assets/js/121.2a7100f0.js"><link rel="prefetch" href="/assets/js/122.bfff0b25.js"><link rel="prefetch" href="/assets/js/123.493b3ce1.js"><link rel="prefetch" href="/assets/js/124.a5a59ce6.js"><link rel="prefetch" href="/assets/js/125.5926fd79.js"><link rel="prefetch" href="/assets/js/126.ca848e32.js"><link rel="prefetch" href="/assets/js/127.011b2a02.js"><link rel="prefetch" href="/assets/js/128.04dc6df4.js"><link rel="prefetch" href="/assets/js/129.878b413a.js"><link rel="prefetch" href="/assets/js/13.687d1aad.js"><link rel="prefetch" href="/assets/js/130.fe0f4e22.js"><link rel="prefetch" href="/assets/js/131.e4359c76.js"><link rel="prefetch" href="/assets/js/132.0e0ec1b3.js"><link rel="prefetch" href="/assets/js/133.363b3116.js"><link rel="prefetch" href="/assets/js/134.97ff68ac.js"><link rel="prefetch" href="/assets/js/135.23bcc906.js"><link rel="prefetch" href="/assets/js/136.edf12101.js"><link rel="prefetch" href="/assets/js/137.c60f8fcb.js"><link rel="prefetch" href="/assets/js/138.0d130bdc.js"><link rel="prefetch" href="/assets/js/139.fa0bb55e.js"><link rel="prefetch" href="/assets/js/14.45601e27.js"><link rel="prefetch" href="/assets/js/140.76289c76.js"><link rel="prefetch" href="/assets/js/141.ebe7da91.js"><link rel="prefetch" href="/assets/js/142.2bd0e9ee.js"><link rel="prefetch" href="/assets/js/143.b4c59fa6.js"><link rel="prefetch" href="/assets/js/144.7f3ca8e8.js"><link rel="prefetch" href="/assets/js/145.e180c8cc.js"><link rel="prefetch" href="/assets/js/146.12f0c389.js"><link rel="prefetch" href="/assets/js/147.97c2af6e.js"><link rel="prefetch" href="/assets/js/148.7fa99d6a.js"><link rel="prefetch" href="/assets/js/149.52245d68.js"><link rel="prefetch" href="/assets/js/15.9473c92d.js"><link rel="prefetch" href="/assets/js/150.8faa5a42.js"><link rel="prefetch" href="/assets/js/151.3c463dc1.js"><link rel="prefetch" href="/assets/js/152.f9932d4e.js"><link rel="prefetch" href="/assets/js/153.5bf5fb04.js"><link rel="prefetch" href="/assets/js/154.0d931a92.js"><link rel="prefetch" href="/assets/js/155.1886e339.js"><link rel="prefetch" href="/assets/js/156.9757d52d.js"><link rel="prefetch" href="/assets/js/157.83d3d1e8.js"><link rel="prefetch" href="/assets/js/158.3f1797aa.js"><link rel="prefetch" href="/assets/js/159.17faa2cf.js"><link rel="prefetch" href="/assets/js/16.f71a9508.js"><link rel="prefetch" href="/assets/js/160.5c4325b4.js"><link rel="prefetch" href="/assets/js/161.ecdd6c30.js"><link rel="prefetch" href="/assets/js/162.8a3fb17f.js"><link rel="prefetch" href="/assets/js/163.d64a4667.js"><link rel="prefetch" href="/assets/js/164.99d91977.js"><link rel="prefetch" href="/assets/js/165.6b30fcbd.js"><link rel="prefetch" href="/assets/js/166.f1d65aa0.js"><link rel="prefetch" href="/assets/js/17.47ff93a0.js"><link rel="prefetch" href="/assets/js/18.4f081220.js"><link rel="prefetch" href="/assets/js/19.5b913ffa.js"><link rel="prefetch" href="/assets/js/2.81064a29.js"><link rel="prefetch" href="/assets/js/20.80dc8d55.js"><link rel="prefetch" href="/assets/js/21.d3226c57.js"><link rel="prefetch" href="/assets/js/22.c9d3b566.js"><link rel="prefetch" href="/assets/js/23.b472d6d0.js"><link rel="prefetch" href="/assets/js/24.a91d8fc7.js"><link rel="prefetch" href="/assets/js/25.1e1b4b92.js"><link rel="prefetch" href="/assets/js/26.a90606fb.js"><link rel="prefetch" href="/assets/js/27.0967113b.js"><link rel="prefetch" href="/assets/js/28.b32a128f.js"><link rel="prefetch" href="/assets/js/29.dcafd6bc.js"><link rel="prefetch" href="/assets/js/30.b7d206cd.js"><link rel="prefetch" href="/assets/js/31.298bdd8c.js"><link rel="prefetch" href="/assets/js/32.35734531.js"><link rel="prefetch" href="/assets/js/33.5fc8b24b.js"><link rel="prefetch" href="/assets/js/34.eb40c700.js"><link rel="prefetch" href="/assets/js/35.4f4fcd84.js"><link rel="prefetch" href="/assets/js/36.0808c5fa.js"><link rel="prefetch" href="/assets/js/37.c8b7f8a6.js"><link rel="prefetch" href="/assets/js/38.3971a382.js"><link rel="prefetch" href="/assets/js/39.ba534153.js"><link rel="prefetch" href="/assets/js/4.54e01268.js"><link rel="prefetch" href="/assets/js/40.59c696eb.js"><link rel="prefetch" href="/assets/js/41.b87e3cb2.js"><link rel="prefetch" href="/assets/js/42.f44ddb0e.js"><link rel="prefetch" href="/assets/js/43.58530612.js"><link rel="prefetch" href="/assets/js/44.4c576426.js"><link rel="prefetch" href="/assets/js/45.525a95ed.js"><link rel="prefetch" href="/assets/js/46.c099514d.js"><link rel="prefetch" href="/assets/js/47.94877869.js"><link rel="prefetch" href="/assets/js/48.bc0322f1.js"><link rel="prefetch" href="/assets/js/49.c05977f2.js"><link rel="prefetch" href="/assets/js/5.4e58b79b.js"><link rel="prefetch" href="/assets/js/50.aedc3562.js"><link rel="prefetch" href="/assets/js/51.c7285d31.js"><link rel="prefetch" href="/assets/js/52.d5a9ad4c.js"><link rel="prefetch" href="/assets/js/53.b1cdff37.js"><link rel="prefetch" href="/assets/js/54.9515b5a7.js"><link rel="prefetch" href="/assets/js/55.6f119d63.js"><link rel="prefetch" href="/assets/js/56.1ab9f8dc.js"><link rel="prefetch" href="/assets/js/57.ff98cd8d.js"><link rel="prefetch" href="/assets/js/58.72b5127d.js"><link rel="prefetch" href="/assets/js/59.72923679.js"><link rel="prefetch" href="/assets/js/6.69b71dc8.js"><link rel="prefetch" href="/assets/js/60.8cf05be4.js"><link rel="prefetch" href="/assets/js/61.faa03809.js"><link rel="prefetch" href="/assets/js/62.88c50f1e.js"><link rel="prefetch" href="/assets/js/63.e12d05dd.js"><link rel="prefetch" href="/assets/js/64.86171104.js"><link rel="prefetch" href="/assets/js/65.3f9ffdb6.js"><link rel="prefetch" href="/assets/js/66.8e1e703c.js"><link rel="prefetch" href="/assets/js/67.52e3d660.js"><link rel="prefetch" href="/assets/js/68.c1483058.js"><link rel="prefetch" href="/assets/js/69.de15fd8c.js"><link rel="prefetch" href="/assets/js/7.8cfd716a.js"><link rel="prefetch" href="/assets/js/70.5433bc61.js"><link rel="prefetch" href="/assets/js/71.801749e4.js"><link rel="prefetch" href="/assets/js/72.7ecd4ecc.js"><link rel="prefetch" href="/assets/js/73.b515ee66.js"><link rel="prefetch" href="/assets/js/74.b24b1719.js"><link rel="prefetch" href="/assets/js/75.a2c79037.js"><link rel="prefetch" href="/assets/js/76.1acbfada.js"><link rel="prefetch" href="/assets/js/77.b6b6ae4c.js"><link rel="prefetch" href="/assets/js/78.6a651526.js"><link rel="prefetch" href="/assets/js/79.2f1ea0da.js"><link rel="prefetch" href="/assets/js/8.cb322cd6.js"><link rel="prefetch" href="/assets/js/80.831be10e.js"><link rel="prefetch" href="/assets/js/81.0f6fabca.js"><link rel="prefetch" href="/assets/js/82.1dbb7e7f.js"><link rel="prefetch" href="/assets/js/83.fb2d0068.js"><link rel="prefetch" href="/assets/js/84.c5ad39fb.js"><link rel="prefetch" href="/assets/js/85.cd9cbb0a.js"><link rel="prefetch" href="/assets/js/86.79e0df47.js"><link rel="prefetch" href="/assets/js/87.e9274d42.js"><link rel="prefetch" href="/assets/js/88.45c1c24b.js"><link rel="prefetch" href="/assets/js/89.47a9f780.js"><link rel="prefetch" href="/assets/js/9.80d99086.js"><link rel="prefetch" href="/assets/js/90.8a5b439b.js"><link rel="prefetch" href="/assets/js/91.7c66ff5a.js"><link rel="prefetch" href="/assets/js/92.93153ce3.js"><link rel="prefetch" href="/assets/js/93.f3d10296.js"><link rel="prefetch" href="/assets/js/94.502628e1.js"><link rel="prefetch" href="/assets/js/95.567207ee.js"><link rel="prefetch" href="/assets/js/96.273947a0.js"><link rel="prefetch" href="/assets/js/97.9427da2a.js"><link rel="prefetch" href="/assets/js/98.fbb941c6.js"><link rel="prefetch" href="/assets/js/99.bee903e5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2d13298d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">零基础学前端</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍓前端开发" class="dropdown-title"><span class="title">🍓前端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍓前端开发" class="mobile-dropdown-title"><span class="title">🍓前端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          从入门到放弃
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/" class="nav-link">
+  指南
+</a></li><li class="dropdown-subitem"><a href="/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/JS/" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具类
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/browser/" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  Git和GitHub
+</a></li><li class="dropdown-subitem"><a href="/MarkDown/" class="nav-link">
+  MarkDown文档
+</a></li><li class="dropdown-subitem"><a href="/GIS/" class="nav-link">
+  webgis
+</a></li><li class="dropdown-subitem"><a href="/Flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-subitem"><a href="/test/" class="nav-link">
+  测试
+</a></li><li class="dropdown-subitem"><a href="/Axure/" class="nav-link">
+  Axure
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍄大前端" class="dropdown-title"><span class="title">🍄大前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍄大前端" class="mobile-dropdown-title"><span class="title">🍄大前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          VueJS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue@0.11/" class="nav-link">
+  vue_0.11
+</a></li><li class="dropdown-subitem"><a href="/vue@2.x/" class="nav-link">
+  vue_2.x
+</a></li><li class="dropdown-subitem"><a href="/Vue/" class="nav-link">
+  vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue CLI
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue-cli/" class="nav-link">
+  vue_cli
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/DvaJS/" class="nav-link">
+  DvaJS
+</a></li><li class="dropdown-subitem"><a href="/UmiJS/" class="nav-link">
+  UmiJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          NodeJS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/NodeJS/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          架构师
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fearchitect/" class="nav-link router-link-active">
+  架构能力
+</a></li><li class="dropdown-subitem"><a href="/design-patterns/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/HTTP/" class="nav-link">
+  HTTP协议
+</a></li><li class="dropdown-subitem"><a href="/algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-subitem"><a href="/performance/" class="nav-link">
+  性能优化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍓后端开发" class="dropdown-title"><span class="title">🍓后端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍓后端开发" class="mobile-dropdown-title"><span class="title">🍓后端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          LNMP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/LNMP/" class="nav-link">
+  LNMP
+</a></li><li class="dropdown-subitem"><a href="/SQL/" class="nav-link">
+  SQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/MacOS/" class="nav-link">
+  MacOS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎯经理人" class="dropdown-title"><span class="title">🎯经理人</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎯经理人" class="mobile-dropdown-title"><span class="title">🎯经理人</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          职业经理人
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/manage/" class="nav-link">
+  聊聊管理
+</a></li><li class="dropdown-subitem"><a href="/manage/career/" class="nav-link">
+  职业规划
+</a></li><li class="dropdown-subitem"><a href="/manage/interview/" class="nav-link">
+  面试指南
+</a></li><li class="dropdown-subitem"><a href="/manage/ability/" class="nav-link">
+  能力框架
+</a></li></ul></li><li class="dropdown-item"><h4>
+          HR六大模块
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/OKR/" class="nav-link">
+  OKR
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文档指南" class="dropdown-title"><span class="title">文档指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="文档指南" class="mobile-dropdown-title"><span class="title">文档指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computing/" class="nav-link">
+  计算机与网络
+</a></li><li class="dropdown-item"><!----> <a href="https://www.quanzhanketang.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3schools原版镜像
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.w3school.com.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3schools中文翻译
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  MDN Web Docs
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍓前端开发" class="dropdown-title"><span class="title">🍓前端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍓前端开发" class="mobile-dropdown-title"><span class="title">🍓前端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          从入门到放弃
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/" class="nav-link">
+  指南
+</a></li><li class="dropdown-subitem"><a href="/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/JS/" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具类
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/browser/" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  Git和GitHub
+</a></li><li class="dropdown-subitem"><a href="/MarkDown/" class="nav-link">
+  MarkDown文档
+</a></li><li class="dropdown-subitem"><a href="/GIS/" class="nav-link">
+  webgis
+</a></li><li class="dropdown-subitem"><a href="/Flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-subitem"><a href="/test/" class="nav-link">
+  测试
+</a></li><li class="dropdown-subitem"><a href="/Axure/" class="nav-link">
+  Axure
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍄大前端" class="dropdown-title"><span class="title">🍄大前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍄大前端" class="mobile-dropdown-title"><span class="title">🍄大前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          VueJS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue@0.11/" class="nav-link">
+  vue_0.11
+</a></li><li class="dropdown-subitem"><a href="/vue@2.x/" class="nav-link">
+  vue_2.x
+</a></li><li class="dropdown-subitem"><a href="/Vue/" class="nav-link">
+  vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue CLI
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue-cli/" class="nav-link">
+  vue_cli
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/DvaJS/" class="nav-link">
+  DvaJS
+</a></li><li class="dropdown-subitem"><a href="/UmiJS/" class="nav-link">
+  UmiJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          NodeJS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/NodeJS/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          架构师
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fearchitect/" class="nav-link router-link-active">
+  架构能力
+</a></li><li class="dropdown-subitem"><a href="/design-patterns/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/HTTP/" class="nav-link">
+  HTTP协议
+</a></li><li class="dropdown-subitem"><a href="/algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-subitem"><a href="/performance/" class="nav-link">
+  性能优化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍓后端开发" class="dropdown-title"><span class="title">🍓后端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍓后端开发" class="mobile-dropdown-title"><span class="title">🍓后端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          LNMP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/LNMP/" class="nav-link">
+  LNMP
+</a></li><li class="dropdown-subitem"><a href="/SQL/" class="nav-link">
+  SQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/MacOS/" class="nav-link">
+  MacOS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎯经理人" class="dropdown-title"><span class="title">🎯经理人</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎯经理人" class="mobile-dropdown-title"><span class="title">🎯经理人</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          职业经理人
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/manage/" class="nav-link">
+  聊聊管理
+</a></li><li class="dropdown-subitem"><a href="/manage/career/" class="nav-link">
+  职业规划
+</a></li><li class="dropdown-subitem"><a href="/manage/interview/" class="nav-link">
+  面试指南
+</a></li><li class="dropdown-subitem"><a href="/manage/ability/" class="nav-link">
+  能力框架
+</a></li></ul></li><li class="dropdown-item"><h4>
+          HR六大模块
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/OKR/" class="nav-link">
+  OKR
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文档指南" class="dropdown-title"><span class="title">文档指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="文档指南" class="mobile-dropdown-title"><span class="title">文档指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computing/" class="nav-link">
+  计算机与网络
+</a></li><li class="dropdown-item"><!----> <a href="https://www.quanzhanketang.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3schools原版镜像
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.w3school.com.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3schools中文翻译
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  MDN Web Docs
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>前端架构</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/fearchitect/" aria-current="page" class="sidebar-link">前端架构师之路</a></li><li><a href="/fearchitect/Performance.html" class="sidebar-link">web性能</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="缓存"><a href="#缓存" class="header-anchor">#</a> 缓存</h1> <p>缓存有哪些好处？</p> <ol><li>缓解服务器压力，不用每次都去请求某些数据了。</li></ol> <p>2.提升性能，打开本地资源肯定会比请求服务器来的快。</p> <p>3.减少带宽消耗，当我们使用缓存时，只会产生很小的网络消耗，至于为什么打开本地资源也会产生网络消耗，下面会有说明。</p> <p>Web缓存种类： 数据库缓存，CDN缓存，代理服务器缓存，浏览器缓存。</p> <table><thead><tr><th>Web缓存类型</th> <th>描述</th></tr></thead> <tbody><tr><td>数据库缓存</td> <td></td></tr> <tr><td>CDN缓存</td> <td></td></tr> <tr><td>代理服务器缓存</td> <td></td></tr> <tr><td>浏览器缓存</td> <td>每个浏览器都实现了HTTP缓存，我们通过浏览器使用HTTP协议与服务器交互的时候，浏览器就会根据一套与服务器约定的规则进行缓存工作。<br>当我们在浏览器中点击 <strong>前进</strong> 或 <strong>后退</strong> 按钮时，利用的便是浏览器的缓存机制。</td></tr></tbody></table> <h1 id="浏览器缓存"><a href="#浏览器缓存" class="header-anchor">#</a> 浏览器缓存</h1> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <ul><li>浏览器缓存过程：强缓存、协商缓存</li> <li>浏览器缓存分类：Service Worker、Memory Cache、Disk Cache、Push Cache</li></ul></div> <h2 id="_1-强缓存"><a href="#_1-强缓存" class="header-anchor">#</a> 1. 强缓存</h2> <p>强缓存是当我们访问URL的时候，不会向服务器发送请求，直接<strong>从缓存中读取资源</strong>，但是会返回<strong>200</strong>的状态码。</p> <p><strong>如何设置强缓存？</strong></p> <p>我们第一次进入页面，请求服务器，然后服务器进行应答，浏览器会根据response Header来判断是否对资源进行缓存，如果响应头中 <code>expires</code>、<code>pragma</code>或者<code>cache-control</code>字段，代表这是强缓存，浏览器就会把资源缓存在<code>memory cache</code> 或 <code>disk cache</code> 中。</p> <p>第二次请求时，浏览器判断请求参数，如果符合强缓存条件就直接返回状态码200，从本地缓存中拿数据。否则把响应参数存在<code>request header</code>请求头中，看是否符合<strong>协商缓存</strong>，符合则返回状态码 <strong>304</strong>，不符合则服务器会返回全新资源。</p> <h3 id="expires"><a href="#expires" class="header-anchor">#</a> expires</h3> <p>是HTTP1.0控制网页缓存的字段，值为一个时间戳，准确来讲是格林尼治时间，服务器返回该请求结果缓存的到期时间，意思是，再次发送请求时，如果未超过过期时间，直接使用该缓存，如果过期了则重新请求。</p> <p>有个缺点，就是它判断是否过期是用本地时间来判断的，本地时间是可以自己修改的。</p> <h3 id="cache-control"><a href="#cache-control" class="header-anchor">#</a> Cache-Control</h3> <p>是HTTP1.1中控制网页缓存的字段，当Cache-Control都存在时，Cache-Control优先级更高，主要取值为：</p> <p>public：资源客户端和服务器都可以缓存。</p> <p>privite：资源只有客户端可以缓存。</p> <p>no-cache：客户端缓存资源，但是是否缓存需要经过协商缓存来验证。</p> <p>no-store：不使用缓存。</p> <p>max-age：缓存保质期。</p> <p><img src="https://mmbiz.qpic.cn/mmbiz/pfCCZhlbMQTa3jqibNjSs3IyOFcZc7w4GBicZrW6HHJGOdmHPhxFibaog60ufRBbIXwN3USoEncTxpaBhPoYiaHZrQ/640" alt="图片"></p> <p>Cache-Control使用了max-age相对时间，解决了expires的问题。</p> <h3 id="pragma"><a href="#pragma" class="header-anchor">#</a> pragma</h3> <p>这个是HTTP1.0中禁用网页缓存的字段，其取值为no-cache，和Cache-Control的no-cache效果一样。</p> <p><img src="https://mmbiz.qpic.cn/mmbiz_png/pfCCZhlbMQTa3jqibNjSs3IyOFcZc7w4GD80NuS66ZINhYHTwHdF20nwMboibG50j5dSOzwuzHHlyicoeOSvXiaXLg/640" alt="图片"></p> <h2 id="_2-缓存位置"><a href="#_2-缓存位置" class="header-anchor">#</a> 2. 缓存位置</h2> <p>上面我们说，强缓存我们会把资源房放到memory cache 和 disk cache中，那什么资源放在memory cache，什么资源放在disk cache中？</p> <p><img src="https://mmbiz.qpic.cn/mmbiz/pfCCZhlbMQTa3jqibNjSs3IyOFcZc7w4GKjyyCnwZaHUpfzHqNLpG5uNKZGeRRDtLt7r6icyKdHGBiadPnkTFibhKw/640?wx_fmt=other&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p> <p>存存储图像和网页等资源主要缓存在disk cache，操作系统缓存文件等资源大部分都会缓存在memory cache中。具体操作浏览器自动分配，看谁的资源利用率不高就分给谁。</p> <p>可以看到memory cache请求时间都是0ms，这个是不是太神奇了，这方面我来梳理下。</p> <p>查找浏览器缓存时会按顺序查找: Service Worker--&gt;Memory Cache--&gt;Disk Cache--&gt;Push Cache。</p> <h3 id="_1-service-worker"><a href="#_1-service-worker" class="header-anchor">#</a> 1. Service Worker</h3> <p>是运行在浏览器背后的独立线程，一般可以用来实现缓存功能。使用 Service Worker的话，传输协议必须为 HTTPS。因为 Service Worker 中涉及到请求拦截，所以必须使用 HTTPS 协议来保障安全。Service Worker 的缓存与浏览器其他内建的缓存机制不同，它可以让我们自由控制缓存哪些文件、如何匹配缓存、如何读取缓存，并且缓存是持续性的。</p> <h3 id="_2-memory-cache"><a href="#_2-memory-cache" class="header-anchor">#</a> 2. Memory Cache</h3> <p>内存中的缓存，主要包含的是当前中页面中已经抓取到的资源，例如页面上已经下载的样式、脚本、图片等。读取内存中的数据肯定比磁盘快，内存缓存虽然读取高效，可是缓存持续性很短，会随着进程的释放而释放。一旦我们关闭 Tab 页面，内存中的缓存也就被释放了。</p> <h3 id="_3-disk-cache"><a href="#_3-disk-cache" class="header-anchor">#</a> 3. Disk Cache</h3> <p>存储在硬盘中的缓存，读取速度慢点，但是什么都能存储到磁盘中，比之 Memory Cache 胜在容量和存储时效性上。</p> <p>在所有浏览器缓存中，Disk Cache 覆盖面基本是最大的。它会根据 HTTP Herder 中的字段判断哪些资源需要缓存，哪些资源可以不请求直接使用，哪些资源已经过期需要重新请求。并且即使在跨站点的情况下，相同地址的资源一旦被硬盘缓存下来，就不会再次去请求数据。绝大部分的缓存都来自 Disk Cache。</p> <p>memory cache 要比 disk cache 快的多。举个例子：从远程 web 服务器直接提取访问文件可能需要500毫秒(半秒)，那么磁盘访问可能需要10-20毫秒，而内存访问只需要100纳秒，更高级的还有 L1缓存访问(最快和最小的 CPU 缓存)只需要0.5纳秒。</p> <p><img src="https://mmbiz.qpic.cn/mmbiz_png/pfCCZhlbMQTa3jqibNjSs3IyOFcZc7w4GULShqbbJp7kswIj1OnPub7ib0CZZZ2j2hPdNmXXdNYw4WwI1ZVca2wA/640" alt="图片"></p> <p>很神奇的，我们又看到了一个prefetch cache，这个又是什么呢?</p> <p><strong>prefetch cache(预取缓存)</strong></p> <p>link标签上带了prefetch，再次加载会出现。</p> <p>prefetch是预加载的一种方式，被标记为prefetch的资源，将会被浏览器在空闲时间加载。</p> <h3 id="_4-push-cache"><a href="#_4-push-cache" class="header-anchor">#</a> 4. Push Cache</h3> <p>Push Cache（推送缓存）是 HTTP/2 中的内容，当以上三种缓存都没有命中时，它才会被使用。它只在会话（Session）中存在，一旦会话结束就被释放，并且缓存时间也很短暂，在Chrome浏览器中只有5分钟左右，同时它也并非严格执行HTTP头中的缓存指令。</p> <h3 id="_5-cpu、内存、硬盘"><a href="#_5-cpu、内存、硬盘" class="header-anchor">#</a> 5. CPU、内存、硬盘</h3> <p>这里提到了硬盘，内存，可能有些小伙伴对硬盘，内存没什么直观的概念。</p> <p>CPU、内存、硬盘都是计算机的主要组成部分。</p> <p>CPU：中央处理单元(CntralPocessingUit)的缩写，也叫处理器，是计算机的运算核心和控制核心。电脑靠CPU来运算、控制。让电脑的各个部件顺利工作，起到协调和控制作用。</p> <p>硬盘：存储资料和软件等数据的设备，有容量大，断电数据不丢失的特点。</p> <p>内存：负责硬盘等硬件上的数据与CPU之间数据交换处理。特点是体积小，速度快，有电可存，无电清空，即电脑在开机状态时内存中可存储数据，关机后将自动清空其中的所有数据。</p> <p><a href="https://mp.weixin.qq.com/s/gV5CA96hsYNPBBn9iRcheg" target="_blank" rel="noopener noreferrer">浏览器缓存的力量<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+https://mp.weixin.qq.com/s/y-yajw1GaWLKUdOJo3cbew</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/10/2021, 7:15:44 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.78a9c30a.js" defer></script><script src="/assets/js/3.0aee185e.js" defer></script><script src="/assets/js/113.843a2f0d.js" defer></script>
+  </body>
+</html>

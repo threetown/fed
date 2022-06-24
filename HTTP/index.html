@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTTP协议 | 零基础学前端</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <meta name="description" content="learn fed">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.2d13298d.css" as="style"><link rel="preload" href="/assets/js/app.78a9c30a.js" as="script"><link rel="preload" href="/assets/js/3.0aee185e.js" as="script"><link rel="preload" href="/assets/js/14.45601e27.js" as="script"><link rel="prefetch" href="/assets/js/10.fb4e8b76.js"><link rel="prefetch" href="/assets/js/100.00068d17.js"><link rel="prefetch" href="/assets/js/101.87302599.js"><link rel="prefetch" href="/assets/js/102.8dbf5499.js"><link rel="prefetch" href="/assets/js/103.f3f703c4.js"><link rel="prefetch" href="/assets/js/104.f2a50496.js"><link rel="prefetch" href="/assets/js/105.628a1100.js"><link rel="prefetch" href="/assets/js/106.c82b57e4.js"><link rel="prefetch" href="/assets/js/107.0157b5f4.js"><link rel="prefetch" href="/assets/js/108.164f4842.js"><link rel="prefetch" href="/assets/js/109.a057ea28.js"><link rel="prefetch" href="/assets/js/11.2f5436a1.js"><link rel="prefetch" href="/assets/js/110.d8cde124.js"><link rel="prefetch" href="/assets/js/111.41b020fd.js"><link rel="prefetch" href="/assets/js/112.d1ffeaac.js"><link rel="prefetch" href="/assets/js/113.843a2f0d.js"><link rel="prefetch" href="/assets/js/114.18f0dfb1.js"><link rel="prefetch" href="/assets/js/115.45fe9b75.js"><link rel="prefetch" href="/assets/js/116.4a3f6bd3.js"><link rel="prefetch" href="/assets/js/117.622b320e.js"><link rel="prefetch" href="/assets/js/118.c79551a2.js"><link rel="prefetch" href="/assets/js/119.d23655dc.js"><link rel="prefetch" href="/assets/js/12.e6990002.js"><link rel="prefetch" href="/assets/js/120.a412b8bc.js"><link rel="prefetch" href="/assets/js/121.2a7100f0.js"><link rel="prefetch" href="/assets/js/122.bfff0b25.js"><link rel="prefetch" href="/assets/js/123.493b3ce1.js"><link rel="prefetch" href="/assets/js/124.a5a59ce6.js"><link rel="prefetch" href="/assets/js/125.5926fd79.js"><link rel="prefetch" href="/assets/js/126.ca848e32.js"><link rel="prefetch" href="/assets/js/127.011b2a02.js"><link rel="prefetch" href="/assets/js/128.04dc6df4.js"><link rel="prefetch" href="/assets/js/129.878b413a.js"><link rel="prefetch" href="/assets/js/13.687d1aad.js"><link rel="prefetch" href="/assets/js/130.fe0f4e22.js"><link rel="prefetch" href="/assets/js/131.e4359c76.js"><link rel="prefetch" href="/assets/js/132.0e0ec1b3.js"><link rel="prefetch" href="/assets/js/133.363b3116.js"><link rel="prefetch" href="/assets/js/134.97ff68ac.js"><link rel="prefetch" href="/assets/js/135.23bcc906.js"><link rel="prefetch" href="/assets/js/136.edf12101.js"><link rel="prefetch" href="/assets/js/137.c60f8fcb.js"><link rel="prefetch" href="/assets/js/138.0d130bdc.js"><link rel="prefetch" href="/assets/js/139.fa0bb55e.js"><link rel="prefetch" href="/assets/js/140.76289c76.js"><link rel="prefetch" href="/assets/js/141.ebe7da91.js"><link rel="prefetch" href="/assets/js/142.2bd0e9ee.js"><link rel="prefetch" href="/assets/js/143.b4c59fa6.js"><link rel="prefetch" href="/assets/js/144.7f3ca8e8.js"><link rel="prefetch" href="/assets/js/145.e180c8cc.js"><link rel="prefetch" href="/assets/js/146.12f0c389.js"><link rel="prefetch" href="/assets/js/147.97c2af6e.js"><link rel="prefetch" href="/assets/js/148.7fa99d6a.js"><link rel="prefetch" href="/assets/js/149.52245d68.js"><link rel="prefetch" href="/assets/js/15.9473c92d.js"><link rel="prefetch" href="/assets/js/150.8faa5a42.js"><link rel="prefetch" href="/assets/js/151.3c463dc1.js"><link rel="prefetch" href="/assets/js/152.f9932d4e.js"><link rel="prefetch" href="/assets/js/153.5bf5fb04.js"><link rel="prefetch" href="/assets/js/154.0d931a92.js"><link rel="prefetch" href="/assets/js/155.1886e339.js"><link rel="prefetch" href="/assets/js/156.9757d52d.js"><link rel="prefetch" href="/assets/js/157.83d3d1e8.js"><link rel="prefetch" href="/assets/js/158.3f1797aa.js"><link rel="prefetch" href="/assets/js/159.17faa2cf.js"><link rel="prefetch" href="/assets/js/16.f71a9508.js"><link rel="prefetch" href="/assets/js/160.5c4325b4.js"><link rel="prefetch" href="/assets/js/161.ecdd6c30.js"><link rel="prefetch" href="/assets/js/162.8a3fb17f.js"><link rel="prefetch" href="/assets/js/163.d64a4667.js"><link rel="prefetch" href="/assets/js/164.99d91977.js"><link rel="prefetch" href="/assets/js/165.6b30fcbd.js"><link rel="prefetch" href="/assets/js/166.f1d65aa0.js"><link rel="prefetch" href="/assets/js/17.47ff93a0.js"><link rel="prefetch" href="/assets/js/18.4f081220.js"><link rel="prefetch" href="/assets/js/19.5b913ffa.js"><link rel="prefetch" href="/assets/js/2.81064a29.js"><link rel="prefetch" href="/assets/js/20.80dc8d55.js"><link rel="prefetch" href="/assets/js/21.d3226c57.js"><link rel="prefetch" href="/assets/js/22.c9d3b566.js"><link rel="prefetch" href="/assets/js/23.b472d6d0.js"><link rel="prefetch" href="/assets/js/24.a91d8fc7.js"><link rel="prefetch" href="/assets/js/25.1e1b4b92.js"><link rel="prefetch" href="/assets/js/26.a90606fb.js"><link rel="prefetch" href="/assets/js/27.0967113b.js"><link rel="prefetch" href="/assets/js/28.b32a128f.js"><link rel="prefetch" href="/assets/js/29.dcafd6bc.js"><link rel="prefetch" href="/assets/js/30.b7d206cd.js"><link rel="prefetch" href="/assets/js/31.298bdd8c.js"><link rel="prefetch" href="/assets/js/32.35734531.js"><link rel="prefetch" href="/assets/js/33.5fc8b24b.js"><link rel="prefetch" href="/assets/js/34.eb40c700.js"><link rel="prefetch" href="/assets/js/35.4f4fcd84.js"><link rel="prefetch" href="/assets/js/36.0808c5fa.js"><link rel="prefetch" href="/assets/js/37.c8b7f8a6.js"><link rel="prefetch" href="/assets/js/38.3971a382.js"><link rel="prefetch" href="/assets/js/39.ba534153.js"><link rel="prefetch" href="/assets/js/4.54e01268.js"><link rel="prefetch" href="/assets/js/40.59c696eb.js"><link rel="prefetch" href="/assets/js/41.b87e3cb2.js"><link rel="prefetch" href="/assets/js/42.f44ddb0e.js"><link rel="prefetch" href="/assets/js/43.58530612.js"><link rel="prefetch" href="/assets/js/44.4c576426.js"><link rel="prefetch" href="/assets/js/45.525a95ed.js"><link rel="prefetch" href="/assets/js/46.c099514d.js"><link rel="prefetch" href="/assets/js/47.94877869.js"><link rel="prefetch" href="/assets/js/48.bc0322f1.js"><link rel="prefetch" href="/assets/js/49.c05977f2.js"><link rel="prefetch" href="/assets/js/5.4e58b79b.js"><link rel="prefetch" href="/assets/js/50.aedc3562.js"><link rel="prefetch" href="/assets/js/51.c7285d31.js"><link rel="prefetch" href="/assets/js/52.d5a9ad4c.js"><link rel="prefetch" href="/assets/js/53.b1cdff37.js"><link rel="prefetch" href="/assets/js/54.9515b5a7.js"><link rel="prefetch" href="/assets/js/55.6f119d63.js"><link rel="prefetch" href="/assets/js/56.1ab9f8dc.js"><link rel="prefetch" href="/assets/js/57.ff98cd8d.js"><link rel="prefetch" href="/assets/js/58.72b5127d.js"><link rel="prefetch" href="/assets/js/59.72923679.js"><link rel="prefetch" href="/assets/js/6.69b71dc8.js"><link rel="prefetch" href="/assets/js/60.8cf05be4.js"><link rel="prefetch" href="/assets/js/61.faa03809.js"><link rel="prefetch" href="/assets/js/62.88c50f1e.js"><link rel="prefetch" href="/assets/js/63.e12d05dd.js"><link rel="prefetch" href="/assets/js/64.86171104.js"><link rel="prefetch" href="/assets/js/65.3f9ffdb6.js"><link rel="prefetch" href="/assets/js/66.8e1e703c.js"><link rel="prefetch" href="/assets/js/67.52e3d660.js"><link rel="prefetch" href="/assets/js/68.c1483058.js"><link rel="prefetch" href="/assets/js/69.de15fd8c.js"><link rel="prefetch" href="/assets/js/7.8cfd716a.js"><link rel="prefetch" href="/assets/js/70.5433bc61.js"><link rel="prefetch" href="/assets/js/71.801749e4.js"><link rel="prefetch" href="/assets/js/72.7ecd4ecc.js"><link rel="prefetch" href="/assets/js/73.b515ee66.js"><link rel="prefetch" href="/assets/js/74.b24b1719.js"><link rel="prefetch" href="/assets/js/75.a2c79037.js"><link rel="prefetch" href="/assets/js/76.1acbfada.js"><link rel="prefetch" href="/assets/js/77.b6b6ae4c.js"><link rel="prefetch" href="/assets/js/78.6a651526.js"><link rel="prefetch" href="/assets/js/79.2f1ea0da.js"><link rel="prefetch" href="/assets/js/8.cb322cd6.js"><link rel="prefetch" href="/assets/js/80.831be10e.js"><link rel="prefetch" href="/assets/js/81.0f6fabca.js"><link rel="prefetch" href="/assets/js/82.1dbb7e7f.js"><link rel="prefetch" href="/assets/js/83.fb2d0068.js"><link rel="prefetch" href="/assets/js/84.c5ad39fb.js"><link rel="prefetch" href="/assets/js/85.cd9cbb0a.js"><link rel="prefetch" href="/assets/js/86.79e0df47.js"><link rel="prefetch" href="/assets/js/87.e9274d42.js"><link rel="prefetch" href="/assets/js/88.45c1c24b.js"><link rel="prefetch" href="/assets/js/89.47a9f780.js"><link rel="prefetch" href="/assets/js/9.80d99086.js"><link rel="prefetch" href="/assets/js/90.8a5b439b.js"><link rel="prefetch" href="/assets/js/91.7c66ff5a.js"><link rel="prefetch" href="/assets/js/92.93153ce3.js"><link rel="prefetch" href="/assets/js/93.f3d10296.js"><link rel="prefetch" href="/assets/js/94.502628e1.js"><link rel="prefetch" href="/assets/js/95.567207ee.js"><link rel="prefetch" href="/assets/js/96.273947a0.js"><link rel="prefetch" href="/assets/js/97.9427da2a.js"><link rel="prefetch" href="/assets/js/98.fbb941c6.js"><link rel="prefetch" href="/assets/js/99.bee903e5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2d13298d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">零基础学前端</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍓前端开发" class="dropdown-title"><span class="title">🍓前端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍓前端开发" class="mobile-dropdown-title"><span class="title">🍓前端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          从入门到放弃
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/" class="nav-link">
+  指南
+</a></li><li class="dropdown-subitem"><a href="/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/JS/" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具类
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/browser/" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  Git和GitHub
+</a></li><li class="dropdown-subitem"><a href="/MarkDown/" class="nav-link">
+  MarkDown文档
+</a></li><li class="dropdown-subitem"><a href="/GIS/" class="nav-link">
+  webgis
+</a></li><li class="dropdown-subitem"><a href="/Flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-subitem"><a href="/test/" class="nav-link">
+  测试
+</a></li><li class="dropdown-subitem"><a href="/Axure/" class="nav-link">
+  Axure
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍄大前端" class="dropdown-title"><span class="title">🍄大前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍄大前端" class="mobile-dropdown-title"><span class="title">🍄大前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          VueJS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue@0.11/" class="nav-link">
+  vue_0.11
+</a></li><li class="dropdown-subitem"><a href="/vue@2.x/" class="nav-link">
+  vue_2.x
+</a></li><li class="dropdown-subitem"><a href="/Vue/" class="nav-link">
+  vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue CLI
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue-cli/" class="nav-link">
+  vue_cli
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/DvaJS/" class="nav-link">
+  DvaJS
+</a></li><li class="dropdown-subitem"><a href="/UmiJS/" class="nav-link">
+  UmiJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          NodeJS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/NodeJS/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          架构师
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fearchitect/" class="nav-link">
+  架构能力
+</a></li><li class="dropdown-subitem"><a href="/design-patterns/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/HTTP/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  HTTP协议
+</a></li><li class="dropdown-subitem"><a href="/algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-subitem"><a href="/performance/" class="nav-link">
+  性能优化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍓后端开发" class="dropdown-title"><span class="title">🍓后端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍓后端开发" class="mobile-dropdown-title"><span class="title">🍓后端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          LNMP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/LNMP/" class="nav-link">
+  LNMP
+</a></li><li class="dropdown-subitem"><a href="/SQL/" class="nav-link">
+  SQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/MacOS/" class="nav-link">
+  MacOS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎯经理人" class="dropdown-title"><span class="title">🎯经理人</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎯经理人" class="mobile-dropdown-title"><span class="title">🎯经理人</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          职业经理人
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/manage/" class="nav-link">
+  聊聊管理
+</a></li><li class="dropdown-subitem"><a href="/manage/career/" class="nav-link">
+  职业规划
+</a></li><li class="dropdown-subitem"><a href="/manage/interview/" class="nav-link">
+  面试指南
+</a></li><li class="dropdown-subitem"><a href="/manage/ability/" class="nav-link">
+  能力框架
+</a></li></ul></li><li class="dropdown-item"><h4>
+          HR六大模块
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/OKR/" class="nav-link">
+  OKR
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文档指南" class="dropdown-title"><span class="title">文档指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="文档指南" class="mobile-dropdown-title"><span class="title">文档指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computing/" class="nav-link">
+  计算机与网络
+</a></li><li class="dropdown-item"><!----> <a href="https://www.quanzhanketang.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3schools原版镜像
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.w3school.com.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3schools中文翻译
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  MDN Web Docs
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍓前端开发" class="dropdown-title"><span class="title">🍓前端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍓前端开发" class="mobile-dropdown-title"><span class="title">🍓前端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          从入门到放弃
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/" class="nav-link">
+  指南
+</a></li><li class="dropdown-subitem"><a href="/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/JS/" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具类
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/browser/" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  Git和GitHub
+</a></li><li class="dropdown-subitem"><a href="/MarkDown/" class="nav-link">
+  MarkDown文档
+</a></li><li class="dropdown-subitem"><a href="/GIS/" class="nav-link">
+  webgis
+</a></li><li class="dropdown-subitem"><a href="/Flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-subitem"><a href="/test/" class="nav-link">
+  测试
+</a></li><li class="dropdown-subitem"><a href="/Axure/" class="nav-link">
+  Axure
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍄大前端" class="dropdown-title"><span class="title">🍄大前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍄大前端" class="mobile-dropdown-title"><span class="title">🍄大前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          VueJS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue@0.11/" class="nav-link">
+  vue_0.11
+</a></li><li class="dropdown-subitem"><a href="/vue@2.x/" class="nav-link">
+  vue_2.x
+</a></li><li class="dropdown-subitem"><a href="/Vue/" class="nav-link">
+  vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue CLI
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue-cli/" class="nav-link">
+  vue_cli
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/DvaJS/" class="nav-link">
+  DvaJS
+</a></li><li class="dropdown-subitem"><a href="/UmiJS/" class="nav-link">
+  UmiJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          NodeJS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/NodeJS/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          架构师
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fearchitect/" class="nav-link">
+  架构能力
+</a></li><li class="dropdown-subitem"><a href="/design-patterns/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/HTTP/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  HTTP协议
+</a></li><li class="dropdown-subitem"><a href="/algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-subitem"><a href="/performance/" class="nav-link">
+  性能优化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍓后端开发" class="dropdown-title"><span class="title">🍓后端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍓后端开发" class="mobile-dropdown-title"><span class="title">🍓后端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          LNMP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/LNMP/" class="nav-link">
+  LNMP
+</a></li><li class="dropdown-subitem"><a href="/SQL/" class="nav-link">
+  SQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/MacOS/" class="nav-link">
+  MacOS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎯经理人" class="dropdown-title"><span class="title">🎯经理人</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎯经理人" class="mobile-dropdown-title"><span class="title">🎯经理人</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          职业经理人
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/manage/" class="nav-link">
+  聊聊管理
+</a></li><li class="dropdown-subitem"><a href="/manage/career/" class="nav-link">
+  职业规划
+</a></li><li class="dropdown-subitem"><a href="/manage/interview/" class="nav-link">
+  面试指南
+</a></li><li class="dropdown-subitem"><a href="/manage/ability/" class="nav-link">
+  能力框架
+</a></li></ul></li><li class="dropdown-item"><h4>
+          HR六大模块
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/OKR/" class="nav-link">
+  OKR
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文档指南" class="dropdown-title"><span class="title">文档指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="文档指南" class="mobile-dropdown-title"><span class="title">文档指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computing/" class="nav-link">
+  计算机与网络
+</a></li><li class="dropdown-item"><!----> <a href="https://www.quanzhanketang.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3schools原版镜像
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.w3school.com.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3schools中文翻译
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  MDN Web Docs
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="http协议"><a href="#http协议" class="header-anchor">#</a> HTTP协议</h1> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <ul><li>HTTP
+<ul><li>HTTP/1.1</li> <li>HTTP/2</li></ul></li> <li>SSL</li> <li>HTTPS</li></ul></div> <p><img src="/assets/img/net.59860783.png" alt="前端网络"></p> <h2 id="理论"><a href="#理论" class="header-anchor">#</a> 理论</h2> <ul><li><a href="https://www.cloudflare.com/zh-cn/learning/" target="_blank" rel="noopener noreferrer">网络安全<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.cloudflare.com/zh-cn/learning/ssl/why-is-http-not-secure/" target="_blank" rel="noopener noreferrer">HTTP 与 HTTPS：有什么区别？<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.cloudflare.com/zh-cn/learning/ssl/what-is-https/" target="_blank" rel="noopener noreferrer">什么是 HTTPS？<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.cloudflare.com/zh-cn/learning/ssl/what-happens-in-a-tls-handshake" target="_blank" rel="noopener noreferrer">什么是 TLS 握手？<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.cloudflare.com/zh-cn/learning/ddos/glossary/tcp-ip" target="_blank" rel="noopener noreferrer">什么是 IP 和 TCP？<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.cloudflare.com/zh-cn/learning/ddos/glossary/user-datagram-protocol-udp" target="_blank" rel="noopener noreferrer">什么是用户数据报协议（UDP / IP）？<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.cloudflare.com/zh-cn/learning/network-layer/what-is-the-network-layer/" target="_blank" rel="noopener noreferrer">什么是网络层？<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.cloudflare.com/zh-cn/learning/ddos/glossary/domain-name-system-dns" target="_blank" rel="noopener noreferrer">DNS<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <ol><li><a href="https://www.guru99.com/difference-http-vs-https.html" target="_blank" rel="noopener noreferrer">Difference between HTTP and HTTPS<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.guru99.com/tcp-3-way-handshake.html" target="_blank" rel="noopener noreferrer">TCP 3-Way Handshake (SYN, SYN-ACK,ACK)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.guru99.com/tcp-ip-model.html" target="_blank" rel="noopener noreferrer">TCP/IP Model:Layers &amp; Protocol<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ol> <h2 id="实践"><a href="#实践" class="header-anchor">#</a> 实践</h2> <p><strong>TCP(Transmission Control Protocol)　传输控制协议</strong></p> <p>SYN 攻击是一种典型的 DoS/DDoS 攻击</p> <p><a href="https://juejin.cn/post/6844903958624878606" target="_blank" rel="noopener noreferrer">三次握手和四次挥手<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <blockquote><h2 id="三次握手"><a href="#三次握手" class="header-anchor">#</a> 三次握手</h2> <p>三次握手（Three-way Handshake）其实就是指建立一个TCP连接时，需要客户端和服务器总共发送3个包。进行三次握手的主要作用就是为了确认双方的接收能力和发送能力是否正常、指定自己的初始化序列号为后面的可靠性传送做准备。实质上其实就是连接服务器指定端口，建立TCP连接，并同步连接双方的序列号和确认号，交换<code>TCP窗口大小</code>信息。</p></blockquote> <blockquote><h3 id="挥手为什么需要四次"><a href="#挥手为什么需要四次" class="header-anchor">#</a> 挥手为什么需要四次？</h3> <p>因为当服务端收到客户端的SYN连接请求报文后，可以直接发送SYN+ACK报文。其中<strong>ACK报文是用来应答的，SYN报文是用来同步的</strong>。但是关闭连接时，当服务端收到FIN报文时，很可能并不会立即关闭SOCKET，所以只能先回复一个ACK报文，告诉客户端，&quot;你发的FIN报文我收到了&quot;。只有等到我服务端所有的报文都发送完了，我才能发送FIN报文，因此不能一起发送。故需要四次挥手。</p></blockquote> <p>Syntax of an HTTP URL</p> <p><img src="https://www.ibm.com/docs/en/SSGMCP_5.3.0/com.ibm.cics.ts.internet.doc/c.gif" alt="Read syntax diagram"><a href="https://www.ibm.com/docs/en/cics-ts/5.3?topic=concepts-components-url#skipd2598e159" target="_blank" rel="noopener noreferrer"><img src="https://www.ibm.com/docs/en/SSGMCP_5.3.0/com.ibm.cics.ts.internet.doc/c.gif" alt="Skip visual syntax diagram"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>http://host nameIP address:80:port/path component?query string</p> <p>Here is an example of an HTTP URL:</p> <div class="language- extra-class"><pre class="language-text"><code>http://www.example.com/software/index.html
+</code></pre></div><p>With a port number specified, the URL is:</p> <div class="language- extra-class"><pre class="language-text"><code>http://www.example.com:1030/software/index.html
+</code></pre></div><ul><li><p><a href="https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:the-internet/xcae6f4a7ff015e7d:the-internet-protocol-suite/a/the-internet-protocols" target="_blank" rel="noopener noreferrer">The Internet protocol suite<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><img src="https://cdn.kastatic.org/ka-perseus-images/6a0cd3a5b7e709c2f637c959ba98705ad21e4e3c.svg" alt="internet protocol"></p></li> <li><p><a href="https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:the-internet" target="_blank" rel="noopener noreferrer">The Internet<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li></li></ul> <h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <ul><li>在浏览器地址栏输入一个 url，会发生什么？</li></ul> <h2 id="参考文献"><a href="#参考文献" class="header-anchor">#</a> 参考文献</h2> <ul><li><p>[MDN HTTP教程</p></li> <li><p>《TCP/IP详解 卷1:协议》</p></li> <li><p><a href="http://www.umass.edu/nfp/guru/handout/ip_layers.html" target="_blank" rel="noopener noreferrer">Internet Protocol and Layers<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="https://www.w3.org/People/Frystyk/thesis/TcpIp.html" target="_blank" rel="noopener noreferrer">w3 - The Internet Protocol Stack<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="https://www.ibm.com/docs/en/cics-ts/5.3?topic=concepts-components-url" target="_blank" rel="noopener noreferrer">The components of a URL<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><img src="/assets/img/url.6fbf2683.svg" alt="url"></p></li> <li><p><a href="https://www.khanacademy.org/computing" target="_blank" rel="noopener noreferrer">Khanacademy Computing<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="https://www.manageengine.com/network-monitoring/network-protocols.html" target="_blank" rel="noopener noreferrer">Network protocols<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li></ul> <p>https://www.javatpoint.com/computer-network-tcp-ip-model</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/16/2022, 3:21:21 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.78a9c30a.js" defer></script><script src="/assets/js/3.0aee185e.js" defer></script><script src="/assets/js/14.45601e27.js" defer></script>
+  </body>
+</html>
