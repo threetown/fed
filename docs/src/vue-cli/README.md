@@ -60,13 +60,27 @@
 
 vue-cli、create-react-app
 
+[vue源码](https://vue-js.com/learn-vue/)
+
+[vuejs-templates webpack](http://vuejs-templates.github.io/webpack/)
+
 [浅谈Node CLI](https://www.yuque.com/guoba7/mz70ea/vhsszg)
 
-
+[vue-cli-analysis](https://kuangpf.com/vue-cli-analysis/)
 
 [vue-cli](http://man.hubwiz.com/docset/VueJS.docset/Contents/Resources/Documents/vuejs.org/2015/12/28/vue-cli/index.html)
 
+[vue-cli 3.0源码](https://juejin.cn/post/6844903775304433677)
 
+[node开发脚手架](https://juejin.cn/post/6844903526947110919)
+
+[搭建一个通用的脚手架](https://juejin.cn/post/6844903558639288333)
+
+[vue-cli源码流程图](https://juejin.cn/post/6844903586929868813)
+
+[@Vue/Cli 3.0.0 图形化项目管理](https://juejin.cn/post/6844903621276991496)
+
+[从 vue-cli 源码学习如何写模板](https://juejin.cn/post/6844903488791511048)
 
 
 

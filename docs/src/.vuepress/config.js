@@ -62,7 +62,6 @@ module.exports = {
               { text: 'Flutter', link: '/Flutter/'},
               { text: '测试', link: '/test/' },
               { text: 'Axure', link: '/Axure/' },
-              { text: 'SQL', link: '/SQL/' }
             ]
           },
         ]
@@ -88,6 +87,22 @@ module.exports = {
           { text: '性能优化', link: '/performance/'}
         ]}
       ]},
+      {
+        text: '🍓后端开发',
+        items: [
+          { 
+            text: 'LNMP', items: [
+              { text: 'LNMP', link: '/LNMP/' },
+              { text: 'SQL', link: '/SQL/' }
+            ]
+          },
+          {
+            text: '操作系统', items: [
+              { text: 'MacOS', link: '/MacOS/' },
+            ]
+          }
+        ]
+      },
       {
         text: '🎯经理人', items: [
           { text: '职业经理人', items: [
@@ -269,6 +284,25 @@ module.exports = {
           children: [
             'OKR',
             'okr-tpl'
+          ]
+        }
+      ],
+      '/LNMP/': [
+        {
+          title: 'LNMP',
+          children: [
+            ''
+          ]
+        }
+      ],
+      '/MacOS/': [
+        {
+          title: 'MacOS',
+          children: [
+            '',
+            'brew',
+            'MNMP',
+            'nodejs'
           ]
         }
       ],
