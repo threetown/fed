@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>浏览器跨域 | 零基础学前端</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <meta name="description" content="learn fed">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.2d13298d.css" as="style"><link rel="preload" href="/assets/js/app.0a15208b.js" as="script"><link rel="preload" href="/assets/js/3.1a9699b9.js" as="script"><link rel="preload" href="/assets/js/35.33bf39f9.js" as="script"><link rel="prefetch" href="/assets/js/10.93902b8e.js"><link rel="prefetch" href="/assets/js/100.b1d7df1d.js"><link rel="prefetch" href="/assets/js/101.774f3587.js"><link rel="prefetch" href="/assets/js/102.ab1429e6.js"><link rel="prefetch" href="/assets/js/103.1380842b.js"><link rel="prefetch" href="/assets/js/104.2c445a62.js"><link rel="prefetch" href="/assets/js/105.55d36bdb.js"><link rel="prefetch" href="/assets/js/106.90146179.js"><link rel="prefetch" href="/assets/js/107.68a270bf.js"><link rel="prefetch" href="/assets/js/108.483767fe.js"><link rel="prefetch" href="/assets/js/109.cc916dce.js"><link rel="prefetch" href="/assets/js/11.e36136f7.js"><link rel="prefetch" href="/assets/js/110.7f1577b7.js"><link rel="prefetch" href="/assets/js/111.98147c99.js"><link rel="prefetch" href="/assets/js/112.ec1ebc18.js"><link rel="prefetch" href="/assets/js/113.121dd0c1.js"><link rel="prefetch" href="/assets/js/114.47c72628.js"><link rel="prefetch" href="/assets/js/115.d3bd3b3f.js"><link rel="prefetch" href="/assets/js/116.59911f4d.js"><link rel="prefetch" href="/assets/js/117.3615072e.js"><link rel="prefetch" href="/assets/js/118.81b33236.js"><link rel="prefetch" href="/assets/js/119.14c0bcdc.js"><link rel="prefetch" href="/assets/js/12.acf90667.js"><link rel="prefetch" href="/assets/js/120.e9ce28c2.js"><link rel="prefetch" href="/assets/js/121.faa569ec.js"><link rel="prefetch" href="/assets/js/122.56e1baf2.js"><link rel="prefetch" href="/assets/js/123.d8fcf331.js"><link rel="prefetch" href="/assets/js/124.9af97a21.js"><link rel="prefetch" href="/assets/js/125.2ec844e6.js"><link rel="prefetch" href="/assets/js/126.f5a27e20.js"><link rel="prefetch" href="/assets/js/127.1523ad1f.js"><link rel="prefetch" href="/assets/js/128.959e0cb2.js"><link rel="prefetch" href="/assets/js/129.c3afa873.js"><link rel="prefetch" href="/assets/js/13.a0cc0a36.js"><link rel="prefetch" href="/assets/js/130.f94d0650.js"><link rel="prefetch" href="/assets/js/131.c4546c33.js"><link rel="prefetch" href="/assets/js/132.a42ee650.js"><link rel="prefetch" href="/assets/js/133.43a9df61.js"><link rel="prefetch" href="/assets/js/134.eb00c648.js"><link rel="prefetch" href="/assets/js/135.def97609.js"><link rel="prefetch" href="/assets/js/136.bcf734d3.js"><link rel="prefetch" href="/assets/js/137.2022d32a.js"><link rel="prefetch" href="/assets/js/138.1005403a.js"><link rel="prefetch" href="/assets/js/139.4dcc9582.js"><link rel="prefetch" href="/assets/js/14.70f353f5.js"><link rel="prefetch" href="/assets/js/140.d3c8e60c.js"><link rel="prefetch" href="/assets/js/141.838dfc26.js"><link rel="prefetch" href="/assets/js/142.6f0978a8.js"><link rel="prefetch" href="/assets/js/143.a0523db7.js"><link rel="prefetch" href="/assets/js/144.51e4db65.js"><link rel="prefetch" href="/assets/js/145.248c914d.js"><link rel="prefetch" href="/assets/js/146.27d059ef.js"><link rel="prefetch" href="/assets/js/147.4fd147a1.js"><link rel="prefetch" href="/assets/js/148.392cd869.js"><link rel="prefetch" href="/assets/js/149.f97328a5.js"><link rel="prefetch" href="/assets/js/15.6807b5b5.js"><link rel="prefetch" href="/assets/js/150.c6bd7746.js"><link rel="prefetch" href="/assets/js/151.b7035f3a.js"><link rel="prefetch" href="/assets/js/152.33eee21f.js"><link rel="prefetch" href="/assets/js/153.d29c3cc3.js"><link rel="prefetch" href="/assets/js/154.38a3da58.js"><link rel="prefetch" href="/assets/js/155.4023b45b.js"><link rel="prefetch" href="/assets/js/156.38dccf7b.js"><link rel="prefetch" href="/assets/js/157.38199b9d.js"><link rel="prefetch" href="/assets/js/158.436ed442.js"><link rel="prefetch" href="/assets/js/159.fe412ff8.js"><link rel="prefetch" href="/assets/js/16.0323100d.js"><link rel="prefetch" href="/assets/js/160.eb4468b7.js"><link rel="prefetch" href="/assets/js/161.8758e21f.js"><link rel="prefetch" href="/assets/js/162.de20ddd0.js"><link rel="prefetch" href="/assets/js/163.6c231dcc.js"><link rel="prefetch" href="/assets/js/164.eeeb27a3.js"><link rel="prefetch" href="/assets/js/165.d4626122.js"><link rel="prefetch" href="/assets/js/166.c37e05b4.js"><link rel="prefetch" href="/assets/js/167.af8d5125.js"><link rel="prefetch" href="/assets/js/168.0123bca6.js"><link rel="prefetch" href="/assets/js/169.dcb27fe6.js"><link rel="prefetch" href="/assets/js/17.c1576e94.js"><link rel="prefetch" href="/assets/js/170.93b81585.js"><link rel="prefetch" href="/assets/js/171.3217839d.js"><link rel="prefetch" href="/assets/js/172.6e960fd3.js"><link rel="prefetch" href="/assets/js/173.6a769945.js"><link rel="prefetch" href="/assets/js/18.5a2271a7.js"><link rel="prefetch" href="/assets/js/19.cf5a5d2e.js"><link rel="prefetch" href="/assets/js/2.c3e53dd5.js"><link rel="prefetch" href="/assets/js/20.84597afa.js"><link rel="prefetch" href="/assets/js/21.d3226c57.js"><link rel="prefetch" href="/assets/js/22.b1eafa65.js"><link rel="prefetch" href="/assets/js/23.b472d6d0.js"><link rel="prefetch" href="/assets/js/24.28103653.js"><link rel="prefetch" href="/assets/js/25.9a234cd5.js"><link rel="prefetch" href="/assets/js/26.87589ca9.js"><link rel="prefetch" href="/assets/js/27.0967113b.js"><link rel="prefetch" href="/assets/js/28.31f3f702.js"><link rel="prefetch" href="/assets/js/29.74529a51.js"><link rel="prefetch" href="/assets/js/30.e7349b17.js"><link rel="prefetch" href="/assets/js/31.733e35c5.js"><link rel="prefetch" href="/assets/js/32.b36e5b86.js"><link rel="prefetch" href="/assets/js/33.08d43715.js"><link rel="prefetch" href="/assets/js/34.c1fb5185.js"><link rel="prefetch" href="/assets/js/36.e419a1c0.js"><link rel="prefetch" href="/assets/js/37.003c789c.js"><link rel="prefetch" href="/assets/js/38.fcc3b1d1.js"><link rel="prefetch" href="/assets/js/39.460d9813.js"><link rel="prefetch" href="/assets/js/4.073dcbaf.js"><link rel="prefetch" href="/assets/js/40.6272c91e.js"><link rel="prefetch" href="/assets/js/41.7548eb2a.js"><link rel="prefetch" href="/assets/js/42.d291a60e.js"><link rel="prefetch" href="/assets/js/43.2fc49262.js"><link rel="prefetch" href="/assets/js/44.d0f0cc91.js"><link rel="prefetch" href="/assets/js/45.0e639fa5.js"><link rel="prefetch" href="/assets/js/46.bcffc723.js"><link rel="prefetch" href="/assets/js/47.8b76bd42.js"><link rel="prefetch" href="/assets/js/48.a086fb36.js"><link rel="prefetch" href="/assets/js/49.2e5993ec.js"><link rel="prefetch" href="/assets/js/5.77ab1bee.js"><link rel="prefetch" href="/assets/js/50.f5380226.js"><link rel="prefetch" href="/assets/js/51.04a9006d.js"><link rel="prefetch" href="/assets/js/52.93ae97cb.js"><link rel="prefetch" href="/assets/js/53.288ff34a.js"><link rel="prefetch" href="/assets/js/54.afc1157f.js"><link rel="prefetch" href="/assets/js/55.8125b62d.js"><link rel="prefetch" href="/assets/js/56.4be2ebef.js"><link rel="prefetch" href="/assets/js/57.1048cf19.js"><link rel="prefetch" href="/assets/js/58.edb8d625.js"><link rel="prefetch" href="/assets/js/59.9b588b46.js"><link rel="prefetch" href="/assets/js/6.17809d55.js"><link rel="prefetch" href="/assets/js/60.bd10232f.js"><link rel="prefetch" href="/assets/js/61.1ee43883.js"><link rel="prefetch" href="/assets/js/62.d6502e47.js"><link rel="prefetch" href="/assets/js/63.f52d2d29.js"><link rel="prefetch" href="/assets/js/64.ce045a28.js"><link rel="prefetch" href="/assets/js/65.dbbe1cec.js"><link rel="prefetch" href="/assets/js/66.bfb6c12d.js"><link rel="prefetch" href="/assets/js/67.17dca53b.js"><link rel="prefetch" href="/assets/js/68.8a221ebd.js"><link rel="prefetch" href="/assets/js/69.beac962a.js"><link rel="prefetch" href="/assets/js/7.8cfd716a.js"><link rel="prefetch" href="/assets/js/70.8b48eed9.js"><link rel="prefetch" href="/assets/js/71.d5f6f35d.js"><link rel="prefetch" href="/assets/js/72.14c92216.js"><link rel="prefetch" href="/assets/js/73.c4a69c11.js"><link rel="prefetch" href="/assets/js/74.ed6e2fe0.js"><link rel="prefetch" href="/assets/js/75.ee30261f.js"><link rel="prefetch" href="/assets/js/76.e38507e4.js"><link rel="prefetch" href="/assets/js/77.d1f14b7c.js"><link rel="prefetch" href="/assets/js/78.85e21359.js"><link rel="prefetch" href="/assets/js/79.45ecf73b.js"><link rel="prefetch" href="/assets/js/8.2d436547.js"><link rel="prefetch" href="/assets/js/80.1dfc7a9c.js"><link rel="prefetch" href="/assets/js/81.cc70aa95.js"><link rel="prefetch" href="/assets/js/82.422940b9.js"><link rel="prefetch" href="/assets/js/83.e5fd22f1.js"><link rel="prefetch" href="/assets/js/84.c90f4b19.js"><link rel="prefetch" href="/assets/js/85.261d903a.js"><link rel="prefetch" href="/assets/js/86.e1247b3b.js"><link rel="prefetch" href="/assets/js/87.b3794b25.js"><link rel="prefetch" href="/assets/js/88.eb46a6b4.js"><link rel="prefetch" href="/assets/js/89.b9b2a5f1.js"><link rel="prefetch" href="/assets/js/9.dc9e2812.js"><link rel="prefetch" href="/assets/js/90.24214291.js"><link rel="prefetch" href="/assets/js/91.2df53d20.js"><link rel="prefetch" href="/assets/js/92.8ce36d00.js"><link rel="prefetch" href="/assets/js/93.074b4da6.js"><link rel="prefetch" href="/assets/js/94.a461198a.js"><link rel="prefetch" href="/assets/js/95.94ae2ad4.js"><link rel="prefetch" href="/assets/js/96.8b64e9d0.js"><link rel="prefetch" href="/assets/js/97.a78e12ca.js"><link rel="prefetch" href="/assets/js/98.1e663af0.js"><link rel="prefetch" href="/assets/js/99.842d550f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2d13298d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">零基础学前端</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍓前端开发" class="dropdown-title"><span class="title">🍓前端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍓前端开发" class="mobile-dropdown-title"><span class="title">🍓前端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          从入门到放弃
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/" class="nav-link">
+  指南
+</a></li><li class="dropdown-subitem"><a href="/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/JS/" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具类
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/browser/" class="nav-link router-link-active">
+  浏览器
+</a></li><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  Git和GitHub
+</a></li><li class="dropdown-subitem"><a href="/MarkDown/" class="nav-link">
+  MarkDown文档
+</a></li><li class="dropdown-subitem"><a href="/GIS/" class="nav-link">
+  webgis
+</a></li><li class="dropdown-subitem"><a href="/Flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-subitem"><a href="/test/" class="nav-link">
+  测试
+</a></li><li class="dropdown-subitem"><a href="/Axure/" class="nav-link">
+  Axure
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍄大前端" class="dropdown-title"><span class="title">🍄大前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍄大前端" class="mobile-dropdown-title"><span class="title">🍄大前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          VueJS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue@0.11/" class="nav-link">
+  vue_0.11
+</a></li><li class="dropdown-subitem"><a href="/vue@2.x/" class="nav-link">
+  vue_2.x
+</a></li><li class="dropdown-subitem"><a href="/Vue/" class="nav-link">
+  vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue CLI
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue-cli/" class="nav-link">
+  vue_cli
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/DvaJS/" class="nav-link">
+  DvaJS
+</a></li><li class="dropdown-subitem"><a href="/UmiJS/" class="nav-link">
+  UmiJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          NodeJS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/NodeJS/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          架构师
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fearchitect/" class="nav-link">
+  架构能力
+</a></li><li class="dropdown-subitem"><a href="/design-patterns/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/HTTP/" class="nav-link">
+  HTTP协议
+</a></li><li class="dropdown-subitem"><a href="/algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-subitem"><a href="/performance/" class="nav-link">
+  性能优化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍓后端开发" class="dropdown-title"><span class="title">🍓后端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍓后端开发" class="mobile-dropdown-title"><span class="title">🍓后端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          LNMP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/LNMP/" class="nav-link">
+  LNMP
+</a></li><li class="dropdown-subitem"><a href="/SQL/" class="nav-link">
+  SQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/MacOS/" class="nav-link">
+  MacOS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎯经理人" class="dropdown-title"><span class="title">🎯经理人</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎯经理人" class="mobile-dropdown-title"><span class="title">🎯经理人</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          职业经理人
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/manage/" class="nav-link">
+  聊聊管理
+</a></li><li class="dropdown-subitem"><a href="/manage/career/" class="nav-link">
+  职业规划
+</a></li><li class="dropdown-subitem"><a href="/manage/interview/" class="nav-link">
+  面试指南
+</a></li><li class="dropdown-subitem"><a href="/manage/ability/" class="nav-link">
+  能力框架
+</a></li></ul></li><li class="dropdown-item"><h4>
+          HR六大模块
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/OKR/" class="nav-link">
+  OKR
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文档指南" class="dropdown-title"><span class="title">文档指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="文档指南" class="mobile-dropdown-title"><span class="title">文档指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computing/" class="nav-link">
+  计算机与网络
+</a></li><li class="dropdown-item"><!----> <a href="https://www.quanzhanketang.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3schools原版镜像
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.w3school.com.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3schools中文翻译
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  MDN Web Docs
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍓前端开发" class="dropdown-title"><span class="title">🍓前端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍓前端开发" class="mobile-dropdown-title"><span class="title">🍓前端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          从入门到放弃
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/" class="nav-link">
+  指南
+</a></li><li class="dropdown-subitem"><a href="/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/JS/" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具类
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/browser/" class="nav-link router-link-active">
+  浏览器
+</a></li><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  Git和GitHub
+</a></li><li class="dropdown-subitem"><a href="/MarkDown/" class="nav-link">
+  MarkDown文档
+</a></li><li class="dropdown-subitem"><a href="/GIS/" class="nav-link">
+  webgis
+</a></li><li class="dropdown-subitem"><a href="/Flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-subitem"><a href="/test/" class="nav-link">
+  测试
+</a></li><li class="dropdown-subitem"><a href="/Axure/" class="nav-link">
+  Axure
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍄大前端" class="dropdown-title"><span class="title">🍄大前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍄大前端" class="mobile-dropdown-title"><span class="title">🍄大前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          VueJS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue@0.11/" class="nav-link">
+  vue_0.11
+</a></li><li class="dropdown-subitem"><a href="/vue@2.x/" class="nav-link">
+  vue_2.x
+</a></li><li class="dropdown-subitem"><a href="/Vue/" class="nav-link">
+  vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue CLI
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue-cli/" class="nav-link">
+  vue_cli
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/DvaJS/" class="nav-link">
+  DvaJS
+</a></li><li class="dropdown-subitem"><a href="/UmiJS/" class="nav-link">
+  UmiJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          NodeJS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/NodeJS/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          架构师
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fearchitect/" class="nav-link">
+  架构能力
+</a></li><li class="dropdown-subitem"><a href="/design-patterns/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/HTTP/" class="nav-link">
+  HTTP协议
+</a></li><li class="dropdown-subitem"><a href="/algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-subitem"><a href="/performance/" class="nav-link">
+  性能优化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍓后端开发" class="dropdown-title"><span class="title">🍓后端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍓后端开发" class="mobile-dropdown-title"><span class="title">🍓后端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          LNMP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/LNMP/" class="nav-link">
+  LNMP
+</a></li><li class="dropdown-subitem"><a href="/SQL/" class="nav-link">
+  SQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/MacOS/" class="nav-link">
+  MacOS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎯经理人" class="dropdown-title"><span class="title">🎯经理人</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎯经理人" class="mobile-dropdown-title"><span class="title">🎯经理人</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          职业经理人
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/manage/" class="nav-link">
+  聊聊管理
+</a></li><li class="dropdown-subitem"><a href="/manage/career/" class="nav-link">
+  职业规划
+</a></li><li class="dropdown-subitem"><a href="/manage/interview/" class="nav-link">
+  面试指南
+</a></li><li class="dropdown-subitem"><a href="/manage/ability/" class="nav-link">
+  能力框架
+</a></li></ul></li><li class="dropdown-item"><h4>
+          HR六大模块
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/OKR/" class="nav-link">
+  OKR
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文档指南" class="dropdown-title"><span class="title">文档指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="文档指南" class="mobile-dropdown-title"><span class="title">文档指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computing/" class="nav-link">
+  计算机与网络
+</a></li><li class="dropdown-item"><!----> <a href="https://www.quanzhanketang.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3schools原版镜像
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.w3school.com.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3schools中文翻译
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  MDN Web Docs
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>浏览器</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/browser/" aria-current="page" class="sidebar-link">浏览器</a></li><li><a href="/browser/data-storage.html" class="sidebar-link">浏览器中存储数据</a></li><li><a href="/browser/cross-domain.html" aria-current="page" class="active sidebar-link">浏览器跨域</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/browser/cross-domain.html#一、同源策略" class="sidebar-link">一、同源策略</a></li><li class="sidebar-sub-header"><a href="/browser/cross-domain.html#二、跨域解决方式" class="sidebar-link">二、跨域解决方式</a></li></ul></li><li><a href="/browser/cache.html" class="sidebar-link">浏览器缓存</a></li><li><a href="/browser/safe.html" class="sidebar-link">浏览器安全</a></li><li><a href="/browser/chrome.html" class="sidebar-link">Google Chrome</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="浏览器跨域"><a href="#浏览器跨域" class="header-anchor">#</a> 浏览器跨域</h1> <h2 id="一、同源策略"><a href="#一、同源策略" class="header-anchor">#</a> 一、同源策略</h2> <blockquote><p><strong>同源策略</strong>（Same Origin Policy）是一个重要的安全策略，它用于限制一个<a href="https://developer.mozilla.org/zh-CN/docs/Glossary/Origin" target="_blank" rel="noopener noreferrer">origin<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>的文档或者它加载的脚本如何能与另一个源的资源进行交互。它能帮助阻隔恶意文档，减少可能被攻击的媒介。所谓&quot;同源&quot;指的是三个相同：</p> <ul><li>协议相同：（如：HTTP、HTTPS等）</li> <li>域名相同：（如：<code>api.threetowns.cn</code>，<code>cdn.threetowns.cn</code> 域名相同，但它们属于不同子域名）</li> <li>端口相同：（如：HTTP端口为80、HTTPS端口为 443）</li></ul></blockquote> <p><img src="/assets/img/url.6fbf2683.svg" alt="url"></p> <h2 id="二、跨域解决方式"><a href="#二、跨域解决方式" class="header-anchor">#</a> 二、跨域解决方式</h2> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <ul><li>JSONP</li> <li>CORS跨域资源共享</li> <li>基于http proxy实现跨域请求</li> <li>基于postMessage实现跨域处理</li> <li>基于iframe的跨域解决方案：window.name、document.domain、localtion.hash</li> <li>webScoket和nginx反向代理</li></ul></div> <h3 id="_1-html特殊标签"><a href="#_1-html特殊标签" class="header-anchor">#</a> 1. HTML特殊标签</h3> <p><code>&lt;link&gt;</code>、<code>&lt;script&gt;</code>、<code>&lt;img&gt;</code>、<code>&lt;iframe&gt;</code>等这些标签具有跨域特性，可以直接访问。</p> <h3 id="_2-jsonp"><a href="#_2-jsonp" class="header-anchor">#</a> 2. JSONP</h3> <p>客户端告诉服务器一个回调函数的名称，服务器在返回script里调用这个回调函数，同时传进客户端需要的数据，这样返回的代码就在浏览器执行了。</p> <p>它只能实现get请求，不安全，容易遭到XSS攻击</p> <ul><li><p>方法一：通过 <code>&lt;script&gt;</code> 具有跨域特性的标签，配合回调函数</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://api.threetowns.cn/getDate?callback=writeDate<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">function</span> <span class="token function">writeDate</span><span class="token punctuation">(</span><span class="token parameter">date</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>date<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></li> <li><p>方法二：通过ajax的get请求</p> <div class="language-js extra-class"><pre class="language-js"><code>$<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  url<span class="token operator">:</span> <span class="token string">'http://api.threetowns.cn/getDate'</span><span class="token punctuation">,</span>
+  type<span class="token operator">:</span> <span class="token string">'get'</span><span class="token punctuation">,</span>                      <span class="token comment">// 请求方式为：get</span>
+  dataType<span class="token operator">:</span> <span class="token string">'jsonp'</span><span class="token punctuation">,</span>                <span class="token comment">// 数据类型为：jsonp</span>
+  jsonpCallback<span class="token operator">:</span> <span class="token string">'handleCallback'</span>   <span class="token comment">// 自定义回调函数</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></li></ul> <h3 id="_3-cors"><a href="#_3-cors" class="header-anchor">#</a> 3. CORS</h3> <p>跨域资源共享（CORS）是一种机制，它使用额外的 HTTP 头来告诉浏览器，让运行在一个 origin (domain) 上的Web应用被准许访问来自不同源服务器上的指定的资源。</p> <ul><li>请求方法：以下三种方法之一：HEAD/GET/POST</li> <li>实现方法：服务端在http响应头中添加 <code>Access-Control-Allow-origin</code></li></ul> <h3 id="_4-postmessage"><a href="#_4-postmessage" class="header-anchor">#</a> 4. postMessage</h3> <p><code>window.postMessage(message, targetOrigin, [transfer]);</code> 方法是<strong>html5新引进的特性</strong>，不受同源策略限制，用于解决以下方面的问题：</p> <ol><li>页面和其打开的新窗口的数据传递</li> <li>多窗口之间消息传递</li> <li>页面与嵌套的iframe消息传递</li></ol> <ul><li>语法：
+<ul><li>data：从其他 window 中传递过来的对象。</li> <li>origin：调用 <code>postMessage</code> 时消息发送方窗口的 <a href="https://developer.mozilla.org/en-US/docs/Origin" target="_blank" rel="noopener noreferrer">origin<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> .</li> <li>source：对发送消息的<a href="https://developer.mozilla.org/en-US/docs/Web/API/Window" target="_blank" rel="noopener noreferrer">窗口<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>对象的引用; 您可以使用此来在具有不同origin的两个窗口之间建立双向通信。</li></ul></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 接收数据: 监听message事件的发生</span>
+<span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'message'</span><span class="token punctuation">,</span> <span class="token parameter">event</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> replyPort <span class="token operator">=</span> event<span class="token punctuation">.</span>ports<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> message <span class="token operator">=</span> event<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>replyPort <span class="token operator">&amp;&amp;</span> message <span class="token operator">&amp;&amp;</span> message<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token string">'skip-waiting'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    event<span class="token punctuation">.</span><span class="token function">waitUntil</span><span class="token punctuation">(</span>
+      self<span class="token punctuation">.</span><span class="token function">skipWaiting</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>
+        <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+          replyPort<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            error<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token parameter">error</span> <span class="token operator">=&gt;</span>
+          replyPort<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            error<span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><h3 id="_5-websocket"><a href="#_5-websocket" class="header-anchor">#</a> 5. WebSocket</h3> <p>HTTP协议有一个缺陷：通信只能由客户端发起，做不到服务器主动向客户端推送信息。</p> <p>WebSocket最大特点是：服务器可以主动向客户端推送信息，客户端也可以主动向服务器发送信息。</p> <h3 id="_6-http-proxy"><a href="#_6-http-proxy" class="header-anchor">#</a> 6. http proxy</h3> <p>vue中使用了 <code>http-proxy-middleware</code> 进行反射代理</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/15/2022, 2:45:24 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/browser/data-storage.html" class="prev">
+        浏览器中存储数据
+      </a></span> <span class="next"><a href="/browser/cache.html">
+        浏览器缓存
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.0a15208b.js" defer></script><script src="/assets/js/3.1a9699b9.js" defer></script><script src="/assets/js/35.33bf39f9.js" defer></script>
+  </body>
+</html>

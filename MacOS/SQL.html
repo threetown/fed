@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>一、什么是洗数据 | 零基础学前端</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <meta name="description" content="learn fed">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.2d13298d.css" as="style"><link rel="preload" href="/assets/js/app.0a15208b.js" as="script"><link rel="preload" href="/assets/js/3.1a9699b9.js" as="script"><link rel="preload" href="/assets/js/80.1dfc7a9c.js" as="script"><link rel="prefetch" href="/assets/js/10.93902b8e.js"><link rel="prefetch" href="/assets/js/100.b1d7df1d.js"><link rel="prefetch" href="/assets/js/101.774f3587.js"><link rel="prefetch" href="/assets/js/102.ab1429e6.js"><link rel="prefetch" href="/assets/js/103.1380842b.js"><link rel="prefetch" href="/assets/js/104.2c445a62.js"><link rel="prefetch" href="/assets/js/105.55d36bdb.js"><link rel="prefetch" href="/assets/js/106.90146179.js"><link rel="prefetch" href="/assets/js/107.68a270bf.js"><link rel="prefetch" href="/assets/js/108.483767fe.js"><link rel="prefetch" href="/assets/js/109.cc916dce.js"><link rel="prefetch" href="/assets/js/11.e36136f7.js"><link rel="prefetch" href="/assets/js/110.7f1577b7.js"><link rel="prefetch" href="/assets/js/111.98147c99.js"><link rel="prefetch" href="/assets/js/112.ec1ebc18.js"><link rel="prefetch" href="/assets/js/113.121dd0c1.js"><link rel="prefetch" href="/assets/js/114.47c72628.js"><link rel="prefetch" href="/assets/js/115.d3bd3b3f.js"><link rel="prefetch" href="/assets/js/116.59911f4d.js"><link rel="prefetch" href="/assets/js/117.3615072e.js"><link rel="prefetch" href="/assets/js/118.81b33236.js"><link rel="prefetch" href="/assets/js/119.14c0bcdc.js"><link rel="prefetch" href="/assets/js/12.acf90667.js"><link rel="prefetch" href="/assets/js/120.e9ce28c2.js"><link rel="prefetch" href="/assets/js/121.faa569ec.js"><link rel="prefetch" href="/assets/js/122.56e1baf2.js"><link rel="prefetch" href="/assets/js/123.d8fcf331.js"><link rel="prefetch" href="/assets/js/124.9af97a21.js"><link rel="prefetch" href="/assets/js/125.2ec844e6.js"><link rel="prefetch" href="/assets/js/126.f5a27e20.js"><link rel="prefetch" href="/assets/js/127.1523ad1f.js"><link rel="prefetch" href="/assets/js/128.959e0cb2.js"><link rel="prefetch" href="/assets/js/129.c3afa873.js"><link rel="prefetch" href="/assets/js/13.a0cc0a36.js"><link rel="prefetch" href="/assets/js/130.f94d0650.js"><link rel="prefetch" href="/assets/js/131.c4546c33.js"><link rel="prefetch" href="/assets/js/132.a42ee650.js"><link rel="prefetch" href="/assets/js/133.43a9df61.js"><link rel="prefetch" href="/assets/js/134.eb00c648.js"><link rel="prefetch" href="/assets/js/135.def97609.js"><link rel="prefetch" href="/assets/js/136.bcf734d3.js"><link rel="prefetch" href="/assets/js/137.2022d32a.js"><link rel="prefetch" href="/assets/js/138.1005403a.js"><link rel="prefetch" href="/assets/js/139.4dcc9582.js"><link rel="prefetch" href="/assets/js/14.70f353f5.js"><link rel="prefetch" href="/assets/js/140.d3c8e60c.js"><link rel="prefetch" href="/assets/js/141.838dfc26.js"><link rel="prefetch" href="/assets/js/142.6f0978a8.js"><link rel="prefetch" href="/assets/js/143.a0523db7.js"><link rel="prefetch" href="/assets/js/144.51e4db65.js"><link rel="prefetch" href="/assets/js/145.248c914d.js"><link rel="prefetch" href="/assets/js/146.27d059ef.js"><link rel="prefetch" href="/assets/js/147.4fd147a1.js"><link rel="prefetch" href="/assets/js/148.392cd869.js"><link rel="prefetch" href="/assets/js/149.f97328a5.js"><link rel="prefetch" href="/assets/js/15.6807b5b5.js"><link rel="prefetch" href="/assets/js/150.c6bd7746.js"><link rel="prefetch" href="/assets/js/151.b7035f3a.js"><link rel="prefetch" href="/assets/js/152.33eee21f.js"><link rel="prefetch" href="/assets/js/153.d29c3cc3.js"><link rel="prefetch" href="/assets/js/154.38a3da58.js"><link rel="prefetch" href="/assets/js/155.4023b45b.js"><link rel="prefetch" href="/assets/js/156.38dccf7b.js"><link rel="prefetch" href="/assets/js/157.38199b9d.js"><link rel="prefetch" href="/assets/js/158.436ed442.js"><link rel="prefetch" href="/assets/js/159.fe412ff8.js"><link rel="prefetch" href="/assets/js/16.0323100d.js"><link rel="prefetch" href="/assets/js/160.eb4468b7.js"><link rel="prefetch" href="/assets/js/161.8758e21f.js"><link rel="prefetch" href="/assets/js/162.de20ddd0.js"><link rel="prefetch" href="/assets/js/163.6c231dcc.js"><link rel="prefetch" href="/assets/js/164.eeeb27a3.js"><link rel="prefetch" href="/assets/js/165.d4626122.js"><link rel="prefetch" href="/assets/js/166.c37e05b4.js"><link rel="prefetch" href="/assets/js/167.af8d5125.js"><link rel="prefetch" href="/assets/js/168.0123bca6.js"><link rel="prefetch" href="/assets/js/169.dcb27fe6.js"><link rel="prefetch" href="/assets/js/17.c1576e94.js"><link rel="prefetch" href="/assets/js/170.93b81585.js"><link rel="prefetch" href="/assets/js/171.3217839d.js"><link rel="prefetch" href="/assets/js/172.6e960fd3.js"><link rel="prefetch" href="/assets/js/173.6a769945.js"><link rel="prefetch" href="/assets/js/18.5a2271a7.js"><link rel="prefetch" href="/assets/js/19.cf5a5d2e.js"><link rel="prefetch" href="/assets/js/2.c3e53dd5.js"><link rel="prefetch" href="/assets/js/20.84597afa.js"><link rel="prefetch" href="/assets/js/21.d3226c57.js"><link rel="prefetch" href="/assets/js/22.b1eafa65.js"><link rel="prefetch" href="/assets/js/23.b472d6d0.js"><link rel="prefetch" href="/assets/js/24.28103653.js"><link rel="prefetch" href="/assets/js/25.9a234cd5.js"><link rel="prefetch" href="/assets/js/26.87589ca9.js"><link rel="prefetch" href="/assets/js/27.0967113b.js"><link rel="prefetch" href="/assets/js/28.31f3f702.js"><link rel="prefetch" href="/assets/js/29.74529a51.js"><link rel="prefetch" href="/assets/js/30.e7349b17.js"><link rel="prefetch" href="/assets/js/31.733e35c5.js"><link rel="prefetch" href="/assets/js/32.b36e5b86.js"><link rel="prefetch" href="/assets/js/33.08d43715.js"><link rel="prefetch" href="/assets/js/34.c1fb5185.js"><link rel="prefetch" href="/assets/js/35.33bf39f9.js"><link rel="prefetch" href="/assets/js/36.e419a1c0.js"><link rel="prefetch" href="/assets/js/37.003c789c.js"><link rel="prefetch" href="/assets/js/38.fcc3b1d1.js"><link rel="prefetch" href="/assets/js/39.460d9813.js"><link rel="prefetch" href="/assets/js/4.073dcbaf.js"><link rel="prefetch" href="/assets/js/40.6272c91e.js"><link rel="prefetch" href="/assets/js/41.7548eb2a.js"><link rel="prefetch" href="/assets/js/42.d291a60e.js"><link rel="prefetch" href="/assets/js/43.2fc49262.js"><link rel="prefetch" href="/assets/js/44.d0f0cc91.js"><link rel="prefetch" href="/assets/js/45.0e639fa5.js"><link rel="prefetch" href="/assets/js/46.bcffc723.js"><link rel="prefetch" href="/assets/js/47.8b76bd42.js"><link rel="prefetch" href="/assets/js/48.a086fb36.js"><link rel="prefetch" href="/assets/js/49.2e5993ec.js"><link rel="prefetch" href="/assets/js/5.77ab1bee.js"><link rel="prefetch" href="/assets/js/50.f5380226.js"><link rel="prefetch" href="/assets/js/51.04a9006d.js"><link rel="prefetch" href="/assets/js/52.93ae97cb.js"><link rel="prefetch" href="/assets/js/53.288ff34a.js"><link rel="prefetch" href="/assets/js/54.afc1157f.js"><link rel="prefetch" href="/assets/js/55.8125b62d.js"><link rel="prefetch" href="/assets/js/56.4be2ebef.js"><link rel="prefetch" href="/assets/js/57.1048cf19.js"><link rel="prefetch" href="/assets/js/58.edb8d625.js"><link rel="prefetch" href="/assets/js/59.9b588b46.js"><link rel="prefetch" href="/assets/js/6.17809d55.js"><link rel="prefetch" href="/assets/js/60.bd10232f.js"><link rel="prefetch" href="/assets/js/61.1ee43883.js"><link rel="prefetch" href="/assets/js/62.d6502e47.js"><link rel="prefetch" href="/assets/js/63.f52d2d29.js"><link rel="prefetch" href="/assets/js/64.ce045a28.js"><link rel="prefetch" href="/assets/js/65.dbbe1cec.js"><link rel="prefetch" href="/assets/js/66.bfb6c12d.js"><link rel="prefetch" href="/assets/js/67.17dca53b.js"><link rel="prefetch" href="/assets/js/68.8a221ebd.js"><link rel="prefetch" href="/assets/js/69.beac962a.js"><link rel="prefetch" href="/assets/js/7.8cfd716a.js"><link rel="prefetch" href="/assets/js/70.8b48eed9.js"><link rel="prefetch" href="/assets/js/71.d5f6f35d.js"><link rel="prefetch" href="/assets/js/72.14c92216.js"><link rel="prefetch" href="/assets/js/73.c4a69c11.js"><link rel="prefetch" href="/assets/js/74.ed6e2fe0.js"><link rel="prefetch" href="/assets/js/75.ee30261f.js"><link rel="prefetch" href="/assets/js/76.e38507e4.js"><link rel="prefetch" href="/assets/js/77.d1f14b7c.js"><link rel="prefetch" href="/assets/js/78.85e21359.js"><link rel="prefetch" href="/assets/js/79.45ecf73b.js"><link rel="prefetch" href="/assets/js/8.2d436547.js"><link rel="prefetch" href="/assets/js/81.cc70aa95.js"><link rel="prefetch" href="/assets/js/82.422940b9.js"><link rel="prefetch" href="/assets/js/83.e5fd22f1.js"><link rel="prefetch" href="/assets/js/84.c90f4b19.js"><link rel="prefetch" href="/assets/js/85.261d903a.js"><link rel="prefetch" href="/assets/js/86.e1247b3b.js"><link rel="prefetch" href="/assets/js/87.b3794b25.js"><link rel="prefetch" href="/assets/js/88.eb46a6b4.js"><link rel="prefetch" href="/assets/js/89.b9b2a5f1.js"><link rel="prefetch" href="/assets/js/9.dc9e2812.js"><link rel="prefetch" href="/assets/js/90.24214291.js"><link rel="prefetch" href="/assets/js/91.2df53d20.js"><link rel="prefetch" href="/assets/js/92.8ce36d00.js"><link rel="prefetch" href="/assets/js/93.074b4da6.js"><link rel="prefetch" href="/assets/js/94.a461198a.js"><link rel="prefetch" href="/assets/js/95.94ae2ad4.js"><link rel="prefetch" href="/assets/js/96.8b64e9d0.js"><link rel="prefetch" href="/assets/js/97.a78e12ca.js"><link rel="prefetch" href="/assets/js/98.1e663af0.js"><link rel="prefetch" href="/assets/js/99.842d550f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2d13298d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">零基础学前端</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍓前端开发" class="dropdown-title"><span class="title">🍓前端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍓前端开发" class="mobile-dropdown-title"><span class="title">🍓前端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          从入门到放弃
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/" class="nav-link">
+  指南
+</a></li><li class="dropdown-subitem"><a href="/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/JS/" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具类
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/browser/" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  Git和GitHub
+</a></li><li class="dropdown-subitem"><a href="/MarkDown/" class="nav-link">
+  MarkDown文档
+</a></li><li class="dropdown-subitem"><a href="/GIS/" class="nav-link">
+  webgis
+</a></li><li class="dropdown-subitem"><a href="/Flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-subitem"><a href="/test/" class="nav-link">
+  测试
+</a></li><li class="dropdown-subitem"><a href="/Axure/" class="nav-link">
+  Axure
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍄大前端" class="dropdown-title"><span class="title">🍄大前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍄大前端" class="mobile-dropdown-title"><span class="title">🍄大前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          VueJS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue@0.11/" class="nav-link">
+  vue_0.11
+</a></li><li class="dropdown-subitem"><a href="/vue@2.x/" class="nav-link">
+  vue_2.x
+</a></li><li class="dropdown-subitem"><a href="/Vue/" class="nav-link">
+  vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue CLI
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue-cli/" class="nav-link">
+  vue_cli
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/DvaJS/" class="nav-link">
+  DvaJS
+</a></li><li class="dropdown-subitem"><a href="/UmiJS/" class="nav-link">
+  UmiJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          NodeJS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/NodeJS/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          架构师
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fearchitect/" class="nav-link">
+  架构能力
+</a></li><li class="dropdown-subitem"><a href="/design-patterns/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/HTTP/" class="nav-link">
+  HTTP协议
+</a></li><li class="dropdown-subitem"><a href="/algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-subitem"><a href="/performance/" class="nav-link">
+  性能优化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍓后端开发" class="dropdown-title"><span class="title">🍓后端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍓后端开发" class="mobile-dropdown-title"><span class="title">🍓后端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          LNMP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/LNMP/" class="nav-link">
+  LNMP
+</a></li><li class="dropdown-subitem"><a href="/SQL/" class="nav-link">
+  SQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/MacOS/" class="nav-link router-link-active">
+  MacOS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎯经理人" class="dropdown-title"><span class="title">🎯经理人</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎯经理人" class="mobile-dropdown-title"><span class="title">🎯经理人</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          职业经理人
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/manage/" class="nav-link">
+  聊聊管理
+</a></li><li class="dropdown-subitem"><a href="/manage/career/" class="nav-link">
+  职业规划
+</a></li><li class="dropdown-subitem"><a href="/manage/interview/" class="nav-link">
+  面试指南
+</a></li><li class="dropdown-subitem"><a href="/manage/ability/" class="nav-link">
+  能力框架
+</a></li></ul></li><li class="dropdown-item"><h4>
+          HR六大模块
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/OKR/" class="nav-link">
+  OKR
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文档指南" class="dropdown-title"><span class="title">文档指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="文档指南" class="mobile-dropdown-title"><span class="title">文档指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computing/" class="nav-link">
+  计算机与网络
+</a></li><li class="dropdown-item"><!----> <a href="https://www.quanzhanketang.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3schools原版镜像
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.w3school.com.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3schools中文翻译
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  MDN Web Docs
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍓前端开发" class="dropdown-title"><span class="title">🍓前端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍓前端开发" class="mobile-dropdown-title"><span class="title">🍓前端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          从入门到放弃
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/" class="nav-link">
+  指南
+</a></li><li class="dropdown-subitem"><a href="/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/JS/" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具类
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/browser/" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  Git和GitHub
+</a></li><li class="dropdown-subitem"><a href="/MarkDown/" class="nav-link">
+  MarkDown文档
+</a></li><li class="dropdown-subitem"><a href="/GIS/" class="nav-link">
+  webgis
+</a></li><li class="dropdown-subitem"><a href="/Flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-subitem"><a href="/test/" class="nav-link">
+  测试
+</a></li><li class="dropdown-subitem"><a href="/Axure/" class="nav-link">
+  Axure
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍄大前端" class="dropdown-title"><span class="title">🍄大前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍄大前端" class="mobile-dropdown-title"><span class="title">🍄大前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          VueJS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue@0.11/" class="nav-link">
+  vue_0.11
+</a></li><li class="dropdown-subitem"><a href="/vue@2.x/" class="nav-link">
+  vue_2.x
+</a></li><li class="dropdown-subitem"><a href="/Vue/" class="nav-link">
+  vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue CLI
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue-cli/" class="nav-link">
+  vue_cli
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/DvaJS/" class="nav-link">
+  DvaJS
+</a></li><li class="dropdown-subitem"><a href="/UmiJS/" class="nav-link">
+  UmiJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          NodeJS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/NodeJS/" class="nav-link">
+  NodeJS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          架构师
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fearchitect/" class="nav-link">
+  架构能力
+</a></li><li class="dropdown-subitem"><a href="/design-patterns/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/HTTP/" class="nav-link">
+  HTTP协议
+</a></li><li class="dropdown-subitem"><a href="/algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-subitem"><a href="/performance/" class="nav-link">
+  性能优化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🍓后端开发" class="dropdown-title"><span class="title">🍓后端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="🍓后端开发" class="mobile-dropdown-title"><span class="title">🍓后端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          LNMP
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/LNMP/" class="nav-link">
+  LNMP
+</a></li><li class="dropdown-subitem"><a href="/SQL/" class="nav-link">
+  SQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          操作系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/MacOS/" class="nav-link router-link-active">
+  MacOS
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎯经理人" class="dropdown-title"><span class="title">🎯经理人</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎯经理人" class="mobile-dropdown-title"><span class="title">🎯经理人</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          职业经理人
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/manage/" class="nav-link">
+  聊聊管理
+</a></li><li class="dropdown-subitem"><a href="/manage/career/" class="nav-link">
+  职业规划
+</a></li><li class="dropdown-subitem"><a href="/manage/interview/" class="nav-link">
+  面试指南
+</a></li><li class="dropdown-subitem"><a href="/manage/ability/" class="nav-link">
+  能力框架
+</a></li></ul></li><li class="dropdown-item"><h4>
+          HR六大模块
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/OKR/" class="nav-link">
+  OKR
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文档指南" class="dropdown-title"><span class="title">文档指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="文档指南" class="mobile-dropdown-title"><span class="title">文档指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/computing/" class="nav-link">
+  计算机与网络
+</a></li><li class="dropdown-item"><!----> <a href="https://www.quanzhanketang.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3schools原版镜像
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.w3school.com.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3schools中文翻译
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  MDN Web Docs
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>MacOS</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/MacOS/" aria-current="page" class="sidebar-link">iTerm2</a></li><li><a href="/MacOS/brew.html" class="sidebar-link">brew</a></li><li><a href="/MacOS/MNMP.html" class="sidebar-link">MNMP</a></li><li><a href="/MacOS/nodejs.html" class="sidebar-link">node.js常规操作</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="一、什么是洗数据"><a href="#一、什么是洗数据" class="header-anchor">#</a> 一、什么是洗数据</h2> <h3 id="_1-含义"><a href="#_1-含义" class="header-anchor">#</a> 1. 含义</h3> <p>​    含义：洗数据是指将线上已存在的数据进行某些变动，或是修改数值对应字段名称亦或由于数据库表结构发生变化到导致数据存储变更的一类操作</p> <h3 id="_2-什么情况下需要洗数据"><a href="#_2-什么情况下需要洗数据" class="header-anchor">#</a> 2. 什么情况下需要洗数据</h3> <ul><li>一是字段数据变更：新增或修改字段名称、更改字段对应数据值、删除某些弃用字段</li> <li>二是表结构变更：需求变化，现有的存储模型不支持，需变更数据存储格式、新建库表结构、删除无用表</li></ul> <h2 id="二、为什么重视洗数据逻辑的验证"><a href="#二、为什么重视洗数据逻辑的验证" class="header-anchor">#</a> 二、为什么重视洗数据逻辑的验证</h2> <ul><li>洗数据代码执行后数据不可逆性较强，不能随便执行洗数据，需更谨慎</li> <li>修复洗数据造成的影响成本及代价较高，洗数据导致的问题较普通Bug更具影响力，洗数据后不能确保是否存在某些客户创建或修改数据，一旦存在老数据和新数据相互交叉的情况，修复数据难度会随着上线的时间呈指数型增长，所以提前验证洗数据逻辑对于修复成本来说也十分重要</li> <li>对一些敏感数据的洗数据操作对客户影响更大，洗数据涉及线上客户使用的数据，对于客户操作及使用习惯有很大影响，尤其是工资发放、社保缴纳之类，一旦洗错，无疑会受到严重客诉，甚至造成客户对系统使用幸福感的降低及对系统的不信任</li></ul> <h2 id="三、如何更全面验证洗数据逻辑"><a href="#三、如何更全面验证洗数据逻辑" class="header-anchor">#</a> 三、如何更全面验证洗数据逻辑</h2> <p>为更全面的验证洗数据的逻辑是否合理，需严格遵循以下验证规范</p> <table><thead><tr><th><strong>步骤</strong></th> <th><strong>阶段</strong></th> <th><strong>是否必须</strong></th> <th><strong>规范</strong></th> <th><strong>备注</strong></th></tr></thead> <tbody><tr><td>1</td> <td>需求评审</td> <td></td> <td>敲定该项目是否需要洗数据，洗数据范围包括哪些</td> <td></td></tr> <tr><td>2</td> <td>技术方案设计评审</td> <td></td> <td>① 向开发问清楚洗数据的处理逻辑，并review洗数据逻辑是否合理<br>② 提醒开发每一条洗数据方案都要有对应的回滚方案，确定是否能重复执行洗数据</td> <td></td></tr> <tr><td>3</td> <td>设计测试用例</td> <td></td> <td>① 测试排期需要认真考虑验证洗数据时间<br>② 针对洗数据较为复杂的场景，需同开发查取线上客户相关逻辑数据特点<br>③ 针对查到客户数据特点，有针对行的制造全面且有效的老数据<br>④ 根据上述1、2、3，在用例中明确体现要构造的被清洗数据有哪些，覆盖哪些表。<br>⑤ 通过python脚本或者sql脚本一一读取原数据和洗过的数据进行对比，验证通过后方可认为清洗成功。可做到100%全覆盖。</td> <td></td></tr> <tr><td>4</td> <td>用例评审</td> <td></td> <td>① 针对洗数据场景和开发一起review造数据的全面性和有效性<br>② 根据提测时间，确定何时造数据，以及手动造数据后数据是否需要备份多份，供验问题使用</td> <td></td></tr> <tr><td>5</td> <td>review洗数据代码</td> <td></td> <td>① 测试需要提前了解开发洗数据代码编写逻辑，同开发在review洗数据代码时，通过开发对代码的讲解或测试自己阅读代码，判断是否存在逻辑问题及漏洞，<br>② 确定开发是否若存在通过粘贴复制的代码，若是，需要着重查看被复制的变量是否有误<br>③ 监督开发编写洗数据成功失败对比参照脚本，便于精准定位洗数据失败的原因</td> <td></td></tr> <tr><td>6</td> <td>提测</td> <td></td> <td>① 确定提测内容是否包含洗数据部分，若包含，确定开发已自测洗数据逻辑<br>② 洗数据后，必须回归洗数据功能以及回滚方案是否正确<br>③ 确保回滚操作步骤被验证过。</td> <td></td></tr> <tr><td>7</td> <td>测试环境测试</td> <td></td> <td>若洗数据的脚本和sql不止一个，需开发同测试配合，执行一条洗数据，验证一项数据，通过后方可进行下一条，否则必须修复有问题的洗数据脚本或sql重新验证通过方可</td> <td></td></tr> <tr><td>8</td> <td>预发布测试</td> <td></td> <td>含洗数据的项目必须在预发布环境执行单个公司洗数据和全量洗数据的过程，且全量洗时必须有成功与失败的记录，以及统计全量洗数据的时间</td> <td></td></tr> <tr><td>9</td> <td>灰度+上线</td> <td></td> <td>发布项目代码后，先回归正常业务功能，保证功能点正常后，执行全量洗数据，验证洗数据是否正确</td> <td></td></tr></tbody></table> <h2 id="四、洗数据具体注意点"><a href="#四、洗数据具体注意点" class="header-anchor">#</a> 四、洗数据具体注意点</h2> <p>鉴于对洗数据把握度欠佳的情况，梳理一些洗数据具体的注意点</p> <table><thead><tr><th>项目</th> <th>是否必须</th> <th>备注</th></tr></thead> <tbody><tr><td>洗数据步骤是否可遵循可重复</td> <td>是</td> <td>1、洗数据前必须对要清洗的数据进行备份<br>2、洗数据的步骤必须形成明确的步骤，且能脚本化的要脚本化</td></tr> <tr><td>能否重复洗</td> <td>否</td> <td>1、如果在洗数据完成以后，存在不可逆的时候，洗的数据有问题，就不能恢复了，那么线上用户就不能正常使用了，所以要尽量避免这种情况。如果实在不能避免，那就要备份对应的表或者库。<br>2、如果能够重复洗，那么洗完了，有问题，可以快速的洗回去，不至于出现问题。</td></tr> <tr><td>洗数据的方式</td> <td>否</td> <td>1、SQL洗，这种方式的可以方便我们检查update、select的语句是不是写的不合理，也是学习写复杂SQL的一种方式，以及让开发解释一下对应的SQL影响范围。<br>2、代码洗，这种方式对于测试来说，除了review代码外，是不能帮助开发来发现问题，相对风险高点。 如果是代码洗，则代码必须经过了review。</td></tr> <tr><td>修改表字段存在非空但是没有默认值</td> <td>否</td> <td>1、开发在写新的业务代码时，可能需要在原有的旧表上加字段或者干脆修改原有的字段类型、意义等，这个时候，我们作为测试需要关注一下.最好的格式是如下类型的：<br><code>old_id int(11) NOT NULL DEFAULT '0' COMMENT '旧主键' （要求非空，但是有默认值）</code>，如果开发明确说明不能有默认值，那么就要考虑一下，老用户在使用旧表的时候，你修改了原有字段或者加了新的字段到旧表上，原有的业务代码能否插入到数据库的旧表中。<br> 2、同样存在部分情况下，在旧表加字段，已有的业务代码入库没有影响，这个具体情况具体分析，不能一概而论。在这种情况下，可以在上灰度之就加上，提前一天晚上找运维加上，第二天上灰度的时候，就直接开测就行了，不需要在第二天用户已经在正常使用系统的时候，再执行SQL，有可能会影响到客户的正常使用。</td></tr> <tr><td>能否单独洗一个公司</td> <td>是</td> <td>比较常见的问题是，开发写了一个脚本或者一个sql语句，直接就更新所有公司了，然后因为逻辑比较复杂或者影响的关联表太多，现在要恢复回去太麻烦，那就成了死循环了，要洗新数据，还要先恢复老数据，而老数据的恢复又要一大坨代码来保证，所以，这个地方是一个强制要求，必须能够单独洗一个公司！！如果开发使用的是代码洗数据，在预发布环境洗全库的数据时，要让开发不断优化自己的代码，解决洗全库情况下，线上真实用户的数据不能被洗成功的情况。因为我们在预发布环境的测试公司，必然不可能覆盖线上所有用户的真实使用场景，所以这一步是必须的，也是很有必要的，但是不是我们测试能够回归的，我们也不需要回归，让开发修复完即可。</td></tr> <tr><td>什么时候测试洗数据</td> <td>是</td> <td>其实我们测试过程中，如果测试环境的数据已经洗了好多次了，要不洗可能我们根本主流程就跑不通了。这种情况下测试环境的洗数据，其实没法测，也不需要测。什么时候测呢，在上预发布环境的时候测洗数据。而且我们要在预发布环境洗数据之前先准备待洗的数据，不能等洗完了，我们才想起来数据还没准备呢。其次，如果预发布环境冲突，不得不在测试环境测洗数据时，需要将代码发回master后，我们测试造一下全面数据，再由开发部署新代码，然后一步一步验洗数据</td></tr> <tr><td>洗数据的时间长短</td> <td>是</td> <td>在预发布环境，执行全量洗数据的时间长短，一定要记录下来，这个点在运维同学在预发布环境执行洗数据的脚本时，会记录下来，如果没有记录，要及时找运维同学确认原因。这个时间长短影响的就是具体上线时，线上相应模块&quot;不可用&quot;的时间长短。可能开发同学会解释不会影响到已有的老用户，但是当我们在线上或者灰度洗数据操作旧表时，不要忘记老用户也在使用老逻辑写入旧表，这种情况下洗数据的时间越长，在洗数据过程中产生新的旧数据的时间可能性越大。也就是:上线前-&gt;灰度洗数据时-&gt;上线后，这3个阶段中，在灰度洗数据的过程中产生的脏数据，还要再洗一遍。所以这个时间长度，就是判断需要不需要再次洗一遍的依据。</td></tr> <tr><td>能否&quot;断点续传&quot;</td> <td>是</td> <td>断点续传是BT下载中的名词，大概意思就是在当次没有完成下载时，还可以在以后继续在上次停下来的地方继续下载。对应到洗数据这里，需要考虑的是当洗数据的数据量较大、时间较长时，能不能在因为各种原因导致洗数据卡住时，下次再洗能不能继续在上次停止的地方，接着洗，而不是全部重新来一遍。因为有的情况下，有的数据洗了一遍，再洗第二遍就会出问题。所以这种情况下，就要开发明确一下，能否&quot;断点续传&quot;，这种情况下的洗数据，一般是通过代码洗，在使用代码洗，通过代码洗的时候，开发可以通过加时间戳，或者统计数量，以及对洗过的数据打标记等多种方式来进行&quot;断点续传&quot;。所以这个也是一个有必要且有意义的事情。</td></tr> <tr><td>是否需要发断服公告</td> <td>是</td> <td>在部分情况下，洗数据会造成线上用户不能正常使用要上线的功能，那么就需要考虑提前发断服公告，断服公告的意义，就在于对应的模块的功能不可用。在上预发布环境的时候，就要明确洗数据的影响范围，是否需要发断服公告，线上用户不能使用到什么程度，以及洗数据的过程如果时间比较长，在洗数据这个过程中，如果有线上用户正常使用，产生了新的数据，再洗的难度大不大。会不会对用户的正常使用产生困扰。如果会的话，就有必要发，具体断服公告的内容，需要产品给出对应的文案，然后对应负责人发出去。</td></tr> <tr><td>是否需要屏蔽线上用户操作入口</td> <td>否</td> <td>在部分情况下，如果用户正常使用，而我们新的需求不允许老用户在这段时间内继续操作，因为新产生的数据，我们不想处理，或者处理起来比较麻烦，为了解决这个问题。干脆就屏蔽掉用户的操作入口。具体来说就是需要产品告知用户，在具体的上线时间点，XXX功能将做升级服务，暂时不可用。当然这个动作其实很危险，不能随意的想当然屏蔽用户的正常使用。比如：打卡高峰期，你升级打卡服务，不让用户使用打卡功能。类似的，要考虑线上用户的真实使用场景，必要的情况下，需要开发同学去线上查询一下对应的操作，线上用户使用情况。大概的一个使用时间，在尽量小的影响范围内，去做屏蔽动作。降低客户投诉的风险。</td></tr> <tr><td>什么时间执行线上数据库洗数据</td> <td>是</td> <td>1.在部分情况下，有可能需要在上线前一天洗数据，这种情况是考虑到，对已有的业务逻辑不会产生影响下，有的是因为执行时间长，有的是因为是第二天就上灰度，来了就开始测试，可以提前进行。<br>2.在执行洗数据前，我们要提前在线上数据库准备一下老数据。在能灰度测试的情况下，要明确指明先洗一个测试公司，如果测试公司测试通过没有问题后，在正式上线完所有的功能后，再次洗全库数据。此时线上所有的功能已经回归完毕，且没有bug.然后再执行全库洗数据。<br>3.数据清洗过程必须由QA看着执行。</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.0a15208b.js" defer></script><script src="/assets/js/3.1a9699b9.js" defer></script><script src="/assets/js/80.1dfc7a9c.js" defer></script>
+  </body>
+</html>
