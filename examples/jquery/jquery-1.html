@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+/**
+ * 一、处理prototype覆盖
+ *    1. 通过给prototype添加constructor属性，引入构造函数本身
+ **/
+// 1. 用函数表达式的形式，声明一个构造函数 jQuery
+var jQuery = function(params) {
+    
+}
+// 2. 构造函数添加属性或方法
+// jQuery.prototype.init = function(){
+//     console.log('run init...')
+// }
+
+jQuery.prototype = {
+    constructor: jQuery, // 构造方法加回来
+    init:function(){
+        console.log('run init...')
+    }
+}
+var newQuery = new jQuery();
+console.log(newQuery)
+
+
+/**
+ * 二、执行init方法
+ * 
+ **/
+
+var jQuery = function(params) {
+    // return jQuery.prototype.init()
+}
+jQuery.prototype.init = function(){
+    console.log('trigger init function')
+}
+
+// 此时，我们想执行jQuery的init方法
+// 1. new
+// 2. 执行
+var $ = new jQuery();
+$.init()
+// 合并写法
+new jQuery.prototype.init();  // 或 new jQuery.init();
+
+
+/**
+ * 实现无new执行
+ * 1. 对外暴露对象实例
+ * 2. 在jQuery构造函数中，直接返回 new jQuery.prototype.init();
+ **/
+ var jQuery = function(params) {
+    return new jQuery.prototype.init(params)
+}
+jQuery.prototype.init = function(params){
+    console.log('trigger init function, input params: ' + params)
+}
+// 全局暴露
+window.$ = jQuery;
+
+
+/**
+ * 实现无new执行
+ * 1. 对外暴露对象实例
+ * 2. 在jQuery构造函数中，直接返回 new jQuery.prototype.init();
+ **/
+ var jQuery = function(params) {
+    return new jQuery.prototype.init(params)
+}
+jQuery.prototype.init = function(params){
+    console.log('trigger init function, input params: ' + params)
+}
+jQuery.prototype.css = function(params){
+    console.log('now you trigger css function, input params: ' + params)
+}
+// 全局暴露
+window.$ = jQuery;
+
+// 以上解决了无new调用init方法
+// 如何无new调用css方法呢？
+jQuery.prototype.init.prototype = jQuery.prototype;
+// 我们把jQuery挂载到jQuery.init的原型上prototype
+// 此时调用css就没问题了
+$('run init').css('css')
+
+
+// 对代码的原型prototype（解决覆盖问题）进行改造
+var jQuery = function(params) {
+    return new jQuery.prototype.init(params)
+}
+jQuery.prototype = {
+    constructor: jQuery,
+    init: function(params){
+        console.log('trigger init function, input params: ' + params)
+    },
+        css: function(params){
+        console.log('now you trigger css function, input params: ' + params)
+    }
+}
+// 以上解决了无new调用init方法
+// 如何无new调用css方法呢？
+jQuery.prototype.init.prototype = jQuery.prototype;
+// 全局暴露
+window.$ = jQuery;
+
+
+
+/***
+ * 上面的 jQuery.prototype.init.prototype = jQuery.prototype; 看起来比较迷糊，在后面代码压缩时不太友好
+ **/
+ var jQuery = function(params) {
+    return new jQuery.prototype.init(params)
+}
+// 把jQuery.prototype给jQuery.fn变量
+jQuery.fn = jQuery.prototype = {
+    constructor: jQuery,
+    init: function(params){
+        console.log('trigger init function, input params: ' + params)
+    },
+        css: function(params){
+        console.log('now you trigger css function, input params: ' + params)
+    }
+}
+// 同步修改下面代码
+jQuery.fn.init.prototype = jQuery.fn;
+// 全局暴露
+window.$ = jQuery;
+
+
+// 至此实现了无new化
+// 但，还有新问题，容易全局污染，咱们得把它单独处理成一个模块
+// 这里使用IIFE来实现模块化，仅对外暴露全局变量
+(function(window, undefined){
+    var jQuery = function(params) {
+        return new jQuery.prototype.init(params)
+    }
+    // 把jQuery.prototype给jQuery.fn变量
+    jQuery.fn = jQuery.prototype = {
+        constructor: jQuery,
+        init: function(params){
+            console.log('trigger init function, input params: ' + params)
+        },
+            css: function(params){
+            console.log('now you trigger css function, input params: ' + params)
+        }
+    }
+    // 同步修改下面代码
+    jQuery.fn.init.prototype = jQuery.fn;
+
+    window.jQuery = window.$ = jQuery;
+})(window);
+
+
+
+
+
+
+// 构造函数，返回一个对象实例，并执行fn.init方法
+function jQuery(){
+    return new jQuery.fn.init( selector, context, rootjQuery );
+}
+
+// 构造函数上添加原型属性
+jQuery.fn = jQuery.prototype = {
+    // The current version of jQuery being used
+    jquery: core_version,
+
+    constructor: jQuery,
+    init: function( selector, context, rootjQuery ) {
+
+    }
+
+};
+
+// Give the init function the jQuery prototype for later instantiation
+jQuery.fn.init.prototype = jQuery.fn;
+</script>
+</body>
+</html>

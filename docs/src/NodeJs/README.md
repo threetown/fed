@@ -30,3 +30,27 @@
     "dependencies": {}
   }
 ```
+
+
+
+
+
+![](./img/event-loop-v.gif)
+
+
+
+![](./img/event-loop-v1.gif)
+
+
+
+![](./img/event-loop-v2.gif)
+
+
+
+![](./img/event-loop-v3.gif)
+
+
+
+
+
+https://dev.to/nodedoctors/an-animated-guide-to-nodejs-event-loop-3g62

@@ -47,3 +47,30 @@ console.log(4)
 
 
 
+https://zhuanlan.zhihu.com/p/448426887
+
+```js
+document.body.innerHTML = ` 
+    <button id="btn" type="button">btn</button> 
+`; 
+
+const button = document.getElementById('btn')
+ 
+button.addEventListener('click',()=>{
+  Promise.resolve().then(()=>console.log('promise resolved 1'))
+  console.log('listener 1')
+})
+ 
+button.addEventListener('click',()=>{
+  Promise.resolve().then(()=>console.log('promise resolved 2'))
+  console.log('listener 2')
+})
+ 
+// 1. 手动点击按钮 
+// button.click() // 2. 解开这句注释，用JS触发点击行为
+```
+
+- 手动点击按钮时： listener1 -> promise resolved 1 -> listener2 -> promise resolved 2
+- 当我们使用2： listener1 -> listener2 -> promise resolved 1 -> promise resolved 2
+
+UI 触发的 click 事件是异步的，每个 listener 是一个 macrotask；代码触发的 click 底层是 dispatchEvent，这是一个同步的方法，会同步执行所有 listener

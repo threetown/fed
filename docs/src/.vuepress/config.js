@@ -43,7 +43,16 @@ module.exports = {
             { text: 'HTML', link: '/HTML/' },
             { text: 'CSS', link: '/CSS/' },
             { text: 'JavaScript', link: '/JS/' }
-          ]},
+          ]},{
+            text: 'interview', items: [
+              {text: 'HTML', link: '/2024/HTML/' },
+              {text: 'CSS', link: '/2024/CSS/' },
+              {text: 'JS', link: '/2024/JS/' },
+              {text: 'Webpack', link: '/2024/Webpack/' },
+              {text: 'HTTP', link: '/2024/HTTP/' },
+              {text: 'browser', link: '/2024/browser/' },
+            ]
+          },
           {
             text: '工具类',
             items: [

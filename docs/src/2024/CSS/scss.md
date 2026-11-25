@@ -1,0 +1,13 @@
+变量（variable），嵌套（nestend rules），混合（mixins），
+Sass Maps的函数map-get($map,$key)
+
+
+
+
+
+
+
+Maps的含义： Maps可视为键值对的集合，键被用于定位值 在css种没有对应的概念。 和Lists不同Maps必须被圆括号包围，键值对被都好分割 。 Maps中的keys和values可以是sassscript的任何对象。（包括任意的sassscript表达式 arbitrary SassScript expressions） 和Lists一样Maps主要为sassscript函数服务，如 map-get函数用于查找键值，map-merge函数用于map和新加的键值融合，@each命令可添加样式到一个map中的每个键值对。 Maps可用于任何Lists可用的地方，在List函数中 Map会被自动转换为List ， 如 (key1: value1, key2: value2)会被List函数转换为 key1 value1, key2 value2 ，反之则不能。(网友Soledad提供)
+
+
+
