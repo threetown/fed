@@ -108,6 +108,12 @@ module.exports = {
         ]}
       ]},
       {
+        text: '🍓AI',
+        items: [
+          { text: '概念全景图', link: '/AI/' },
+        ]
+      },
+      {
         text: '🎯经理人', items: [
           { text: '职业经理人', items: [
             { text: '聊聊管理', link: '/manage/' },
