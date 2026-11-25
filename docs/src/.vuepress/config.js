@@ -75,7 +75,7 @@ module.exports = {
           },
         ]
       },
-      { text: '🍄大前端', items: [
+      { text: '🍄全栈开发', items: [
         { text: 'VueJS', items: [{ text: 'vue_0.11', link: '/vue@0.11/'}, { text: 'vue_2.x', link: '/vue@2.x/'}, { text: 'vue', link: '/Vue/'}] },
         { text: 'Vue CLI', items: [{ text: 'vue_cli', link: '/vue-cli/' }] },
         { text: 'React', items: [
@@ -88,6 +88,17 @@ module.exports = {
             { text: 'NodeJS', link: '/NodeJS/' }
           ]
         },
+        { 
+          text: 'LNMP', items: [
+            { text: 'LNMP', link: '/LNMP/' },
+            { text: 'SQL', link: '/SQL/' }
+          ]
+        },
+        {
+          text: '操作系统', items: [
+            { text: 'MacOS', link: '/MacOS/' },
+          ]
+        },
         { text: '架构师', items: [
           { text: '架构能力', link: '/fearchitect/' },
           { text: '设计模式', link: '/design-patterns/' },
@@ -96,22 +107,6 @@ module.exports = {
           { text: '性能优化', link: '/performance/'}
         ]}
       ]},
-      {
-        text: '🍓后端开发',
-        items: [
-          { 
-            text: 'LNMP', items: [
-              { text: 'LNMP', link: '/LNMP/' },
-              { text: 'SQL', link: '/SQL/' }
-            ]
-          },
-          {
-            text: '操作系统', items: [
-              { text: 'MacOS', link: '/MacOS/' },
-            ]
-          }
-        ]
-      },
       {
         text: '🎯经理人', items: [
           { text: '职业经理人', items: [
