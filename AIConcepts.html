@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<script>
+window.contextInfo = {"files":[],"materials":[],"crafts":[]};
+// 处理锚点链接跳转（srcDoc iframe 中锚点链接默认行为不正确）
+document.addEventListener('click', function(e) {
+  var anchor = e.target.closest('a');
+  if (anchor) {
+    var href = anchor.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      e.preventDefault();
+      var targetId = href.slice(1);
+      var target = document.getElementById(targetId);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
+});
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 核心概念全景图 · 7 条主线 × 140 个概念</title>
+<meta property="og:title" content="AI 核心概念全景图 · 7 条主线 × 140 个概念" />
+<meta property="og:description" content="LLM 是大脑，提示工程是和大脑说话的方式，向量数据库与 RAG 给大脑配了可查的资料库，AI 代理让大脑能动手干活，MCP 是代理接工具的标准插座；生成式 AI 是包含这一切的大家族。">
+<meta property="og:image" content="https://hi.threetowns.cn/threetowns.png" />
+<meta property="og:url" content="https://hi.threetowns.cn/AIConcepts.html" />
+<meta property="og:type" content="website" />
+<meta name="description" content="LLM 是大脑，提示工程是和大脑说话的方式，向量数据库与 RAG 给大脑配了可查的资料库，AI 代理让大脑能动手干活，MCP 是代理接工具的标准插座；生成式 AI 是包含这一切的大家族。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#070b18;--panel:rgba(255,255,255,.035);--line:rgba(255,255,255,.08);--text:#e8ecf6;--muted:#8b94ad}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--bg);color:var(--text);min-height:100vh;
+    background-image:
+      radial-gradient(1200px 600px at 10% -10%, rgba(124,92,255,.22), transparent 60%),
+      radial-gradient(1000px 600px at 95% 0%, rgba(0,200,255,.16), transparent 60%),
+      radial-gradient(900px 700px at 50% 110%, rgba(255,120,60,.12), transparent 60%),
+      linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+    background-size:auto,auto,auto,40px 40px,40px 40px;
+  }
+  .poster{max-width:1760px;margin:0 auto;padding:56px 40px 48px}
+  header{text-align:center;margin-bottom:36px}
+  .kicker{font-family:"JetBrains Mono",monospace;letter-spacing:.35em;font-size:13px;color:#9aa7ff;text-transform:uppercase}
+  h1{font-size:clamp(36px,5vw,72px);font-weight:900;letter-spacing:.02em;margin:14px 0 10px;
+     background:linear-gradient(90deg,#b49bff,#7fd8ff 35%,#7dffc4 60%,#ffcf6b 85%,#ff8a5c);
+     -webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--muted);font-size:17px}
+  .sub b{color:var(--text)}
+  .stats{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:22px}
+  .stat{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:8px 18px;font-size:14px;color:var(--muted)}
+  .stat strong{font-family:"JetBrains Mono",monospace;color:var(--text);font-size:16px;margin-right:4px}
+  .flow{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;margin:30px auto 10px;max-width:1500px}
+  .flow .node{padding:10px 16px;border-radius:12px;font-weight:700;font-size:15px;border:1px solid;display:flex;flex-direction:column;align-items:center;min-width:110px}
+  .flow .node small{font-weight:400;font-size:12px;opacity:.85;margin-top:2px;text-wrap:balance}
+  .flow .arrow{color:#4b5574;font-size:20px}
+  .tagline{text-align:center;color:var(--muted);font-size:15px;margin:14px auto 34px;max-width:1100px;line-height:1.8}
+  .tagline em{font-style:normal;color:var(--text);font-weight:500}
+  .grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:14px}
+  .track{border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));border:1px solid var(--line);overflow:hidden;position:relative}
+  .track::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--c)}
+  .th{padding:20px 14px 14px;border-bottom:1px solid var(--line);background:radial-gradient(120% 100% at 50% 0%, color-mix(in srgb,var(--c) 28%,transparent), transparent 70%)}
+  .th .no{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--c);letter-spacing:.15em}
+  .th h2{font-size:22px;font-weight:900;margin:4px 0 2px}
+  .th .en{font-size:12px;color:var(--muted);font-family:"JetBrains Mono",monospace;text-wrap:balance;overflow-wrap:break-word}
+  .th p{font-size:12.5px;color:#c3c9da;margin-top:8px;line-height:1.55}
+  ol{list-style:none;padding:8px 8px 12px}
+  li{display:flex;gap:8px;padding:7px 6px;border-radius:9px;transition:background .15s}
+  li:hover{background:rgba(255,255,255,.05)}
+  .n{flex:none;width:22px;height:22px;border-radius:7px;font-family:"JetBrains Mono",monospace;font-size:11px;font-weight:700;display:grid;place-items:center;color:var(--c);background:color-mix(in srgb,var(--c) 14%,transparent);margin-top:1px}
+  .body{min-width:0}
+  .zh{font-size:13.5px;font-weight:500;line-height:1.35}
+  .e2{font-size:10.5px;color:var(--muted);font-family:"JetBrains Mono",monospace;line-height:1.35;margin-top:2px;overflow-wrap:break-word;hyphens:none;text-wrap:balance}
+  footer{text-align:center;color:#5d6783;font-size:12px;margin-top:30px;font-family:"JetBrains Mono",monospace;letter-spacing:.1em}
+  /* 主线颜色：深色/浅色两套 */
+  .track,.flow .node{--c:var(--cd)}
+  .flow .node{color:var(--c);border-color:color-mix(in srgb,var(--c) 35%,transparent);background:color-mix(in srgb,var(--c) 8%,transparent)}
+  body,.track,.th,li,.stat,.flow .node,.theme-btn{transition:background-color .35s,color .35s,border-color .35s}
+
+  /* 切换按钮 */
+  .theme-btn{position:fixed;top:18px;right:18px;z-index:50;display:flex;align-items:center;gap:8px;
+    padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:rgba(20,26,46,.75);color:var(--text);
+    font:500 13px "Noto Sans SC",sans-serif;cursor:pointer;backdrop-filter:blur(8px);box-shadow:0 6px 20px rgba(0,0,0,.25)}
+  .theme-btn:hover{transform:translateY(-1px)}
+  .theme-btn .ico{font-size:16px;line-height:1}
+
+  /* ===== 浅色主题 ===== */
+  body.light{
+    --bg:#f5f6fb;--panel:rgba(255,255,255,.8);--line:rgba(20,30,70,.1);--text:#1b2135;--muted:#5f6880;
+    background-color:var(--bg);
+    background-image:
+      radial-gradient(1200px 600px at 10% -10%, rgba(124,92,255,.12), transparent 60%),
+      radial-gradient(1000px 600px at 95% 0%, rgba(0,170,230,.10), transparent 60%),
+      radial-gradient(900px 700px at 50% 110%, rgba(255,140,80,.10), transparent 60%),
+      linear-gradient(rgba(20,30,70,.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(20,30,70,.04) 1px, transparent 1px);
+  }
+  body.light .track,body.light .flow .node{--c:var(--cl)}
+  body.light .kicker{color:#5b5fd6}
+  body.light h1{background:linear-gradient(90deg,#6d4fe0,#0b8fb3 35%,#12945f 60%,#c98a12 85%,#d9632a);-webkit-background-clip:text;background-clip:text}
+  body.light .track{background:#fff;box-shadow:0 4px 18px rgba(30,40,90,.06)}
+  body.light .th{background:radial-gradient(120% 100% at 50% 0%, color-mix(in srgb,var(--c) 12%,transparent), transparent 70%)}
+  body.light .th p{color:#4a5270}
+  body.light li:hover{background:color-mix(in srgb,var(--c) 7%,transparent)}
+  body.light .n{background:color-mix(in srgb,var(--c) 12%,transparent)}
+  body.light .flow .node{background:#fff}
+  body.light .flow .arrow{color:#b3b9cc}
+  body.light{--muted:#5b6478}body.light footer{color:#5d6783}
+  body.light .theme-btn{background:rgba(255,255,255,.85);box-shadow:0 6px 20px rgba(30,40,90,.12)}
+
+  /* 品牌 */
+  .brand{display:inline-flex;align-items:center;gap:10px;padding:7px 16px 7px 7px;margin-bottom:22px;border-radius:999px;
+    border:1px solid var(--line);background:var(--panel);backdrop-filter:blur(6px)}
+  .brand .logo{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font:900 17px "JetBrains Mono",monospace;color:#fff;
+    background:linear-gradient(135deg,#a98bff,#4fd8ff 55%,#5dffb1);box-shadow:0 4px 14px rgba(120,140,255,.35)}
+  .brand .bname{font:700 16px "JetBrains Mono",monospace;letter-spacing:.04em;color:var(--text)}
+  .brand .bsep{width:1px;height:16px;background:var(--line)}
+  .brand .bcn{font-weight:700;font-size:15px;color:var(--text);letter-spacing:.06em}
+  .fbrand{display:inline-block;font:700 14px "Noto Sans SC",sans-serif;letter-spacing:.12em;margin-bottom:6px;
+    background:linear-gradient(90deg,#b49bff,#7fd8ff,#7dffc4);-webkit-background-clip:text;background-clip:text;color:transparent}
+  body.light .brand{background:#fff;box-shadow:0 4px 14px rgba(30,40,90,.08)}
+  body.light .brand .logo{background:linear-gradient(135deg,#6d4fe0,#0b8fb3 55%,#12945f)}
+  body.light .fbrand{background:linear-gradient(90deg,#6d4fe0,#0b8fb3,#12945f);-webkit-background-clip:text;background-clip:text}
+
+  @media print{.theme-btn{display:none}}
+  @media (max-width:1500px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+  @media (max-width:1000px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media (max-width:560px){.grid{grid-template-columns:1fr}.poster{padding:32px 14px}}
+</style>
+</head>
+<body>
+<button class="theme-btn" id="themeBtn" type="button" aria-label="切换浅色/深色"><span class="ico">☀️</span><span class="lbl">浅色</span></button>
+<div class="poster">
+  <header>
+    <div class="brand"><span class="logo">L</span><span class="bname">Leon AI</span><span class="bsep"></span><span class="bcn">里昂AI</span></div>
+    <div class="kicker">AI Concepts Atlas · 20-Day Learning Map</div>
+    <h1>AI 核心概念全景图</h1>
+    <div class="sub"><b>7 条主线 × 20 个概念 = 140 个概念</b>　·　每天每条主线学 1 个，20 天学完　·　中英对照</div>
+    <div class="stats">
+      <div class="stat"><strong>7</strong>条主线</div>
+      <div class="stat"><strong>140</strong>个概念</div>
+      <div class="stat"><strong>20</strong>天学完</div>
+    </div>
+  </header>
+
+  <div class="flow" id="flow"></div>
+  <p class="tagline"><em>LLM</em> 是大脑，<em>提示工程</em>是和大脑说话的方式，<em>向量数据库</em>与 <em>RAG</em> 给大脑配了可查的资料库，<em>AI 代理</em>让大脑能动手干活，<em>MCP</em> 是代理接工具的标准插座；<em>生成式 AI</em> 是包含这一切的大家族。</p>
+
+  <section class="grid" id="grid"></section>
+
+  <footer><span class="fbrand">Leon AI · 里昂AI</span><br>AI CONCEPTS ATLAS · 7 TRACKS · 140 CONCEPTS</footer>
+</div>
+
+<script>
+const TRACKS = [
+ {zh:"LLM",en:"Large Language Models",c:"#a98bff",desc:"大语言模型：会“接龙”的大脑，从原理、训练到部署",items:[
+  ["LLM 是什么","What is an LLM?"],["Transformer 架构","Transformer Architecture"],["注意力机制","Attention Mechanism"],
+  ["词元化（BPE）","Tokenization (BPE)"],["嵌入与位置编码","Embeddings & Positional Encoding"],["下一个词元预测","Next-Token Prediction"],
+  ["预训练","Pretraining"],["指令微调","Instruction Tuning"],["RLHF 与 DPO","RLHF & DPO"],["上下文窗口","Context Window"],
+  ["温度、Top-k、Top-p","Temperature, Top-k, Top-p"],["幻觉","Hallucination"],["微调与 LoRA","Fine-tuning & LoRA"],["量化","Quantization"],
+  ["KV 缓存","KV Cache"],["推理（Inference）与延迟","Inference & Latency"],["开放权重模型与闭源模型","Open vs Closed Models"],
+  ["小型语言模型（SLM）","Small Language Models"],["推理模型（Reasoning）","Reasoning Models"],["基准测试与评估","Benchmarks & Evaluation"]
+ ]},
+ {zh:"生成式 AI",en:"Generative AI",c:"#ff7ab8",desc:"能创造新内容的 AI 大家族：文字、图像、音频、视频",items:[
+  ["生成式 AI 是什么","What is Generative AI?"],["生成式模型与判别式模型","Generative vs Discriminative"],["神经网络","Neural Networks"],
+  ["Transformer","Transformers"],["自注意力","Self-Attention"],["词元与词元化","Tokens & Tokenization"],["嵌入","Embeddings"],
+  ["基础模型","Foundation Models"],["预训练与微调","Pretraining & Fine-tuning"],["提示词与补全","Prompts & Completions"],
+  ["温度与 Top-p","Temperature & Top-p"],["上下文窗口","Context Window"],["幻觉","Hallucination"],["扩散模型","Diffusion Models"],
+  ["GAN 与 VAE","GANs & VAEs"],["多模态模型","Multimodal Models"],["文本 / 图像 / 音频 / 视频生成","Text, Image, Audio & Video Generation"],
+  ["RLHF","RLHF"],["评估与基准测试","Evaluation & Benchmarks"],["负责任的 AI 与安全","Responsible AI & Safety"]
+ ]},
+ {zh:"提示工程",en:"Prompt Engineering",c:"#ffcf5c",desc:"怎样和大脑说话：结构、技巧、安全与迭代",items:[
+  ["Prompt 的结构","Anatomy of a Prompt"],["明确的指令","Clear Instructions"],["系统提示","System Prompts"],["角色设定","Role Prompting"],
+  ["零样本","Zero-shot Prompting"],["少样本","Few-shot Prompting"],["思维链（CoT）","Chain-of-Thought"],["提示模板","Prompt Templates"],
+  ["分隔符与结构","Delimiters & Structure"],["结构化输出（JSON）","Structured Output (JSON)"],["提供背景信息","Providing Context"],
+  ["约束与护栏","Constraints & Guardrails"],["提示链","Prompt Chaining"],["自洽性","Self-Consistency"],["ReAct","ReAct"],
+  ["温度与参数设置","Temperature & Settings"],["提示词注入","Prompt Injection"],["迭代优化","Iterate & Refine"],["输出评估","Evaluating Outputs"],["上下文工程","Context Engineering"]
+ ]},
+ {zh:"向量数据库",en:"Vector Databases",c:"#4fd8ff",desc:"按“意思”找东西的仓库：距离、索引、规模化",items:[
+  ["向量数据库是什么","What is a Vector Database?"],["向量与嵌入","Vectors & Embeddings"],["嵌入维度","Embedding Dimensions"],
+  ["余弦相似度、欧氏距离、点积","Cosine, Euclidean, Dot Product"],["k 最近邻（kNN）","k-Nearest Neighbors"],["近似最近邻（ANN）","Approximate Nearest Neighbor"],
+  ["HNSW 索引","HNSW Index"],["IVF 倒排文件索引","IVF (Inverted File) Index"],["乘积量化（PQ）","Product Quantization"],["元数据过滤","Metadata Filtering"],
+  ["混合搜索","Hybrid Search"],["命名空间与集合","Namespaces & Collections"],["Upsert 与删除","Upserts & Deletes"],["分片与复制","Sharding & Replication"],
+  ["召回率与延迟的权衡","Recall vs Latency Trade-off"],["Pinecone · Weaviate · Milvus · Qdrant","Managed / Open-source Vector DBs"],
+  ["pgvector","pgvector (PostgreSQL extension)"],["Chroma 与 FAISS","Chroma & FAISS"],["扩展到数十亿向量","Scaling to Billions of Vectors"],["应用：RAG、搜索、推荐","Use Cases: RAG, Search, Recommendation"]
+ ]},
+ {zh:"RAG",en:"Retrieval-Augmented Generation",c:"#5dffb1",desc:"检索增强生成：先查资料再回答，把闭卷考变开卷考",items:[
+  ["为什么需要 RAG：LLM 知识的局限","Why RAG: LLM Knowledge Limits"],["RAG 架构","RAG Architecture"],["文档加载 / 摄取","Document Loading / Ingestion"],
+  ["分块策略","Chunking Strategies"],["嵌入模型","Embedding Models"],["向量数据库","Vector Databases"],["索引","Indexing"],["相似度搜索","Similarity Search"],
+  ["检索 Top-k 结果","Top-k Retrieval"],["混合搜索（BM25 + 向量）","Hybrid Search (BM25 + Vector)"],["元数据过滤","Metadata Filtering"],["重排序","Re-ranking"],
+  ["查询重写","Query Rewriting"],["提示增强","Prompt Augmentation"],["上下文窗口管理","Context Window Management"],["引用与依据（Grounding）","Citations & Grounding"],
+  ["多跳 RAG","Multi-hop RAG"],["GraphRAG","GraphRAG (Knowledge-Graph RAG)"],["代理式 RAG","Agentic RAG"],["RAG 评估","RAG Evaluation"]
+ ]},
+ {zh:"AI 代理",en:"AI Agents",c:"#6c9bff",desc:"能自己思考、动手、看结果、再调整的 AI 助手（又称智能体）",items:[
+  ["什么是 AI 代理","What is an AI Agent?"],["循环：思考 → 行动 → 观察","Think → Act → Observe Loop"],["ReAct 模式","ReAct Pattern"],
+  ["工具调用 / 函数调用","Tool / Function Calling"],["规划与任务分解","Planning & Task Decomposition"],["短期记忆","Short-term Memory"],["长期记忆","Long-term Memory"],
+  ["反思与自我批评","Reflection & Self-Critique"],["多智能体系统","Multi-Agent Systems"],["编排者-工作者模式","Orchestrator-Worker Pattern"],["路由","Routing"],
+  ["代理框架","Agent Frameworks"],["MCP（模型上下文协议）","Model Context Protocol"],["浏览器与电脑操作","Browser & Computer Use"],["代码执行沙箱","Code Execution Sandbox"],
+  ["人在回路（HITL）","Human-in-the-Loop"],["护栏与权限","Guardrails & Permissions"],["状态与检查点","State & Checkpoints"],["代理评估","Agent Evaluation"],["成本与延迟控制","Cost & Latency Control"]
+ ]},
+ {zh:"MCP",en:"Model Context Protocol",c:"#ff9a5c",desc:"模型上下文协议：AI 应用接工具和数据的“USB-C 接口”",items:[
+  ["什么是 MCP","What is MCP?"],["为什么需要 MCP：N×M 问题","Why MCP: the N×M Problem"],["主机、客户端与服务器","Host, Client & Server"],
+  ["JSON-RPC 消息","JSON-RPC Messages"],["工具（Tools）","Tools"],["资源（Resources）","Resources"],["提示（Prompts）","Prompts"],["采样（Sampling）","Sampling"],
+  ["能力协商","Capability Negotiation"],["stdio 传输","stdio Transport"],["可流式 HTTP","Streamable HTTP"],["连接生命周期","Connection Lifecycle"],
+  ["工具 Schema（JSON Schema）","Tool Schemas"],["授权（OAuth）","Authorization (OAuth)"],["编写 MCP 服务器","Building an MCP Server"],["连接到 AI 应用","Connecting to AI Apps"],
+  ["本地服务器与远程服务器","Local vs Remote Servers"],["提示词注入与工具投毒","Prompt Injection & Tool Poisoning"],["权限与用户同意","Permissions & User Consent"],["用 MCP Inspector 调试","Debugging with MCP Inspector"]
+ ]}
+];
+const LIGHT = {"LLM":"#6d4fe0","生成式 AI":"#d63384","提示工程":"#b7791f","向量数据库":"#0b8fb3","RAG":"#12945f","AI 代理":"#2f5fd6","MCP":"#d9632a"};
+const cv = t => `--cd:${t.c};--cl:${LIGHT[t.zh] || t.c}`;
+const esc = s => String(s ?? "").replace(/[&<>"]/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[ch]));
+const themeBtn = document.getElementById("themeBtn");
+function setTheme(light){
+  document.body.classList.toggle("light", light);
+  themeBtn.querySelector(".ico").textContent = light ? "🌙" : "☀️";
+  themeBtn.querySelector(".lbl").textContent = light ? "深色" : "浅色";
+}
+themeBtn.addEventListener("click", () => setTheme(!document.body.classList.contains("light")));
+try {
+  document.getElementById("flow").innerHTML = TRACKS.map((t,i) =>
+    `<div class="node" style="${cv(t)}">${esc(t.zh)}<small>${esc(t.en)}</small></div>` +
+    (i < TRACKS.length-1 ? '<span class="arrow">›</span>' : '')).join("");
+  document.getElementById("grid").innerHTML = TRACKS.map((t,ti) => `
+    <article class="track" style="${cv(t)}">
+      <div class="th"><div class="no">TRACK 0${ti+1}</div><h2>${esc(t.zh)}</h2><div class="en">${esc(t.en)}</div><p>${esc(t.desc)}</p></div>
+      <ol>${t.items.map((it,i) => `<li><span class="n">${String(i+1).padStart(2,"0")}</span><div class="body"><div class="zh">${esc(it[0])}</div><div class="e2">${esc(it[1])}</div></div></li>`).join("")}</ol>
+    </article>`).join("");
+} catch (err) {
+  document.getElementById("grid").innerHTML = '<p style="color:#ff8080">海报渲染出错：' + esc(err.message) + '</p>';
+}
+</script>
+</body>
+</html>
