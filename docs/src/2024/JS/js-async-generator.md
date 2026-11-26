@@ -140,7 +140,7 @@ g.throw(new Error("Something went wrong"));
 
 
 
-![generator-function](./img/generator-function.webp)
+<!-- ![generator-function](./img/generator-function.webp) -->
 
 
 

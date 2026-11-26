@@ -401,7 +401,7 @@ if ( document.readyState === "complete" ) {
 
 * [jQuery source viewer](https://j11y.io/jquery/)
 
-![jquery source viewer](./img/jquery-source-viewer.png)
+<!-- ![jquery source viewer](./img/jquery-source-viewer.png) -->
 
 
 
